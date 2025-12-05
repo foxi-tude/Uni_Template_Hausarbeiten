@@ -1,0 +1,22 @@
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
+
+\section{Einleitung}
+
+\subsection{Das Spiel Vier Gewinnt}
+Vier Gewinnt ist ein klassisches Strategiespiel, und wurde 1973 von Howard Wexler handelt sich um ein endliches Zwei-Personen Nullsummenspiel mit perfekter Information. Ein Nullsummenspiel kennzeichnet sich dadurch aus, dass die Verluste des einen Spielers exakt den Gewinnen des anderen darstellen. Eine spielende Person ist deshalb perfekt Informiert, da die gesamte Spielsituation jederzeit offen einsehbar ist. Somit kann eine spielende Person eine voll informierte Entscheidung treffen. \cite{owen2013spieltheorie}
+Das Spiel wird auf einem vertikal aufgerichteten Brett mit sieben Spalten und sechs Zeilen gespielt. Die Spielenden werfen abwechselnd Steine ihrer Farbe von oben in eine Spalte ein, wobei der Stein auf die unterste freie Position fällt. Gewinner ist derjenige Person, die zuerst vier eigene Steine horizontal, vertikal oder diagonal in einer Linie anordnet. \cite{wiki:Vier_gewinnt} 
+
+Die Kombination aus einfacher Spielmechanik und überraschend hohen Gesamtzahl der validen Spielpositionen von circa 4,5 Billionen \cite{dengel2008ki}, während Tic-Tac-Toe 5.478 gültige Positionen besitzt. Daher ist ein Aufbau eines Kompletten Spielbaumes zwar nicht unmöglich, jedoch ist wäre dieser Baum mit $\mathbf{4 x 10^(21)}$ Blattknoten, so groß das selbst im Komprimierten zustand 557 Gigabyte nötig wären um diesen Spielbaum abzubilden \cite{yokota2022high}. Zusätzlich dürfte die Laufzeit für die Berechnung des Spielbaums viel Zeit in Anspruch nehmen. Die Lösung des Spiel liegt somit nicht in einer 1 zu 1 Abbildung, sondern in einem Algorithmischen Ansatz, welche ich im nächsten Unterkapitel beleuchtet werden.
+
+
+\subsection{Lösungsansätze für einen Bot}
+Wie James D. Allen und A
+Im Jahre 1988 konnte James D. Allen eben in seine Masterarbeit "A \cite{allis1988knowledge}
+
+Im Rahmen dieser Hausarbeit werden unterschiedliche Lösungsansätze betrachtet, wie zum Beispiel der Minimax-Algorithmus mit und ohne Alpha-Beta-Pruning sowie verschiedene Heuristiken zur Zustandsbewertung. Der Minimax-Algorithmus bietet die Möglichkeit, auch ohne explizites Lernen optimale Spielzüge zu ermitteln, leidet jedoch unter einer exponentiell anwachsenden Berechnungskomplexität bei wachsender Spieltiefe. Das Alpha-Beta-Pruning reduziert diesen Aufwand erheblich, indem es unnötige Berechnungen vermeidet und somit effizientere Durchläufe ermöglicht.
+
+Alternativ werden Monte-Carlo-Verfahren eingesetzt, die eine probabilistische Analyse vieler möglicher Spielverläufe erlauben. Ihr Vorteil liegt in der Flexibilität und der Fähigkeit, auch in komplexen Situationen praktikable Züge zu finden. Allerdings können sie bei begrenzter Rechenzeit zu suboptimalen Ergebnissen führen.
+
+Mit Hilfe dieser Methoden lassen sich die Grenzen klassischer, deterministischer Verfahren aufzeigen und mit stochastischen oder heuristischen Ansätzen vergleichen. Ziel dieser Arbeit ist es, die jeweiligen Stärken und Schwächen der Ansätze im Kontext von Vier Gewinnt aufzuzeigen und praktische Einsatzmöglichkeiten zu evaluieren.
