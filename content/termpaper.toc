@@ -1,0 +1,5 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
+\contentsline {section}{\nonumberline Literatur}{1}{section*.3}%
+\contentsline {section}{Selbstständigkeitserklärung}{2}{section*.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
