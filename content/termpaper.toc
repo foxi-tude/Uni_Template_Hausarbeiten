@@ -1,7 +1,7 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Das Spiel Vier Gewinnt}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Lösungsansätze für einen Bot}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Algorithmische Lösungsansätze für einen Bot}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Entwurf}{2}{section.2}%
 \contentsline {section}{\numberline {3}Realisierung des Entwurfs}{2}{section.3}%
 \contentsline {section}{\numberline {4}Analyse}{3}{section.4}%

@@ -1,26 +1,60 @@
-This is 8-bit Big BibTeX version 0.99d-x4.01 (TeX Live 2023)
-Implementation:  C for Unix
-Release version: 4.01 (15 jul 2023)
-
-Error: cannot open CS file: 88591lat.csf
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: termpaper.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: dinat.bst
-Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
-Reallocated global_strs (elt_size=200001) to 10 items from 0.
-Reallocated glb_str_end (elt_size=8) to 10 items from 0.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
+I was expecting a `,' or a `}'---line 61 of file literature.bib
+ :  
+ :  year= {1990}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty note in yokota2022high
-
-Here's how much of BibTeX's memory you used:
- Cites:                 5 out of 750
- Fields:               41 out of 5000
- Hash table:       199654 out of 200000
- Strings:             825 out of 200000
- Free string pool:   6877 out of 65000
- Wizard functions:   3552 out of 6000
-(There was 1 warning)
+You've used 6 entries,
+            3552 wiz_defined-function locations,
+            830 strings with 7068 characters,
+and the built_in function-call counts, 4127 in all, are:
+= -- 477
+> -- 60
+< -- 105
++ -- 131
+- -- 40
+* -- 358
+:= -- 696
+add.period$ -- 8
+call.type$ -- 6
+change.case$ -- 31
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 105
+empty$ -- 310
+format.name$ -- 66
+if$ -- 809
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 46
+num.names$ -- 24
+pop$ -- 46
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 181
+stack$ -- 0
+substring$ -- 368
+swap$ -- 22
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 1
+while$ -- 43
+width$ -- 0
+write$ -- 69
+(There was 1 error message)
