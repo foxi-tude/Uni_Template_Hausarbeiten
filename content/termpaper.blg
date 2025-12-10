@@ -1,60 +1,57 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: termpaper.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: dinat.bst
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: literature.bib
-I was expecting a `,' or a `}'---line 61 of file literature.bib
+I was expecting a `,' or a `}'---line 31 of file literature.bib
  :  
  :  year= {1990}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty note in yokota2022high
-You've used 6 entries,
+You've used 5 entries,
             3552 wiz_defined-function locations,
-            830 strings with 7068 characters,
-and the built_in function-call counts, 4127 in all, are:
-= -- 477
-> -- 60
-< -- 105
-+ -- 131
-- -- 40
-* -- 358
-:= -- 696
-add.period$ -- 8
-call.type$ -- 6
-change.case$ -- 31
-chr.to.int$ -- 6
-cite$ -- 7
-duplicate$ -- 105
-empty$ -- 310
-format.name$ -- 66
-if$ -- 809
+            831 strings with 7046 characters,
+and the built_in function-call counts, 3490 in all, are:
+= -- 399
+> -- 49
+< -- 99
++ -- 117
+- -- 33
+* -- 291
+:= -- 594
+add.period$ -- 7
+call.type$ -- 5
+change.case$ -- 25
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 87
+empty$ -- 265
+format.name$ -- 53
+if$ -- 683
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 46
-num.names$ -- 24
-pop$ -- 46
+missing$ -- 9
+newline$ -- 42
+num.names$ -- 21
+pop$ -- 38
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 24
 quote$ -- 0
-skip$ -- 181
+skip$ -- 159
 stack$ -- 0
-substring$ -- 368
-swap$ -- 22
-text.length$ -- 13
+substring$ -- 310
+swap$ -- 18
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 1
-while$ -- 43
+type$ -- 40
+warning$ -- 0
+while$ -- 36
 width$ -- 0
-write$ -- 69
+write$ -- 63
 (There was 1 error message)
