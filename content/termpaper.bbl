@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -23,6 +23,23 @@
   German Conference on AI, KI 2008, Kaiserslautern, Germany, September 23-26,
   2008, Proceedings}. Bd. 5243.
 \newblock Springer Science \& Business Media, 2008
+
+\bibitem[Knuth und Moore(1975)]{KNUTH1975293}
+\dinatlabel{Knuth und Moore 1975} \textsc{Knuth}, Donald~E.~; \textsc{Moore},
+  Ronald~W.:
+\newblock An analysis of alpha-beta pruning.
+\newblock In: \emph{Artificial Intelligence}
+\newblock 6 (1975), Nr.~4, S.~293--326. --
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0004370275900193}. --
+\newblock ISSN 0004-3702
+
+\bibitem[Kocsis und Szepesvári(2006)]{Kocsis2006}
+\dinatlabel{Kocsis und Szepesvári 2006} \textsc{Kocsis}, Levente~;
+  \textsc{Szepesvári}, Csaba:
+\newblock Bandit based {M}onte-{C}arlo Planning.
+\newblock In: \emph{Proceedings of the European Conference on Machine Learning
+  (ECML)}, Springer, 2006, S.~282--293
 
 \bibitem[Owen(2013)]{owen2013spieltheorie}
 \dinatlabel{Owen 2013} \textsc{Owen}, Guillermo:
