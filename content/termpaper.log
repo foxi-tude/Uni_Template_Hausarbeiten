@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  17 DEC 2025 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  17 DEC 2025 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1389,7 +1389,13 @@ mm/m/it/10.95 moegliche Spalten pro Zug$
  []
 
 
-Overfull \hbox (22.01694pt too wide) in paragraph at lines 20--21
+Overfull \hbox (8.58878pt too wide) in paragraph at lines 16--17
+\T1/cmr/m/n/10.95 Die Alpha-Beta-Pruning-Technik ist ei-ne Op-ti-mie-rungs-me-t
+ho-de des Minimax-Algorithmus,
+ []
+
+[4]
+Overfull \hbox (22.01694pt too wide) in paragraph at lines 30--31
 \T1/cmr/m/n/10.95 Op-ti-mie-rung ex-po-nen-ti-el-le Lauf-zeit von $\OML/cmm/m/i
 t/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b[]\OT1/cmr/m/n/10.95 )$ \T1/c
 mr/m/n/10.95 auf-weist, wo-bei $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = \OML
@@ -1397,8 +1403,8 @@ mr/m/n/10.95 auf-weist, wo-bei $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = \OML
  []
 
 ) (chapters/entwurf.tex) (chapters/realisierung.tex) (chapters/analyse.tex
-[4]) (chapters/fazit.tex) (termpaper.bbl [5]) (../style/statement_inf.tex
-[6] [7
+[5]) (chapters/fazit.tex) (termpaper.bbl [6]) (../style/statement_inf.tex
+[7] [8
 
 ]) (termpaper.aux)
  ***********
@@ -1415,10 +1421,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41596 strings out of 467871
- 898830 string characters out of 5428442
+ 41601 strings out of 467871
+ 898876 string characters out of 5428442
  1461020 words of memory out of 5000000
- 69818 multiletter control sequences out of 15000+600000
+ 69820 multiletter control sequences out of 15000+600000
  651002 words of font info for 82 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  118i,19n,145p,11250b,1306s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1437,11 +1443,12 @@ AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
-/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (9 pages, 254513 bytes).
+nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on termpaper.pdf (10 pages, 276530 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

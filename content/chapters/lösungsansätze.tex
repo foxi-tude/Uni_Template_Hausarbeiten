@@ -10,7 +10,17 @@ Ein fundamentales Konzept zur Berechnung von optimalen Strategien in Nullsummens
 
 Die Werte haben ihren Ursprung in den Blattknoten (Endzustände) des Baumes. Diese besitzen eine Bewertungsfunktion, die aussagt wie gut oder schlecht dieser Endzustand für die Maximierende Person ist. Somit setzen sich die Werte für die Inneren Knoten aus Ihren Kindknoten zusammen, also durch das Propagieren der Werte Ihrer Kindknoten. Dabei gilt für die Maximierenden Knoten $Wert =$ $Maximum$ $aller$ $Kindwerte$ und für die Minimierenden Knoten $Wert =$ $Minimun$ $aller$ $Kindwerte$. Die Vorgehensweise mittels negativ Bewertungen wird die Negamax-Variante genannt. \newpage
 
-Klassisch wird dieser Algorithmus mittels eine Tiefensuche implementiert und besitzt ohne Optimierung eine exponentielle Laufzeit von $O(b^d)$ wobei $b=moegliche \ Spalten \ pro \ Zug$ und $d=Zuege \ im \ Vorraus$ darstellen. Aufgrund dieser Großen Laufzeit ist eine Verbesserung notwendig, solch eine Optimierung bietet die Alpha-Beta Pruning Technik. Dabei werden die Äste des Spielbaums abgeschnitten die nicht für eine Optimale Lösung benötigt werden \cite{KNUTH1975293}. 
+Klassisch wird dieser Algorithmus mittels eine Tiefensuche implementiert und besitzt ohne Optimierung eine exponentielle Laufzeit von $O(b^d)$ wobei $b=moegliche \ Spalten \ pro \ Zug$ und $d=Zuege \ im \ Vorraus$ darstellen. Aufgrund dieser Großen Laufzeit ist eine Verbesserung notwendig, solch eine Optimierung bietet die Alpha-Beta Pruning Technik, welche nachverfolgend beschrieben wird.. 
+
+\subsection{Alpha-Beta-Pruning Optimierung}
+Die Alpha-Beta-Pruning-Technik ist eine Optimierungsmethode des Minimax-Algorithmus, die durch intelligentes Abschneiden von Spielbaumästen die Anzahl der zu evaluierenden Knoten erheblich reduziert \cite{KNUTH1975293}. Das Verfahren arbeitet mit zwei Wertschranken:
+
+- \textbf{Alpha ($\alpha$)}: Die beste (höchste) Bewertung, die der Maximierer bisher gefunden hat.\newline
+- \textbf{Beta ($\beta$)}: Die beste (niedrigste) Bewertung, die der Minimierer bisher gefunden hat.
+
+Ein Ast kann abgeschnitten werden, wenn $\alpha \geq \beta$, da die restlichen Züge in diesem Ast nicht mehr relevant für die optimale Spielentscheidung sind. Dies basiert auf der Annahme, dass beide Spieler optimal spielen und keine schlechteren Positionen akzeptieren würden \cite{KNUTH1975293}.
+
+Die Effektivität von Alpha-Beta-Pruning hängt stark von der Reihenfolge ab, in der die Züge evaluiert werden. Mit optimaler Zugreihenfolge ist eine Reduktion der Komplexität auf \(O(b^{d/2})\) möglich, was eine quadratische Verbesserung gegenüber dem klassischen Minimax darstellt \cite{KNUTH1975293}.
 
 \subsection{Monte-Carlo-Treesearch}
 Ein alternatives Konzept zur Berechnung von annähernd optimalen Strategien in Nullsummenspielen ist die Monte-Carlo-Baumsuche (MCTS). Wie der Minimax-Algorithmus basiert auch MCTS auf einem Spielbaum, in dem jeder Knoten einen Spielzustand repräsentiert und einen numerischen Wert besitzt. Im Gegensatz zum Minimax-Algorithmus, der durch statische Bewertungsfunktionen an den Blattknoten operiert, bestimmt MCTS diese Werte durch wiederholte stochastische Simulationen (Rollouts) bis zu den Endzuständen des Spielbaums. Durch die Propagierung der Simulationsergebnisse von den Blattknoten zu inneren Knoten konvergiert die Schätzung der Knotenwerte mit hinreichend vielen Iterationen gegen gute Näherungen der optimalen Spielqualität \cite{Kocsis2006}.
@@ -19,3 +29,13 @@ Die MCTS-Methode durchläuft zur Wertberechnung vier konzeptionelle Phasen: In d
 
 Diese Methode wird iterativ implementiert und benötigt, im Gegensatz zum klassischen Minimax mit Tiefensuche, keine explizite Bewertungsfunktion. Während Minimax ohne Optimierung exponentielle Laufzeit von $O(b^d)$ aufweist, wobei $b = moegliche \ Spalten \ pro \ Zug$ und $d = Zuege im Voraus$, funktioniert MCTS praktikabler bei Spielen mit moderater Komplexität wie 4 Gewinnt. Mit nur 32 MB Speicher und etwa 500.000 Simulationen erreicht MCTS zuverlässige Spielstärke. Damit bietet MCTS eine effiziente Alternative zu Alpha-Beta Pruning, insbesondere wenn keine domänenspezifische Evaluierungsfunktion vorhanden ist.
 
+\subsection{Wahl des Algorithmus}
+Für diese Implementierung ich mich für den \textbf{Minimax-Algorithmus mit Alpha-Beta-Pruning} entschieden \cite{Solr-627596169, KNUTH1975293}. Diese Wahl wird durch folgende Faktoren begründet:
+
+1. \textbf{Vorhersagbarkeit und Optimalität}: Minimax mit Alpha-Beta-Pruning garantiert die Findung des optimalen Zuges unter Annahme optimalen gegnerischen Spiels, sofern die Suchtiefe ausreichend ist \cite{Solr-627596169}.
+
+2. \textbf{Deterministische Spielweise}: Das Verfahren liefert reproduzierbare Ergebnisse, was für Analysen und Tests vorteilhaft ist.
+
+3. \textbf{Effiziente Komplexitätsreduktion}: Mit Alpha-Beta-Pruning kann die Komplexität quadratisch reduziert werden, was tiefere Suchbäume ermöglicht \cite{KNUTH1975293}.
+
+4. \textbf{Domänenspezifische Optimierung}: Für Vier Gewinnt kann eine spezialisierte Bewertungsfunktion entwickelt werden, die strategische Ziele quantifiziert \cite{Solr-627596169}.
