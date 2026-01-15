@@ -15,45 +15,47 @@ I was expecting a `,' or a `}'---line 61 of file literature.bib
  :  year= {1990}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 7 entries,
+Warning--entry type for "Liese2024" isn't style-file defined
+--line 195 of file literature.bib
+You've used 8 entries,
             3552 wiz_defined-function locations,
-            849 strings with 7428 characters,
-and the built_in function-call counts, 5198 in all, are:
-= -- 620
-> -- 69
-< -- 139
-+ -- 166
-- -- 47
-* -- 458
-:= -- 857
-add.period$ -- 9
-call.type$ -- 7
-change.case$ -- 35
-chr.to.int$ -- 7
-cite$ -- 7
-duplicate$ -- 128
-empty$ -- 389
-format.name$ -- 79
-if$ -- 1034
+            859 strings with 7825 characters,
+and the built_in function-call counts, 5709 in all, are:
+= -- 683
+> -- 76
+< -- 148
++ -- 177
+- -- 50
+* -- 502
+:= -- 944
+add.period$ -- 10
+call.type$ -- 8
+change.case$ -- 39
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 141
+empty$ -- 428
+format.name$ -- 85
+if$ -- 1138
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 14
-newline$ -- 55
-num.names$ -- 29
-pop$ -- 51
+newline$ -- 61
+num.names$ -- 33
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 38
 quote$ -- 0
-skip$ -- 225
+skip$ -- 244
 stack$ -- 0
-substring$ -- 492
-swap$ -- 28
-text.length$ -- 15
+substring$ -- 542
+swap$ -- 30
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 73
 warning$ -- 0
-while$ -- 53
+while$ -- 59
 width$ -- 0
-write$ -- 87
+write$ -- 97
 (There was 1 error message)

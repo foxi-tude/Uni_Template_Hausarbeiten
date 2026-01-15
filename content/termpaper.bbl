@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -40,6 +40,14 @@
 \newblock Bandit based {M}onte-{C}arlo Planning.
 \newblock In: \emph{Proceedings of the European Conference on Machine Learning
   (ECML)}, Springer, 2006, S.~282--293
+
+\bibitem[Liese(2024)]{Liese2024}
+\dinatlabel{Liese 2024} \textsc{Liese}, Yassin:
+\newblock \emph{Systematische Evaluierung und Optimierung Minimax-basierter
+  Suchstrategien anhand des Spiels Vier-Gewinnt}.
+\newblock Februar 2024. --
+\newblock URL
+  \url{https://doc.neuro.tu-berlin.de/bachelor/2024-BA-YassinLiese.pdf}
 
 \bibitem[Owen(2013)]{owen2013spieltheorie}
 \dinatlabel{Owen 2013} \textsc{Owen}, Guillermo:
