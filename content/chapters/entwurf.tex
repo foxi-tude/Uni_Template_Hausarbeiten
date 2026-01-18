@@ -3,3 +3,117 @@
 %
 
 \section{Entwurf}
+
+\subsection{Spielbrett}
+
+Das Spielbrett ist Zentral für das Spiel 4 Gewinnt und wurde vom Professor Dr. Klauck vorgegeben. Die Schnittstellendefinition sieht folgende Operatoren vor:
+
+\begin{verbatim}
+	- new_board/0: → board
+	- is_board/1: board→ boolean
+	- export_board/1: board → boardMatrix
+	- print_board/1: board | boardMatrix → done
+	- next_player/1: board | {<blue | red>,<count>} → {<red | blue>,<count>+1}
+	- current_player/1: board → {<red | blue>,<count>}
+	- score/1: board→ <running | red | blue | remis>
+	- possible_moves/1: board → number-list
+	- possible_moves_pos/1: board → number-list
+	- make_move/2: board× number → board | {error, {game_over,<score>}} 
+	                                     | {error, column_full} 
+	                                     | {error, column_outofrange}
+	- score_ChipsRow/1: board→ number-list
+	- score_ChipsRow/2: board × {<red | blue>,<count>} → number-list
+	- check_geq_three/2: board × {<red | blue>,<count>} → number-list
+\end{verbatim}
+
+Auf Basis dieser Operatoren habe ich die Datenstrukturen und zusätzliche Funktionen überlegt die bei der Schnittstellen Realisierung unterstützen. Einfache Getter und potenzielle Hilfsfunktionen sind hier nicht aufgelistet.
+
+\newpage
+
+\subsubsection{Datenstrukturen}
+
+\paragraph{Board (Hauptdatenstruktur)}\mbox{}\\
+\texttt{Board = \{board, Matrix, CurrentPlayer, Score\}} 
+\begin{itemize}
+	\item \texttt{Matrix}: Liste von 7 Spalten (Spaltenweise Organisation aufgrund der Spielmechanik.)
+	\item \texttt{CurrentPlayer}: \texttt{\{Color, Count\}} mit \texttt{Color} $\in$ \{\texttt{red}, \texttt{blue}\}, \texttt{Count} $\geq$ 0
+	\item \texttt{Score}: \texttt{running} $|$ \texttt{red} $|$ \texttt{blue} $|$ \texttt{remis}
+\end{itemize}
+
+\subparagraph{Spalte}\mbox{}\\
+\texttt{Column = [Cell\textsubscript{1}, Cell\textsubscript{2}, ..., Cell\textsubscript{6}]}
+\begin{itemize}
+	\item Liste von 6 Zellen (von unten nach oben)
+	\item \texttt{Cell}: \texttt{empty} $|$ \texttt{\{Color, Count\}}
+\end{itemize}
+
+\subparagraph{Koordinatensystem}
+\begin{itemize}
+	\item Links unten: (1,1), Rechts oben: (7,6)
+	\item Spalten: 1--7 (horizontal), Reihen: 1--6 (vertikal)
+\end{itemize}
+
+\subsubsection{Wichtigsten Funktionen}
+
+\paragraph{new\_board/0 $\rightarrow$ Board [E1]}\mbox{}\\
+Initialisiert das Spiel und bedarf daher einer Näheren Betrachtung.
+\begin{itemize}
+	\item Erzeuge 7 leere Spalten mit je 6 Zellen (\texttt{empty})
+	\item Setze \texttt{\{red, 0\}} als Startspieler, \texttt{Score = running}
+\end{itemize}
+
+\paragraph{make\_move/2 (Board, ColIdx) $\rightarrow$ Board $|$ Error [E2]}\mbox{}\\
+Stellt die Kernfunktionalität dar, führt Spielzüge aus und aktualisiert den Zustand.
+\begin{enumerate}
+	\item Prüfe: \texttt{Score = running}? $\rightarrow$ sonst \texttt{\{error, \{game\_over, Score\}\}}
+	\item Prüfe: $1 \leq \texttt{ColIdx} \leq 7$ $\rightarrow$ sonst \texttt{\{error, column\_outofrange\}}
+	\item Finde erste leere Zelle in Spalte \texttt{ColIdx} (von unten)
+	\begin{itemize}
+		\item Falls keine: \texttt{\{error, column\_full\}}
+	\end{itemize}
+	\item Setze Chip \texttt{\{CurrentPlayer\}} in gefundene Zelle
+	\item Berechne neuen \texttt{Score} via \texttt{score/1}
+	\item Berechne \texttt{NextPlayer = \{andere Farbe, Count+1\}}
+	\item Gebe \texttt{\{board, NewMatrix, NextPlayer, NewScore\}} zurück
+\end{enumerate}
+
+\paragraph{score/1 (Board) $\rightarrow$ Status [E3]}\mbox{}\\
+Diese Funktion berechnet welcher Spieler Gewonnen bzw. verloren hat und ist damit essentiell.
+\begin{enumerate}
+	\item Prüfe \texttt{winner\_check(Matrix, red)} $\rightarrow$ \texttt{true}: \texttt{red}
+	\item Sonst prüfe \texttt{winner\_check(Matrix, blue)} $\rightarrow$ \texttt{true}: \texttt{blue}
+	\item Sonst prüfe \texttt{is\_full(Matrix)} $\rightarrow$ \texttt{true}: \texttt{remis}
+	\item Sonst: \texttt{running}
+\end{enumerate}
+
+\paragraph{winner\_check(Matrix, Color) $\rightarrow$ Boolean [E3.1]}\mbox{}\\
+Eine sehr wichtige Hilfsfunktion für score/1 und prüft ob 4 Steine nebeneinander liegen in allen Richtungen:
+\begin{itemize}
+	\item Horizontal: Iteriere über Reihen
+	\item Vertikal: Iteriere über Spalten
+	\item Diagonal $\searrow$: Alle Diagonalen von links-oben nach rechts-unten
+	\item Diagonal $\nearrow$: Alle Diagonalen von links-unten nach rechts-oben
+\end{itemize}
+
+\paragraph{score\_ChipsRow/2 (Board, Player) $\rightarrow$ NumberList [E4]}\mbox{}\\
+Wie in der Schnittstelle beschrieben, wird hier berechnet, wie viele gleichfarbige Chips um das nächste Freie Feld herum liegen. Die Vorgehensweise:
+
+Für jede Spalte $i$ (1..7):
+\begin{enumerate}
+	\item Falls Spalte voll: $-1$ (Somit ist die nicht Spielbar)
+	\item Sonst: Bestimme Position (ReihenIndex, $i$) des nächsten freien Feldes
+	\item Zähle in alle 8 Richtungen gleichfarbige Chips:
+	\begin{itemize}
+		\item Links, Rechts, Oben, Unten, 4 Diagonalrichtungen
+	\end{itemize}
+	\item Summiere alle Nachbarschaften $\rightarrow$ [\texttt{Count\textsubscript{1}}, ..., \texttt{Count\textsubscript{7}}]
+\end{enumerate}
+
+\paragraph{check\_geq\_three/2 (Board, Player) $\rightarrow$ NumberList [E5]}\mbox{}\\
+Taktische Analyse -- identifiziert kritische Spalten (Gewinn/Block)
+\begin{itemize}
+	\item Nutze \texttt{score\_ChipsRow/2} zur Berechnung
+	\item Filter Spalten mit \texttt{Count} $\geq$ 3 $\rightarrow$ [\texttt{ColIdx\textsubscript{1}}, \texttt{ColIdx\textsubscript{2}}, ...]
+\end{itemize}
+
+\newpage

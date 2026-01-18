@@ -7,9 +7,21 @@
 \contentsline {subsection}{\numberline {2.3}Monte-Carlo-Treesearch}{6}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Wahl des Algorithmus}{7}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Entwurf}{8}{section.3}%
-\contentsline {section}{\numberline {4}Realisierung des Entwurfs}{8}{section.4}%
-\contentsline {section}{\numberline {5}Analyse}{8}{section.5}%
-\contentsline {section}{\numberline {6}Fazit}{8}{section.6}%
-\contentsline {section}{\nonumberline Literatur}{8}{section*.5}%
-\contentsline {section}{Selbstständigkeitserklärung}{10}{section*.6}%
+\contentsline {subsection}{\numberline {3.1}Spielbrett}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Datenstrukturen}{9}{subsubsection.3.1.1}%
+\contentsline {paragraph}{\nonumberline Board (Hauptdatenstruktur)}{9}{paragraph*.5}%
+\contentsline {subparagraph}{\nonumberline Spalte}{9}{subparagraph*.7}%
+\contentsline {subparagraph}{\nonumberline Koordinatensystem}{9}{subparagraph*.9}%
+\contentsline {subsubsection}{\numberline {3.1.2}Wichtigsten Funktionen}{9}{subsubsection.3.1.2}%
+\contentsline {paragraph}{\nonumberline new\_board/0 $\rightarrow $ Board [E1]}{9}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline make\_move/2 (Board, ColIdx) $\rightarrow $ Board $|$ Error [E2]}{10}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline score/1 (Board) $\rightarrow $ Status [E3]}{10}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline winner\_check(Matrix, Color) $\rightarrow $ Boolean [E3.1]}{10}{paragraph*.17}%
+\contentsline {paragraph}{\nonumberline score\_ChipsRow/2 (Board, Player) $\rightarrow $ NumberList [E4]}{11}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline check\_geq\_three/2 (Board, Player) $\rightarrow $ NumberList [E5]}{11}{paragraph*.21}%
+\contentsline {section}{\numberline {4}Realisierung des Entwurfs}{12}{section.4}%
+\contentsline {section}{\numberline {5}Analyse}{12}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{12}{section.6}%
+\contentsline {section}{\nonumberline Literatur}{12}{section*.23}%
+\contentsline {section}{Selbstständigkeitserklärung}{14}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  15 JAN 2026 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  16 JAN 2026 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1381,7 +1381,7 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 
 ])
 (chapters/l√∂sungsans√§tze.tex [2]
-<./chapters/Minimax_Spielbaum_01.png, id=78, 352.31625pt x 197.23688pt>
+<./chapters/Minimax_Spielbaum_01.png, id=84, 352.31625pt x 197.23688pt>
 File: ./chapters/Minimax_Spielbaum_01.png Graphic file (type png)
 <use ./chapters/Minimax_Spielbaum_01.png>
 Package pdftex.def Info: ./chapters/Minimax_Spielbaum_01.png  used on input lin
@@ -1402,7 +1402,7 @@ ho-de des Minimax-Algorithmus,
  []
 
 [5]
-<./chapters/Minimax_Spielbaum_02.png, id=109, 359.84438pt x 202.50656pt>
+<./chapters/Minimax_Spielbaum_02.png, id=115, 359.84438pt x 202.50656pt>
 File: ./chapters/Minimax_Spielbaum_02.png Graphic file (type png)
 <use ./chapters/Minimax_Spielbaum_02.png>
 Package pdftex.def Info: ./chapters/Minimax_Spielbaum_02.png  used on input lin
@@ -1416,9 +1416,87 @@ mr/m/n/10.95 auf-weist, wo-bei $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = \OML
 /cmm/m/it/10.95 moegliche Spalten pro Zug$
  []
 
-[6 <./chapters/Minimax_Spielbaum_02.png>] [7]) (chapters/entwurf.tex)
-(chapters/realisierung.tex) (chapters/analyse.tex) (chapters/fazit.tex)
-(termpaper.bbl [8]) (../style/statement_inf.tex [9] [10
+[6 <./chapters/Minimax_Spielbaum_02.png>] [7]) (chapters/entwurf.tex
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+
+Overfull \hbox (73.5841pt too wide) in paragraph at lines 27--27
+[] \T1/pcr/c/sc/10.95 - next_player/1: board | {<blue | red>,<count>} \TS1/cmtt
+/m/n/10.95 ^^Y \T1/pcr/c/sc/10.95 {<red | blue>,<count>+1}[] 
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 2
+7.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+
+Overfull \hbox (27.59416pt too wide) in paragraph at lines 27--27
+[] \T1/pcr/c/sc/10.95 - make_move/2: board\TS1/pcr/m/n/10.95 ÷ \T1/pcr/c/sc/10.
+95 number \TS1/cmtt/m/n/10.95 ^^Y \T1/pcr/c/sc/10.95 board | {error, {game_over
+,<score>}}[] 
+ []
+
+
+Overfull \hbox (15.3658pt too wide) in paragraph at lines 27--27
+[]                                      \T1/pcr/c/sc/10.95 | {error, column_out
+ofrange}[] 
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+
+Overfull \hbox (7.88419pt too wide) in paragraph at lines 27--27
+[] \T1/pcr/c/sc/10.95 - score_ChipsRow/2: board \TS1/pcr/m/n/10.95 ÷ \T1/pcr/c/
+sc/10.95 {<red | blue>,<count>} \TS1/cmtt/m/n/10.95 ^^Y \T1/pcr/c/sc/10.95 numb
+er-list[] 
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family pcr in TS1 encoding.
+            Default family used instead on input line 27.
+
+Overfull \hbox (14.45418pt too wide) in paragraph at lines 27--27
+[] \T1/pcr/c/sc/10.95 - check_geq_three/2: board \TS1/pcr/m/n/10.95 ÷ \T1/pcr/c
+/sc/10.95 {<red | blue>,<count>} \TS1/cmtt/m/n/10.95 ^^Y \T1/pcr/c/sc/10.95 num
+ber-list[] 
+ []
+
+[8] [9] [10] [11]) (chapters/realisierung.tex) (chapters/analyse.tex)
+(chapters/fazit.tex) (termpaper.bbl [12]) (../style/statement_inf.tex [13]
+[14
 
 ]) (termpaper.aux)
  ***********
@@ -1435,34 +1513,36 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41641 strings out of 467871
- 899997 string characters out of 5428442
- 1461020 words of memory out of 5000000
- 69855 multiletter control sequences out of 15000+600000
- 651002 words of font info for 82 fonts, out of 8000000 for 9000
+ 41760 strings out of 467871
+ 902394 string characters out of 5428442
+ 1463020 words of memory out of 5000000
+ 69924 multiletter control sequences out of 15000+600000
+ 654721 words of font info for 91 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 118i,19n,145p,11250b,1306s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,20n,145p,11250b,1308s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
 1200.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\eccc1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecti1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1200.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\leonh\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\leonh\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\leonh\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\leonh\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (12 pages, 328567 bytes).
+/dpi600\tcrm1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tctt1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\leonh\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\leonh\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\leonh\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\leonh\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\
+leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\
+Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on termpaper.pdf (16 pages, 352774 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 807 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
