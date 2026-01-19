@@ -3,9 +3,11 @@
 %
 \newpage
 \section{Lösungsansätze}
+\label{lösung}
 Wie oben beschrieben ist es, aufgrund des großen Suchraumes, unpraktikabel alle Spielstände abzubilden. Der Unterschied, der einzelnen Lösungsansätze, liegt darin wie dieser Zustandsraum durchsucht und der Suchbaum aufgebaut wird. Alle Verfahren haben dabei gemein, dass sie den Zustandsraum mit Knoten (Stellungen im Spiel) und Kanten (ein Zug) darstellen. Nachfolgend sind Knoten und Kanten als diese Zustände zu verstehen. Je nachdem welcher Algorithmus beschrieben wird, können diese Zustände zusätzliche Eigenschaften bekommen. 
 
 \subsection{Minimax-Algorithmus}
+\label{minimax}
 Ein fundamentales Konzept zur Berechnung von optimalen Strategien in Nullsummenspielen ist der Minimax-Algorithmus \cite{Solr-627596169}. Dieser Algorithmus basiert auf einem Spielbaum, in dem jeder Knoten ein MAX- oder MIN-Knoten ist. Diese geben, neben dem Spielzustand, an welcher Person (Maxi- oder Minimierer/in) am Zug ist und besitzen einen numerischen Wert. Dieser numerische Wert gibt an welcher Spielzustand besser für die jeweilige Person ist. Der sogenannte Maximierer/in (meist 1. Spieler/in) wählt immer den Spielzustand mit dem höheren wert und der Minimierer/in (meist 2. Spieler/in), den kleineren Wert. Dies entspricht einer Optimalen Spielweise.
 
 Die Werte haben ihren Ursprung in den Blattknoten (Endzustände) des Baumes, welche zeitgleich einen Terminalen Zustand, also das Ende eines Spiels darstellen. Diese besitzen eine heuristische Bewertungsfunktion, die aussagt wie gut oder schlecht dieser Endzustand für die Maximierende Person ist. Die Werte für die Inneren Knoten setzen sich aus Ihren Kindknoten zusammen, also durch das Propagieren der Werte Ihrer Kindknoten.. Der Wert an der Wurzel gibt somit den Wert des terminalen Zustands an, welcher beim Perfektem Spielverhalten beider Spieler erreicht wird. Die Abbildung \ref{Abb1} zeigt diese Variante und hebt den Pfad in rot hervor. Dieser Pfad wird Princibal-Variation genannt.
@@ -31,6 +33,7 @@ Einer Funktion, die der minimierende Spieler verwendet, und einer, die vom maxim
 \newpage
 
 \subsection{Alpha-Beta Optimierung}
+\label{alphabeta}
 Die Alpha-Beta-Pruning-Technik ist eine Optimierungsmethode des Minimax-Algorithmus, die durch intelligentes Abschneiden von Spielbaumästen die Anzahl der zu evaluierenden Knoten erheblich reduziert \cite{KNUTH1975293}. Das Verfahren arbeitet mit zwei Werten:
 
 - \textbf{Alpha ($\alpha$)}: Die beste (höchste) Bewertung, die der Maximierer bisher gefunden hat.\newline
@@ -68,6 +71,7 @@ Die Effektivität von Alpha-Beta-Pruning hängt stark von der Reihenfolge ab, in
 
 
 \subsection{Monte-Carlo-Treesearch}
+\label{montecarlo}
 Ein alternatives Konzept zur Berechnung von annähernd optimalen Strategien in Nullsummenspielen ist die Monte-Carlo-Baumsuche (MCTS). Wie der Minimax-Algorithmus basiert auch MCTS auf einem Spielbaum, in dem jeder Knoten einen Spielzustand repräsentiert und einen numerischen Wert besitzt. Im Gegensatz zum Minimax-Algorithmus, der durch statische Bewertungsfunktionen an den Blattknoten operiert, bestimmt MCTS diese Werte durch wiederholte stochastische Simulationen (Rollouts) bis zu den Endzuständen des Spielbaums. Durch die Propagierung der Simulationsergebnisse von den Blattknoten zu inneren Knoten konvergiert die Schätzung der Knotenwerte mit hinreichend vielen Iterationen gegen gute Näherungen der optimalen Spielqualität \cite{Kocsis2006}.
 
 Die MCTS-Methode durchläuft zur Wertberechnung vier konzeptionelle Phasen: In der Selection-Phase werden bestehende Knoten gemäß der UCB-Heuristik ausgewählt, die Exploration und Exploitation balanciert. Die Expansion-Phase fügt neue Knoten hinzu, während die Simulation-Phase Zufallsspielzüge bis zum Endzustand durchführt. In der abschließenden Backpropagation-Phase werden die Ergebnisse dieser Simulationen entlang des durchlaufenen Pfades rückwärts propagiert und aktualisieren die Knotenwerte sowie Besuchszahlen.
@@ -75,6 +79,7 @@ Die MCTS-Methode durchläuft zur Wertberechnung vier konzeptionelle Phasen: In d
 Diese Methode wird iterativ implementiert und benötigt, im Gegensatz zum klassischen Minimax mit Tiefensuche, keine explizite Bewertungsfunktion. Während Minimax ohne Optimierung exponentielle Laufzeit von $O(b^d)$ aufweist, wobei $b = moegliche \ Spalten \ pro \ Zug$ und $d = Zuege im Voraus$, funktioniert MCTS praktikabler bei Spielen mit moderater Komplexität wie 4 Gewinnt. Mit nur 32 MB Speicher und etwa 500.000 Simulationen erreicht MCTS zuverlässige Spielstärke. Damit bietet MCTS eine effiziente Alternative zu Alpha-Beta Pruning, insbesondere wenn keine domänenspezifische Evaluierungsfunktion vorhanden ist.
 
 \subsection{Wahl des Algorithmus}
+\label{wahl}
 Für diese Implementierung habe ich mich für den \textbf{Minimax-Algorithmus mit Alpha-Beta-Pruning} entschieden \cite{Solr-627596169, KNUTH1975293}. Diese Wahl wird durch folgende Faktoren begründet:
 
 1. \textbf{Vorhersagbarkeit und Optimalität}: Minimax mit Alpha-Beta-Pruning garantiert die Findung des optimalen Zuges unter Annahme optimalen gegnerischen Spiels, sofern die Suchtiefe ausreichend ist \cite{Solr-627596169}.
@@ -86,5 +91,10 @@ Für diese Implementierung habe ich mich für den \textbf{Minimax-Algorithmus mi
 4. \textbf{Domänenspezifische Optimierung}: Für Vier Gewinnt kann eine spezialisierte Bewertungsfunktion entwickelt werden, die strategische Ziele quantifiziert \cite{Solr-627596169}.
 
 Zuguter Letzt viel die Wahl ebenfalls auf eine Implementierung mittels des Minimax Algortihmuses, da ich den MCTS schon einmal Implementiert habe.
+
+\subsection{Die Bewertungsfunktion}
+Nach der näheren Betrachtung in der Section zu Minimax \ref{minimax} und Alpha-Beta \ref{alphabeta} wird klar das die Bewertungsfunktion ein zentrales Element dieses Algorithmuses ist. Daher stellt sich die Frage wie diese Bewertungsfunktion sich genau bildet. 
+\\
+Um sich der Bewertungsfunktion zu nähern 
 
 \newpage
