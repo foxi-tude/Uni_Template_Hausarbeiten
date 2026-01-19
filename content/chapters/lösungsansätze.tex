@@ -66,9 +66,7 @@ Um nicht zwei verschiedene Algorithmen implementieren zu müssen kann die vorhin
 
 \includenamedimage[0.5]{Minimax_Spielbaum_02.png}{Abbildung eines Minimax-Spielbaumes \cite{Liese2024} \label{Abb2}}
 
-Die Effektivität von Alpha-Beta-Pruning hängt stark von der Reihenfolge ab, in der die Züge evaluiert werden. Mit optimaler Zugreihenfolge ist eine Reduktion der Komplexität auf \(O(b^{d/2})\) möglich, was eine quadratische Verbesserung gegenüber dem klassischen Minimax darstellt \cite{KNUTH1975293}.
-
-
+Die Effektivität von Alpha-Beta-Pruning hängt stark von der Reihenfolge ab, in der die Züge evaluiert werden und wie gut die Bewertungsfunktion mit den Terminalen zuständen umgeht. Mit optimaler Zugreihenfolge ist eine Reduktion der Komplexität auf \(O(b^{d/2})\) möglich, was eine quadratische Verbesserung gegenüber dem klassischen Minimax darstellt \cite{KNUTH1975293}.
 
 \subsection{Monte-Carlo-Treesearch}
 \label{montecarlo}
@@ -95,6 +93,7 @@ Zuguter Letzt viel die Wahl ebenfalls auf eine Implementierung mittels des Minim
 \subsection{Die Bewertungsfunktion}
 Nach der näheren Betrachtung in der Section zu Minimax \ref{minimax} und Alpha-Beta \ref{alphabeta} wird klar das die Bewertungsfunktion ein zentrales Element dieses Algorithmuses ist. Daher stellt sich die Frage wie diese Bewertungsfunktion sich genau bildet. 
 \\
-Um sich der Bewertungsfunktion zu nähern 
-
+Die Zentrale frage ist wie die einzelnen Spielzustände bewertet werden um deren Bewertung für Bewertungsfunktion zu nutzen. Hierfür gibt es zum Beispiel die Möglichkeit jedes Feld eine Bewertung zu geben. Diesern Ansatz verfolgt Liese, Yassin \cite{Liese2024} in ihrer Bachelorarbeit, indem sie ein Framework zur Optimierung Minimax-basierter Suchstrategien anhand des Spiels Vier-Gewinnt entwickelt. Jedoch gibt es einen sehr Bewehrten Ansatz der 4Fenster Bewertung. 
+\\
+Dabei wird ein Spielzustand in alle möglichen 4-Fenster (horizontal, vertikal und diagonal) zerlegt und jede Konstellation gewichtet. Es gibt eine generelle Evaluierungsfunktion welche generell in Zweispieler Nullsummenspielen eingesetzt werden kann. $$Eval = \sum_{i=1}^{n} w_i\,f_i(s)$$
 \newpage

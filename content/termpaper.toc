@@ -6,23 +6,24 @@
 \contentsline {subsection}{\numberline {2.2}Alpha-Beta Optimierung}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Monte-Carlo-Treesearch}{6}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Wahl des Algorithmus}{7}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Entwurf}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Spielbrett}{8}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Realisierung des Entwurfs}{9}{section.4}%
-\contentsline {section}{\numberline {5}Analyse}{9}{section.5}%
-\contentsline {section}{\numberline {6}Fazit}{9}{section.6}%
-\contentsline {section}{\numberline {7}Anhang}{9}{section.7}%
-\contentsline {subsubsection}{\numberline {7.0.1}Datenstrukturen}{9}{subsubsection.7.0.1}%
-\contentsline {paragraph}{\nonumberline Board (Hauptdatenstruktur)}{9}{paragraph*.3}%
-\contentsline {subparagraph}{\nonumberline Spalte}{9}{subparagraph*.4}%
-\contentsline {subparagraph}{\nonumberline Koordinatensystem}{9}{subparagraph*.5}%
-\contentsline {subsubsection}{\numberline {7.0.2}Wichtigsten Funktionen}{10}{subsubsection.7.0.2}%
-\contentsline {paragraph}{\nonumberline new\_board/0 $\rightarrow $ Board [E1]}{10}{paragraph*.6}%
-\contentsline {paragraph}{\nonumberline make\_move/2 (Board, ColIdx) $\rightarrow $ Board $|$ Error [E2]}{10}{paragraph*.7}%
-\contentsline {paragraph}{\nonumberline score/1 (Board) $\rightarrow $ Status [E3]}{10}{paragraph*.8}%
-\contentsline {paragraph}{\nonumberline winner\_check(Matrix, Color) $\rightarrow $ Boolean [E3.1]}{11}{paragraph*.9}%
-\contentsline {paragraph}{\nonumberline score\_ChipsRow/2 (Board, Player) $\rightarrow $ NumberList [E4]}{11}{paragraph*.10}%
-\contentsline {paragraph}{\nonumberline check\_geq\_three/2 (Board, Player) $\rightarrow $ NumberList [E5]}{11}{paragraph*.11}%
-\contentsline {section}{\nonumberline Literatur}{12}{section*.12}%
-\contentsline {section}{Selbstständigkeitserklärung}{13}{section*.13}%
+\contentsline {subsection}{\numberline {2.5}Die Bewertungsfunktion}{7}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Entwurf}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spielbrett}{9}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Realisierung des Entwurfs}{10}{section.4}%
+\contentsline {section}{\numberline {5}Analyse}{10}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{10}{section.6}%
+\contentsline {section}{\numberline {7}Anhang}{10}{section.7}%
+\contentsline {subsubsection}{\numberline {7.0.1}Datenstrukturen}{10}{subsubsection.7.0.1}%
+\contentsline {paragraph}{\nonumberline Board (Hauptdatenstruktur)}{10}{paragraph*.5}%
+\contentsline {subparagraph}{\nonumberline Spalte}{10}{subparagraph*.7}%
+\contentsline {subparagraph}{\nonumberline Koordinatensystem}{10}{subparagraph*.9}%
+\contentsline {subsubsection}{\numberline {7.0.2}Wichtigsten Funktionen}{11}{subsubsection.7.0.2}%
+\contentsline {paragraph}{\nonumberline new\_board/0 $\rightarrow $ Board [E1]}{11}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline make\_move/2 (Board, ColIdx) $\rightarrow $ Board $|$ Error [E2]}{11}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline score/1 (Board) $\rightarrow $ Status [E3]}{11}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline winner\_check(Matrix, Color) $\rightarrow $ Boolean [E3.1]}{12}{paragraph*.17}%
+\contentsline {paragraph}{\nonumberline score\_ChipsRow/2 (Board, Player) $\rightarrow $ NumberList [E4]}{12}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline check\_geq\_three/2 (Board, Player) $\rightarrow $ NumberList [E5]}{12}{paragraph*.21}%
+\contentsline {section}{\nonumberline Literatur}{13}{section*.23}%
+\contentsline {section}{Selbstständigkeitserklärung}{14}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
