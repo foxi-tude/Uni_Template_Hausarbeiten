@@ -26,6 +26,71 @@ Das Spielbrett ist Zentral für das Spiel 4 Gewinnt und wurde vom Professor Dr. 
 	- check_geq_three/2: board × {<red | blue>,<count>} → number-list
 \end{verbatim}
 
-Auf Basis dieser Operatoren habe ich die Datenstrukturen und zusätzliche Funktionen überlegt die bei der Schnittstellen Realisierung unterstützen. Einfache Getter und potenzielle Hilfsfunktionen sind nicht aufgelistet.Die nähere Beschreibung finden Sie im Anhang (\ref{Anhang})
+Auf Basis dieser Operatoren habe ich die Datenstrukturen und zusätzliche Funktionen überlegt die bei der Schnittstellen Realisierung unterstützen. Einfache Getter und potenzielle Hilfsfunktionen sind nicht aufgelistet. Die nähere Beschreibung finden Sie im Anhang (\ref{Anhang})
 
+\newpage
+
+\subsection[Gamebot]{Gamebot}
+\label{gamebot}
+
+Um mit einem Gamebot für 4 Gewinnt zu starten bedarf es einer Struktur die einen Knoten in einem Suchbaum darstellen kann und einen Spielzustand repräsentiert. Hierzu kann eine Struktur erstellt werden die wie folgt aussieht: 
+\begin{verbatim} Node = {
+	board: Board,           // Spielzustand
+	value: Integer,         // Heuristischer Wert
+	depth: Integer,         // Tiefe im Baum
+	move: Integer,          // Spalte, die zu diesem Zustand führte
+	is_terminal: Boolean    // Ist Endzustand?
+} \end{verbatim}
+
+Der Gamebot nutzt den in Kapitel \ref{minimax} beschriebenen Minimax-Ansatz, wobei die negaMax variante umgesetzt wird. Um die zu evaluierenden Knoten zu reduzieren wird Alpha-Beta-Pruning eingesetzt, welches in Kapitel \ref{alphabeta} ebenfalls mit einem Pseudocode beschrieben wird.  
+
+\subsubsection{Suchreduzierung}
+Für die Suchreduzierung wird ein neue Struktur eingeführt über welche sich die Wertschranken steuern lassen. In der Regel werden alpha und beta extrem hoch angesetzt damit Terminale im Baum sehr gut erkannt werden. Diese Struktur sieht wie folgt aus:
+\begin{verbatim}
+	AlphaBeta = {
+		alpha: Integer,    // -? initial (z.B. -1000000)
+		beta: Integer      // +? initial (z.B.  1000000)
+	}
+\end{verbatim}
+
+\newpage
+
+\subsubsection[Heuristik]{Bewertungsfunktion}
+Wie im Kapitel \ref{heuristik} zur Bewertungsfunktion bedarf es Gewichte um die jeweilige Spielsituation zu Bewerten. Dafür eignet es sich ebenfalls eine Struktur anzulegen und so aussehen kann:
+\begin{verbatim}
+	EvalWeights = {
+		win: Integer,           // Gewinn (z.B. 10000)
+		lose: Integer,          // Verlust (z.B. -10000)
+		three_in_row: Integer,  // Drei in einer Reihe (z.B. 100)
+		two_in_row: Integer,    // Zwei in einer Reihe (z.B. 10)
+		center_column: Integer  // Bonus für mittlere Spalten (z.B. 5)
+	}
+\end{verbatim}
+
+Das ermöglicht bei Bedarf eine Anpassung der Gewichte ohne den Suchalgorithmus Anpassen zu müssen.
+Des weiteren beschrieb ich in die Methode des 4-Fenster Scores welche ich einsetzen möchte um die Heuristik genauer zu machen. Als Hilfsstruktur bietet sich eine 4er Liste an, da diese genau diesen Zustand repräsentiert:
+\begin{verbatim}
+	Window = [Cell, Cell, Cell, Cell]
+\end{verbatim}
+\\
+Der Center Bonus ist ebenfalls ein gängiges Mittel da die Mittleren Felder mehr Möglichkeiten eröffnen 4 Steine in einer Reihe zu bekommen. Ebenfalls sollte eine Zugreihenfolge berücksichtigt werden, da diese einen Starken Einfluss auf die Effektivität des Algorithmuses hat, wie oben im Theorie teil beschrieben.
+
+\subsubsection{Zugberechnung}
+
+Nachdem Blick auf die wichtigsten Hilfsstrukturen möchte ich nun einen Blick auf den Algorithmischen Ablauf des Gamebots legen. In dem Ablaufdiagramm (\ref{Ablaufdiagramm}) sind verwendete Methoden aus der Schnittstelle des Boards beschrieben, sowie Methodennamen für den KI bot vergeben. Die Einzelnen Schritte sind mit Nummern und Kleinbuchstaben versehen um diese Stellen im Code wieder zu finden. 
+\newpage
+Generell ist der Ablauf wie folgt.
+\begin{itemize}
+	\item 0-0a Spielstatus prüfen | score = running?
+	\item 1 Aktuellen Spieler holen
+	\item 2-2a moegliche Züge ermitteln
+	\item 3 Züge nach relevanz Sortieren
+	\item 4 Über moves laufen | Wenn fertig $\rightarrow$ 5.
+	\item 4-4d Negamax Suche mit Alpha-Beta optimierung, für jede Spalte in moves
+	\item 4e Alpha $\geq$ Bet | Ja $\rightarrow$ 5 - Nein $\rightarrow$ zur naechsten col (4)
+	\item 5 BestMove gesetzt bzw. gefunden | Ja $\rightarrow$ 6. - Nein $\rightarrow$ return error
+	\item 6 makeMove und gebe neues Board zurück.
+\end{itemize}
+
+Zu Punkt Nummer 3 in denen Züge nach Relevanz Sortiert werden ergibt es Sinn mittlere Spalten zu bevorzugen, da diese Statistisch bessere Positionen sind. Die Negamax Suche und Alpha-Beta Optimierung wurde eingehend beschrieben und muss für jede Potenzielle neue Spielposition ausgeführt werden.
 \newpage

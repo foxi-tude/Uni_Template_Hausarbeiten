@@ -17,45 +17,48 @@ I was expecting a `,' or a `}'---line 61 of file literature.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "Liese2024" isn't style-file defined
 --line 195 of file literature.bib
-You've used 8 entries,
+Warning--entry type for "roboticsproject_connect4_algorithm" isn't style-file defined
+--line 225 of file literature.bib
+Warning--to sort, need author or key in roboticsproject_connect4_algorithm
+You've used 9 entries,
             3552 wiz_defined-function locations,
-            859 strings with 7825 characters,
-and the built_in function-call counts, 5709 in all, are:
-= -- 683
+            864 strings with 8010 characters,
+and the built_in function-call counts, 6005 in all, are:
+= -- 719
 > -- 76
 < -- 148
-+ -- 177
++ -- 178
 - -- 50
-* -- 502
-:= -- 944
+* -- 533
+:= -- 988
 add.period$ -- 10
-call.type$ -- 8
-change.case$ -- 39
-chr.to.int$ -- 8
-cite$ -- 8
-duplicate$ -- 141
-empty$ -- 428
+call.type$ -- 9
+change.case$ -- 43
+chr.to.int$ -- 9
+cite$ -- 12
+duplicate$ -- 154
+empty$ -- 462
 format.name$ -- 85
-if$ -- 1138
+if$ -- 1208
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 14
-newline$ -- 61
+newline$ -- 66
 num.names$ -- 33
-pop$ -- 55
+pop$ -- 63
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 41
 quote$ -- 0
-skip$ -- 244
+skip$ -- 250
 stack$ -- 0
-substring$ -- 542
-swap$ -- 30
+substring$ -- 554
+swap$ -- 31
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 73
-warning$ -- 0
-while$ -- 59
+type$ -- 84
+warning$ -- 1
+while$ -- 61
 width$ -- 0
-write$ -- 97
+write$ -- 105
 (There was 1 error message)

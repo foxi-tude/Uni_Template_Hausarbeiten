@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -6,6 +6,13 @@
 \makeatother
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[roboticsproject_connect4_algorithm()]{roboticsproject_connect4_algorithm}
+\dinatlabel{roboticsproject_connect4_algorithm } \emph{Connect 4 Algorithm}. --
+\newblock URL
+  \url{https://roboticsproject.readthedocs.io/en/latest/ConnectFourAlgorithm.html}.
+  -- Zugriffsdatum: 2026-01-10. --
+\newblock Connect Four Robot documentation (Read the Docs)
 
 \bibitem[Allen(1990)]{allen1990expert}
 \dinatlabel{Allen 1990} \textsc{Allen}, James~D.:

@@ -4,9 +4,10 @@
 
 \section{Anhang}
 \label{Anhang}
-\subsubsection{Datenstrukturen}
+\subsection{Datenstrukturen}
 
 \paragraph{Board (Hauptdatenstruktur)}\mbox{}\\
+\label{Board}
 \texttt{Board = \{board, Matrix, CurrentPlayer, Score\}} 
 \begin{itemize}
 	\item \texttt{Matrix}: Liste von 7 Spalten (Spaltenweise Organisation aufgrund der Spielmechanik.)
@@ -29,14 +30,14 @@
 
 \subsubsection{Wichtigsten Funktionen}
 
-\paragraph{new\_board/0 $\rightarrow$ Board [E1]}\mbox{}\\
+\paragraph{new\_board/0 $\rightarrow$ Board [E1] \label{E1}}\mbox{}\\
 Initialisiert das Spiel und bedarf daher einer Näheren Betrachtung.
 \begin{itemize}
 	\item Erzeuge 7 leere Spalten mit je 6 Zellen (\texttt{empty})
 	\item Setze \texttt{\{red, 0\}} als Startspieler, \texttt{Score = running}
 \end{itemize}
 
-\paragraph{make\_move/2 (Board, ColIdx) $\rightarrow$ Board $|$ Error [E2]}\mbox{}\\
+\paragraph{make\_move/2 (Board, ColIdx) $\rightarrow$ Board $|$ Error [E2] \label{E2}}\mbox{}\\
 Stellt die Kernfunktionalität dar, führt Spielzüge aus und aktualisiert den Zustand.
 \begin{enumerate}
 	\item Prüfe: \texttt{Score = running}? $\rightarrow$ sonst \texttt{\{error, \{game\_over, Score\}\}}
@@ -51,7 +52,7 @@ Stellt die Kernfunktionalität dar, führt Spielzüge aus und aktualisiert den Z
 	\item Gebe \texttt{\{board, NewMatrix, NextPlayer, NewScore\}} zurück
 \end{enumerate}
 
-\paragraph{score/1 (Board) $\rightarrow$ Status [E3]}\mbox{}\\
+\paragraph{score/1 (Board) $\rightarrow$ Status [E3] \label{E3}}\mbox{}\\
 Diese Funktion berechnet welcher Spieler Gewonnen bzw. verloren hat und ist damit essentiell.
 \begin{enumerate}
 	\item Prüfe \texttt{winner\_check(Matrix, red)} $\rightarrow$ \texttt{true}: \texttt{red}
@@ -60,7 +61,7 @@ Diese Funktion berechnet welcher Spieler Gewonnen bzw. verloren hat und ist dami
 	\item Sonst: \texttt{running}
 \end{enumerate}
 
-\paragraph{winner\_check(Matrix, Color) $\rightarrow$ Boolean [E3.1]}\mbox{}\\
+\paragraph{winner\_check(Matrix, Color) $\rightarrow$ Boolean [E3.1] \label{E3.1}}\mbox{}\\
 Eine sehr wichtige Hilfsfunktion für score/1 und prüft ob 4 Steine nebeneinander liegen in allen Richtungen:
 \begin{itemize}
 	\item Horizontal: Iteriere über Reihen
@@ -69,7 +70,7 @@ Eine sehr wichtige Hilfsfunktion für score/1 und prüft ob 4 Steine nebeneinand
 	\item Diagonal $\nearrow$: Alle Diagonalen von links-unten nach rechts-oben
 \end{itemize}
 
-\paragraph{score\_ChipsRow/2 (Board, Player) $\rightarrow$ NumberList [E4]}\mbox{}\\
+\paragraph{score\_ChipsRow/2 (Board, Player) $\rightarrow$ NumberList [E4] \label{E4}}\mbox{}\\
 Wie in der Schnittstelle beschrieben, wird hier berechnet, wie viele gleichfarbige Chips um das nächste Freie Feld herum liegen. Die Vorgehensweise:
 
 Für jede Spalte $i$ (1..7):
@@ -83,9 +84,13 @@ Für jede Spalte $i$ (1..7):
 	\item Summiere alle Nachbarschaften $\rightarrow$ [\texttt{Count\textsubscript{1}}, ..., \texttt{Count\textsubscript{7}}]
 \end{enumerate}
 
-\paragraph{check\_geq\_three/2 (Board, Player) $\rightarrow$ NumberList [E5]}\mbox{}\\
-Taktische Analyse -- identifiziert kritische Spalten (Gewinn/Block)
+\paragraph{check\_geq\_three/2 (Board, Player) $\rightarrow$ NumberList [E5] \label{E5}}\mbox{}\\
+Überprüft in welchen Spaltennummern sich drei Chips (diagonal, horizontal oder vertikal) des Spielers zum freien Feld angrenzen.
 \begin{itemize}
 	\item Nutze \texttt{score\_ChipsRow/2} zur Berechnung
 	\item Filter Spalten mit \texttt{Count} $\geq$ 3 $\rightarrow$ [\texttt{ColIdx\textsubscript{1}}, \texttt{ColIdx\textsubscript{2}}, ...]
 \end{itemize}
+
+\includenamedimage[1.0]{mermaid_Ablaufdiagramm.png}{Ablaufdiagramm Zugentscheidung des Gamebots}
+\label{Ablaufdiagramm}
+\newpage

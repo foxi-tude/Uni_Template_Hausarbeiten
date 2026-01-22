@@ -3,3 +3,77 @@
 %
 
 \section{Realisierung des Entwurfs}
+
+\subsection{Spielbrett}
+
+Der Entwurf definiert das Board (\ref{Board}) als 4er Tupel, mit einer Matrix als Liste von 7 Spalten und einer Spalte als Liste von 6 Zellen. Diese Struktur wird mithilfe der Initialisierungsfunktion \texttt{new\_board()\ref{E1}} und den Hilfsfunktionen \texttt{make\_empty\_board/2} und \texttt{make\_col/2}. 
+\\\\
+Die Umsetzung der eigentlichen Züge und dem damit verbundenen Spielerwechsel wird mit \texttt{make\_move/2 \ref{E2}} vollzogen. Dabei wird die Prüfung auf den Score (ob das Spiel noch läuft (running)) in der Methode vollzogen und der eigentliche Spielzug in \texttt{do\_move/3}. Nach einer Index Überprüfung führt die \texttt{place\_chip} Funktion das tatsächliche \texttt{Fallenlassen} aus. Hier wird eine weitere Hilfsfunktion namens \texttt{put\_in\_col/3} genutzt. Diese habe ich vorerst falsch Implementiert wie in der obigen Abbildung \ref{Abb3} zu erkennen.
+
+\includenamedimage[0.5]{Spielbrett_SteinAblegeFehler.png}{Screenshot fehler in put\_in\_col/3}\label{Abb3}
+
+Dabei stellte ich fest, dass die Implementierung der Accumulator welcher die belegten Felder einsammelt, wieder reversiert (zurückgesetzt) werden muss, damit die Tabelle korrekt aufgebaut wird.
+
+Ein weiteres wichtiges Element ist die Score Berechnung. Die Funktionen \texttt{score/1} und \texttt{calc\_score/1} aus dem Entwurf \ref{E3} setzen dies um. Wobei eine Hilfsfunktion in \texttt{calc\_score/1} namens \texttt{winner\_check/2}. Dieser Ruft 4 Funktionen auf die jeweils prüfen ob eine Farbe Horizontal/Vertikal, Diagonal von links nach unten rechts (\texttt{check\_diag1}) oder Diagonal von links unten nach rechts (\texttt{check\_diag2}) oben gewonnen hat.
+\\
+Um die Effizients der Prüfung zu steigern wird mit der Funktion \texttt{cols\_to\_rows/1} die Matrix in eine Zeilenansicht überführt. Das erleichtert die Prüfungen, weil die Zeilenbasiert intuitiver ist und es die Bildschirmausgabe erleichtert. Außerdem Reduziert dies die Zugriffe in der Horizontalen Prüfung, da nur eine Liste überprüft werden muss.
+
+Alle nötigen Iterationen werden Rekursiv durchgeführt und das Pattern Matching angewandt. Einige Operationen für Listen die sonst aus dem In Build Modul List kommen sind hinzugefügt worden. Diese erleichtern das Arbeiten mit Listen enorm.
+
+\begin{itemize}
+	\item \texttt{append(A, B)} -- verkettet Listen A und B (\texttt{A ++ B} / \texttt{lists:append(A, B)})
+	\item \texttt{get\_nth(Liste, N)} -- gibt N-tes Element (1-basiert) aus Liste zur\"uck
+	\item \texttt{len\_check(Liste, ErwarteteLaenge)} -- pr\"uft ob Liste exakt die gegebene L\"ange hat
+	\item \texttt{reverse(Liste, Akku)} -- kehrt Liste um
+\end{itemize}
+
+Zu guter Letzt sichert die Funktion \texttt{is\_board/1} ab dass das Board die korrekte Struktur besitzt, sodass \texttt{export\_board/1} und  \texttt{make\_move/2} korrekt auf dem Board arbeiten können.
+
+\newpage
+
+\subsection{Gamebot}
+
+\subsubsection{Entwurfsänderung}
+Die Implementierung des Board hat dazu geführt das ich den Entwurf des Gamebots überdacht habe. Denn die Informationen, welche ich in dem \texttt{Node} \ref{gamebot} halte sind teilweise schon in dem Board vorhanden oder können von diesem Abgefragt werden. Hier sei besonders die Terminal Logik erwähnt, also wann ein Endzustand erreicht ist.
+\newline \\
+Somit bietet das Board ausreichend Schnittstellen um Informationen als Funktionsparameter weiter zu geben, weshalb der Entwurf angepasst wurde. Das Ablaufdiagramm bleibt jedoch erhalten.
+\subsubsection{Konstanten statt Strukturen}
+Die beschrieben Strukturen aus dem Kapitel \ref{gamebot} werden umgewandelt in Konstanten und beziehen jetzt auch Gewisse Situationen mit ein. Ist also ein \texttt{WIN} in Sicht wird dieser Zug sehr positiv gewertet und ein \texttt{LOSE} dementsprechend negativ. Ebenfalls kommt ein Bonus für eine Zentrale Spalte hinzu, sowie Boni für 3 oder 2 aneinanderliegende Steine.
+
+\begin{verbatim}
+	-define(WIN, 10000).
+	-define(LOSE, -10000).
+	-define(THREE_IN_ROW, 100).
+	-define(TWO_IN_ROW, 10).
+	-define(CENTER_BONUS, 5).
+	-define(INITIAL_ALPHA, -1000000).
+	-define(INITIAL_BETA, 1000000).
+	-define(SEARCH_DEPTH, 6).
+	-define(BOARD_WIDTH, 7).
+	-define(BOARD_HEIGHT, 6).
+\end{verbatim}
+
+\newpage
+
+\subsubsection{Ablauf der Hauptschleife}
+Da die Züge wie im Ablaufdiagramm \ref{Ablaufdiagramm} im Punkt 4, nacheinander ausgeführt werden, und so ein neues Board entsteht, kann mithilfe der Schnittstellen des Board (vor allem \texttt{score/1, possible\_moves/1, make\_move/2, export\_board/1}) nach und nach rekursiv die Möglichen Stellungen abgegangen und bewertet werden.
+\\\\
+Die Hauptschleife des Bots beginnt mit der Funktion \texttt{find\_best\_move/6}, Punkt 4 im Ablaufdiagramm. Dabei wird für jede Spalte (jeden möglichen Zug) eine neues Board generiert (mit \texttt(make\_move)). Aufgrund der Tatsache das dieses neue Board eine Spielposition, also einen \texttt{Node} darstellt ist diese Struktur nicht mehr notwendig. 
+\\
+Innerhalb von \texttt{find\_best\_move/6} wird die Funktion \texttt{negamax/5} aufgerufen die der Beschreibung aus dem Kapitel \ref{alphabeta}, mit Alpha-Beta Optimierung folgt. Der Abbruch der Schleife wird durch Punkt 4a im Ablaufdiagramm vollzogen und wie folgt realisiert:
+
+\begin{verbatim}
+	%% 4e Prüfe Alpha >= Beta (Pruning)
+	case get_alpha(NewAlphaBeta) >= get_beta(NewAlphaBeta) of
+	true ->
+	%% Pruning: Abbruch, bester Zug gefunden
+	{ok, NewBestMove};
+	false ->
+	%% Fahre mit nächstem Zug fort. Der Rekursive aufruf
+	find_best_move(Board, Rest, Player, NewAlphaBeta, NewBestMove, NewBestValue)
+	end.
+\end{verbatim}
+
+Wenn diese Abbruchbedingung erreicht ist, also alle Züge bewertet wurden oder durch das Prunning die Funktion endet, wird der Zug auf dem Board mittels \texttt{execute\_move/2} ausgeführt.
+
+\newpage

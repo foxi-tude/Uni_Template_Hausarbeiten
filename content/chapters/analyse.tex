@@ -1,5 +1,99 @@
-\% !TEX root = ../termpaper.tex
-\% @author Leonhard Lüdeke
-\%
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
 
 \section{Analyse}
+
+Die Implementierung in \texttt{bot\_Leonhard\_Luedeke.erl} bildet den Ablauf des Ablaufdiagrammes \ref{Ablaufdiagramm} (Punkte 0-6) direkt nach. Mit \texttt{make\_move/1} (Z.\ 21) wird der Bot gestartet und mittels \texttt{check\_if\_running/1} (Z.\ 75) der Spielstatus geprüft. Anschließend wird der aktuelle Spieler via \texttt{get\_current\_player/1} (Z.\ 83) sowie die möglichen Züge über \texttt{get\_possible\_moves/1} (Z.\ 90) und \texttt{has\_moves/1} (Z.\ 93) ermittelt. \\ Die Zugreihenfolge wird mit \texttt{sort\_moves\_by\_relevance/1} (Z.\ 100) vorbereitet und das Suchfenster über \texttt{create\_alphabeta/2} (Z.\ 64) initialisiert. Die Suche wird in \texttt{find\_best\_move/6} (Z.\ 116) ausführt und den finalen Zug mittels \texttt{execute\_move/2} (Z.\ 305) an \texttt{connect4:make\_move/2} delegiert. 
+\\\\ 
+Der relevanteste Bezug zum Entwurf und Code in \texttt{find\_best\_move/6} (Z.\ 116) sichtbar, da der Schritt 4a über die Simulation eines Nachfolgezustands (per \texttt{connect4:make\_move/2} in Z.\ 125) erfolgt und die Schritte 4b-4d durch den Aufruf von \texttt{negamax/5} (Z.\ 155) mit konsistenter Negation des Suchfensters (via \texttt{get\_beta/1} in Z.\ 68, \texttt{get\_alpha/1} in Z.\ 67, \texttt{negate/1} in Z.\ 335, \texttt{negate\_player/1} in Z.\ 337) abgebildet werden. 
+Woraufhin die Aktualisierung des Besten Zuges ausschließlich über \texttt{is\_better/2} (Z.\ 331) sowie die Anpassung von Alpha mittels \texttt{maximum/2} (Z.\ 328) und \texttt{set\_alpha/2} (Z.\ 69) erfolgt und der Abbruchfall 4e genau der Bedingung \texttt{get\_alpha(NewAlphaBeta) >= get\_beta(NewAlphaBeta)} (Z.\ 149--154) entspricht.
+\\\\
+Um die rekursiven Bewertungen möglichst überschaubar zu halten, sind im \texttt{negamax/5} (Z.\ 155) die Bewertung terminaler Zustände und Tiefenlimit  getrennt (Terminalbewertung über \texttt{evaluate\_terminal/3} in Z.\ 217 und Heuristik bei Tiefe 0 über \texttt{evaluate\_board/2} in Z.\ 201).
+Außerdem wurde über \texttt{negamax\_recursive/5} (Z.\ 170) die potentzielle ermittelt und die Rekursive Iteration über Kindzüge in \texttt{negamax\_loop/7} (Z.\ 179) realisiert. Dabei findet ein Alpha-Beta-Cutoff exakt bei \texttt{NewAlpha >= Beta} (Z.\ 190--195) statt und damit ausschließlich Äste verwirft, die das aktuelle Suchfenster nicht mehr verbessern können \ref{alphabeta}. 
+
+\newpage
+
+Der 4-Fenster-Score und der Center-Bonus sind mithilfe der Funktion \texttt{evaluate\_board/2} (Z.\ 201) umgesetzt, die Board Funktion \texttt{connect4:export\_board/1} nutzt um das Board als Zeilenweise darstellung zu exportieren. Anschließend wird \texttt{evaluate\_rows/3} (Z.\ 224) mit \texttt{extract\_windows/2} (Z.\ 258) sowie \texttt{score\_windows/3} (Z.\ 264) und \texttt{score\_window/2} (Z.\ 269) aufgerufen um eine Zeilenbasierte Bewertung (Zählfunktionen: \texttt{count\_color/3} in Z.\ 285 und \texttt{count\_empty/2} in Z.\ 293) zu vollziehen. Zusätzlich werden die Spalten über \texttt{evaluate\_cols/3} (Z.\ 230) unter Nutzung von \texttt{get\_column\_from\_rows/3} (Z.\ 238) berücksichtigt und schließlich den Center-Bonus über \texttt{evaluate\_center\_rows/2} (Z.\ 243) und \texttt{count\_center\_color/4} (Z.\ 247) auf die mittlere Spalte abbildet.
+\\\\
+Die Angesprochene Relevanz der Zugreihenfolge für die Effektivität des Alpha-Beta-Prunings \ref{alphabeta}, wird mit \texttt{sort\_moves\_by\_relevance/1} (Z.\ 100) und einer Festen Reihenfolge \texttt{[4,3,5,2,6,1,7]} berücksichtigt um damit früh starke Züge zu evaluieren. Dies soll die Wahrscheinlichkeit erhöhen, dass sowohl in \texttt{find\_best\_move/6} (Z.\ 116) als auch in \texttt{negamax\_loop/7} (Z.\ 179) eine frühzeitige Beendigung der Suche eintreten.
+
+\newpage
+\subsection{Tournaments}
+
+Da die Ergebnisse des Bots sehr davon abhängen wie die Konstanten gewählt sind werde ich hier 3 verschiedene Tournaments mit verschiedenen Konstanten auflisten. Der Bot fängt in diesen Szenarien immer an.
+
+\subsubsection{1. Versuch}
+
+Hierbei sei gesagt das alle Spiele immer exakt gleich ausgehen. Das ist auch nicht überraschend, da es keine Zufallskomponente gibt die hier variation in die Bewertung einbringt. Dies gilt auch die Nachfolgenden Versuche.
+
+\begin{verbatim}
+	-define(WIN, 10000).
+	-define(LOSE, -10000).
+	-define(THREE_IN_ROW, 100).
+	-define(TWO_IN_ROW, 10).
+	-define(CENTER_BONUS, 5).
+	-define(INITIAL_ALPHA, -1000000).
+	-define(INITIAL_BETA, 1000000).
+	-define(SEARCH_DEPTH, 6).
+	-define(BOARD_WIDTH, 7).
+	-define(BOARD_HEIGHT, 6).
+	-------------------------------------------
+	Ergebnis:
+	{Blue,Red,Remis,Moves}
+	{0   , 50,    0,  550}
+\end{verbatim}
+
+Somit brauch der Bot bei diesen Konstanten 11 Züge bis zum Sieg. Doch wie sieht es aus wenn wir die Suchtiefe verändern? Dazu betrachten wir Versuch 2.
+
+\includenamedimage[0.5]{tournament_1_stellung.png}{Endstellung 1. Versuch}
+
+\newpage
+
+\subsubsection{2. Versuch}
+
+Generell erwarte ich, dass die Berechnungen schneller gehen da die Rekursion nicht soweit absteigen muss. Jedoch würde ich ab einer zu niedrigen Suchtiefe erwarten das der Bot evt. mehr Züge bis zum gewinnen benötigt. Die Ergebnisse bei einer Schrittweise Verringerung der Suchtiefe sehen wie folgt aus:
+
+\begin{table}[ht]
+	\caption{Versuchsergebnisse bei reduzierung der Suchtiefe}\label{table:firstExperiemt}
+	\begin{center}
+		\begin{tabular}{r|r|r|r}
+			SEARCH\_DEPTH & Züge im Schnitt & WIN or LOSE & Anzahl Games\\
+			\hline
+			6 &  11 & WIN & 50 \\
+			5 &   7 & WIN & 50\\
+			4 &  11 & WIN & 50 \\
+			3 &   7 & WIN & 50 \\
+			2 &  25 & WIN & 50 \\
+			1 &   7 & WIN & 50 \\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Hier wurde Erwartung nicht erfüllt. Die Verringerung Suchtiefe hat zwar Einfluss auf Züge die es bis zum Gewinnen braucht aber nicht unbedingt negativ. 
+
+\newpage
+
+\subsubsection{3. Versuch}
+
+Nachdem wir sehen können das die Suchtiefe einen Einfluss darauf hat wie viele Züge der Bot zum Sieg braucht könnte es auch Interessant sein wie sehr der Center Bonus einen Einfluss darauf hat. Hier die Ergebnisse einer Schrittweise Verringerung des \texttt{CENTER\_BONUS} bei gleichbleibender Suchtiefe von 6.
+
+\begin{table}[ht]
+	\caption{Versuchsergebnisse bei reduzierung der Suchtiefe}\label{table:secondExperiemt}
+	\begin{center}
+		\begin{tabular}{r|r|r|r|r}
+			SEARCH\_DEPTH & CENTER\_BONUS & Züge im Schnitt & WIN or LOSE & Anzahl Games\\
+			\hline
+			6 & 5 & 11 & WIN & 10 \\
+			6 & 4 & 11 & WIN & 10\\
+			6 & 3 & 11 & WIN & 10 \\
+			6 & 2 & 11 & WIN & 10 \\
+			6 & 1 & 11 & WIN & 10 \\
+			6 & 0 & 11 & WIN & 10 \\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Es hat den Anschein, als ob der Center Bonus gegen den rudimenteren Bot keinen Einfluss hat. 
+
+\newpage

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  19 JAN 2026 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.28)  22 JAN 2026 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,25 +1370,26 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported on input line 41.
+ [2])
 \tf@toc=\write4
 \openout4 = `termpaper.toc'.
 
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported on input line 48.
- [2]
+ [3]
 (chapters/paperabstract.tex) (chapters/einleitung.tex [1
 
 ])
 (chapters/lÃ¶sungsansÃ¤tze.tex [2]
-<./chapters/Minimax_Spielbaum_01.png, id=88, 352.31625pt x 197.23688pt>
+<./chapters/Minimax_Spielbaum_01.png, id=118, 352.31625pt x 197.23688pt>
 File: ./chapters/Minimax_Spielbaum_01.png Graphic file (type png)
 <use ./chapters/Minimax_Spielbaum_01.png>
 Package pdftex.def Info: ./chapters/Minimax_Spielbaum_01.png  used on input lin
-e 15.
+e 16.
 (pdftex.def)             Requested size: 209.12683pt x 117.07599pt.
  [3]
-Overfull \hbox (12.27634pt too wide) in paragraph at lines 19--20
+Overfull \hbox (12.27634pt too wide) in paragraph at lines 20--21
 \T1/cmr/m/n/10.95 ne Op-ti-mie-rung ei-ne ex-po-nen-ti-el-le Lauf-zeit von $\OM
 L/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b[]\OT1/cmr/m/n/10.95
  )$ \T1/cmr/m/n/10.95 wo-bei $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = \OML/c
@@ -1396,20 +1397,20 @@ mm/m/it/10.95 moegliche Spalten pro Zug$
  []
 
 [4 <./chapters/Minimax_Spielbaum_01.png>]
-Overfull \hbox (8.58878pt too wide) in paragraph at lines 37--38
+Overfull \hbox (8.58878pt too wide) in paragraph at lines 38--39
 \T1/cmr/m/n/10.95 Die Alpha-Beta-Pruning-Technik ist ei-ne Op-ti-mie-rungs-me-t
 ho-de des Minimax-Algorithmus,
  []
 
 [5]
-<./chapters/Minimax_Spielbaum_02.png, id=119, 359.84438pt x 202.50656pt>
+<./chapters/Minimax_Spielbaum_02.png, id=149, 359.84438pt x 202.50656pt>
 File: ./chapters/Minimax_Spielbaum_02.png Graphic file (type png)
 <use ./chapters/Minimax_Spielbaum_02.png>
 Package pdftex.def Info: ./chapters/Minimax_Spielbaum_02.png  used on input lin
-e 67.
+e 68.
 (pdftex.def)             Requested size: 209.12683pt x 117.6918pt.
 
-Overfull \hbox (22.01694pt too wide) in paragraph at lines 77--78
+Overfull \hbox (22.01694pt too wide) in paragraph at lines 78--79
 \T1/cmr/m/n/10.95 Op-ti-mie-rung ex-po-nen-ti-el-le Lauf-zeit von $\OML/cmm/m/i
 t/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b[]\OT1/cmr/m/n/10.95 )$ \T1/c
 mr/m/n/10.95 auf-weist, wo-bei $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = \OML
@@ -1494,16 +1495,118 @@ Overfull \hbox (14.45418pt too wide) in paragraph at lines 27--27
 ber-list[] 
  []
 
-[9]) (chapters/realisierung.tex) (chapters/analyse.tex) (chapters/fazit.tex)
-(chapters/anhang.tex [10] [11]) (termpaper.bbl [12])
-(../style/statement_inf.tex [13] [14
+[9]
+Overfull \hbox (2.22581pt too wide) in paragraph at lines 43--43
+[] \T1/pcr/c/sc/10.95 move: Integer,          // Spalte, die zu diesem Zustand 
+führte[] 
+ []
+
+[10]
+Overfull \hbox (2.22581pt too wide) in paragraph at lines 68--68
+[]  \T1/pcr/c/sc/10.95 center_column: Integer  // Bonus für mittlere Spalten (z
+.B. 5)[] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 D
+      er Center Bonus ist ebenfalls ein gÃ¤ngiges Mittel da die Mittleren Fe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[11] [12]) (chapters/realisierung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+<./chapters/Spielbrett_SteinAblegeFehler.png, id=207, 486.31688pt x 434.37282pt
+>
+File: ./chapters/Spielbrett_SteinAblegeFehler.png Graphic file (type png)
+<use ./chapters/Spielbrett_SteinAblegeFehler.png>
+Package pdftex.def Info: ./chapters/Spielbrett_SteinAblegeFehler.png  used on i
+nput line 13.
+(pdftex.def)             Requested size: 209.12683pt x 186.78992pt.
+[13 <./chapters/Spielbrett_SteinAblegeFehler.png>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 59--64
+
+ []
+
+
+Overfull \hbox (87.63571pt too wide) in paragraph at lines 75--75
+[] \T1/pcr/c/sc/10.95 find_best_move(Board, Rest, Player, NewAlphaBeta, NewBest
+Move, NewBestValue)[] 
+ []
+
+[16]) (chapters/analyse.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--14
+
+ []
+
+
+Overfull \hbox (12.29504pt too wide) in paragraph at lines 7--14
+\T1/cmr/m/n/10.95 bar, da der Schritt 4a über die Si-mu-la-ti-on ei-nes Nach-fo
+l-ge-zu-stands (per \T1/pcr/c/sc/10.95 connect4:make_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--14
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
+
+ []
+
+[18]
+<./chapters/tournament_1_stellung.png, id=247, 277.78781pt x 87.32625pt>
+File: ./chapters/tournament_1_stellung.png Graphic file (type png)
+<use ./chapters/tournament_1_stellung.png>
+Package pdftex.def Info: ./chapters/tournament_1_stellung.png  used on input li
+ne 49.
+(pdftex.def)             Requested size: 209.12683pt x 65.74236pt.
+ [19] [20 <./chapters/tournament_1_stellung.png>]
+Overfull \hbox (44.88116pt too wide) in paragraph at lines 84--94
+ [] 
+ []
+
+[21]) (chapters/fazit.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+ []
+
+[22]) (chapters/anhang.tex [23] [24]
+<./chapters/mermaid_Ablaufdiagramm.png, id=298, 1895.08pt x 2256.43pt>
+File: ./chapters/mermaid_Ablaufdiagramm.png Graphic file (type png)
+<use ./chapters/mermaid_Ablaufdiagramm.png>
+Package pdftex.def Info: ./chapters/mermaid_Ablaufdiagramm.png  used on input l
+ine 94.
+(pdftex.def)             Requested size: 418.25368pt x 497.99994pt.
+ [25] [26 <./chapters/mermaid_Ablaufdiagramm.png>]) (termpaper.bbl) (../style/s
+tatement_inf.tex [27] [28
 
 ]) (termpaper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
@@ -1513,13 +1616,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41778 strings out of 467871
- 902728 string characters out of 5428442
- 1463020 words of memory out of 5000000
- 69937 multiletter control sequences out of 15000+600000
+ 41886 strings out of 467871
+ 905068 string characters out of 5428442
+ 1465020 words of memory out of 5000000
+ 70011 multiletter control sequences out of 15000+600000
  654721 words of font info for 91 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 118i,20n,145p,11250b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,20n,145p,11250b,1349s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
 1200.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\eccc1095.pk> <C:\Users\leonh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1541,9 +1644,9 @@ X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1
 nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (16 pages, 368205 bytes).
+Output written on termpaper.pdf (31 pages, 514483 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1005 PDF objects out of 1200 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
