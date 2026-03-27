@@ -12,8 +12,8 @@
 
 %\usepackage{layout}       % Layout Debugging
 %\usepackage{showframe}    % Layout Debugging
-\usepackage{lipsum}       % for example only
-\usepackage{blindtext}    % for example only
+%\usepackage{lipsum}       % for example only
+%\usepackage{blindtext}    % for example only
 
 \sisetup{locale = DE}     % siunitx locale setup
 %\DeclareSIUnit \fps{fps}  % a custom unit (usage: \SI{24}{\fps})
@@ -48,14 +48,17 @@
 \clearpage
 \pagenumbering{arabic}
 
-\begin{abstract}
-\input{chapters/paperabstract}
-\end{abstract}
+%\begin{abstract}
+%\input{chapters/paperabstract}
+%\end{abstract}
 
 \ITextBlockKeywords
 
-\input{chapters/first_chapter}
 % Add additional chapters here
+\input{chapters/einleitung}
+%\input{chapters/analyse}
+%\input{chapters/fazit}
+%\input{chapters/anhang}
 
 %\bibliographystyle{plain}
 \bibliographystyle{dinat}

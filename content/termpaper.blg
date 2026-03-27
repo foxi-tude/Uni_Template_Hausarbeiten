@@ -1,53 +1,65 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: termpaper.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: dinat.bst
-I found no \citation commands---while reading file termpaper.aux
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
-You've used 0 entries,
+Warning--entry type for "noauthor_a2a_nodate" isn't style-file defined
+--line 41 of file literature.bib
+Warning--entry type for "desai_comprehensive_2025" isn't style-file defined
+--line 365 of file literature.bib
+Warning--I didn't find a database entry for "Solr-627596169"
+Warning--I didn't find a database entry for "Liese2024"
+Warning--I didn't find a database entry for "KNUTH1975293"
+Warning--I didn't find a database entry for "Kocsis2006"
+Warning--to sort, need author or key in noauthor_a2a_nodate
+Warning--there's no year in aniket_p_kakde_advancing_2025
+Warning--there's no year in olaru_multi-modal_2023
+You've used 14 entries,
             3552 wiz_defined-function locations,
-            795 strings with 5982 characters,
-and the built_in function-call counts, 34 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 8
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+            877 strings with 9185 characters,
+and the built_in function-call counts, 9976 in all, are:
+= -- 1211
+> -- 184
+< -- 350
++ -- 450
+- -- 139
+* -- 1014
+:= -- 1860
+add.period$ -- 2
+call.type$ -- 14
+change.case$ -- 91
+chr.to.int$ -- 14
+cite$ -- 19
+duplicate$ -- 247
+empty$ -- 530
+format.name$ -- 239
+if$ -- 1761
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 10
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 4
+newline$ -- 91
+num.names$ -- 52
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 86
 quote$ -- 0
-skip$ -- 1
+skip$ -- 416
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 523
+swap$ -- 76
+text.length$ -- 44
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 154
+warning$ -- 3
+while$ -- 114
 width$ -- 0
-write$ -- 9
-(There was 1 error message)
+write$ -- 143
+(There were 9 warnings)

@@ -1,5 +1,14 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
-\contentsline {section}{\nonumberline Literatur}{1}{section*.3}%
-\contentsline {section}{Selbstständigkeitserklärung}{2}{section*.4}%
+\contentsline {section}{\numberline {1}Problemstellung und Relevanz}{2}{section.1}%
+\contentsline {section}{\numberline {2}Forschungsstand}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Agent-Kommunikationsprotokolle und A2A}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Python A2A und Implementierungsbibliotheken}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Integration mit Multi-Agent-Architekturen}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Zielsetzung und Forschungsfragen}{5}{section.3}%
+\contentsline {section}{\numberline {4}Methodik und geplanter Aufbau}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Vorgehensweise / Methodik}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Vorläufige Gliederung der Arbeit}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Erwarteter Beitrag der Arbeit}{8}{section.5}%
+\contentsline {section}{\numberline {6}Vorläufige Literaturauswahl (Auszug)}{9}{section.6}%
+\contentsline {section}{\nonumberline Literatur}{10}{section*.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
