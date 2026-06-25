@@ -10,56 +10,50 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
-Warning--entry type for "noauthor_a2a_nodate" isn't style-file defined
---line 41 of file literature.bib
-Warning--entry type for "desai_comprehensive_2025" isn't style-file defined
---line 365 of file literature.bib
-Warning--I didn't find a database entry for "Solr-627596169"
-Warning--I didn't find a database entry for "Liese2024"
-Warning--I didn't find a database entry for "KNUTH1975293"
-Warning--I didn't find a database entry for "Kocsis2006"
-Warning--to sort, need author or key in noauthor_a2a_nodate
-Warning--there's no year in aniket_p_kakde_advancing_2025
-Warning--there's no year in olaru_multi-modal_2023
-You've used 14 entries,
+Warning--entry type for "owasp_owasp_nodate" isn't style-file defined
+--line 213 of file literature.bib
+Warning--entry type for "open_webui" isn't style-file defined
+--line 225 of file literature.bib
+Warning--there's no year in ferrag_prompt_2026
+You've used 5 entries,
             3552 wiz_defined-function locations,
-            877 strings with 9185 characters,
-and the built_in function-call counts, 9976 in all, are:
-= -- 1211
-> -- 184
-< -- 350
-+ -- 450
-- -- 139
-* -- 1014
-:= -- 1860
-add.period$ -- 2
-call.type$ -- 14
-change.case$ -- 91
-chr.to.int$ -- 14
-cite$ -- 19
-duplicate$ -- 247
-empty$ -- 530
-format.name$ -- 239
-if$ -- 1761
+            822 strings with 6783 characters,
+and the built_in function-call counts, 3008 in all, are:
+= -- 360
+> -- 50
+< -- 99
++ -- 120
+- -- 32
+* -- 272
+:= -- 557
+add.period$ -- 1
+call.type$ -- 5
+change.case$ -- 26
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 77
+empty$ -- 181
+format.name$ -- 55
+if$ -- 549
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 91
-num.names$ -- 52
-pop$ -- 143
+missing$ -- 2
+newline$ -- 39
+num.names$ -- 20
+pop$ -- 44
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 25
 quote$ -- 0
-skip$ -- 416
+skip$ -- 130
 stack$ -- 0
-substring$ -- 523
-swap$ -- 76
-text.length$ -- 44
+substring$ -- 175
+swap$ -- 16
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
-warning$ -- 3
-while$ -- 114
+type$ -- 55
+warning$ -- 1
+while$ -- 37
 width$ -- 0
-write$ -- 143
-(There were 9 warnings)
+write$ -- 57
+(There were 3 warnings)

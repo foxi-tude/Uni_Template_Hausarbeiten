@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  30 APR 2026 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  19 JUN 2026 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1466,87 +1466,28 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <28> not available
 ftex/pdftex.map}{C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /base/8r.enc}
 
- <../style/HAW_Marke_schwarz.pdf>] (termpaper.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
-
-(C:\Users\luedeke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
-
-(C:\Users\luedeke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+ <../style/HAW_Marke_schwarz.pdf>] (termpaper.toc)
 \tf@toc=\write4
 \openout4 = `termpaper.toc'.
 
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
+
+(C:\Users\luedeke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+
+
+(C:\Users\luedeke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 [2] (chapters/einleitung.tex [1
 
-]
-Overfull \hbox (21.07104pt too wide) in paragraph at lines 7--8
-\T1/cmr/m/n/10.95 Mit der Ver-brei-tung agen-ti-scher KI-Systeme ent-ste-hen zu
--neh-mend Multi-Agent-Umgebungen,
- []
-
-
-Overfull \hbox (9.9079pt too wide) in paragraph at lines 7--8
-\T1/cmr/m/n/10.95 stan-dar-di-sier-te Kom-mu-ni-ka-ti-ons-pro-to-kol-le füh-ren
- pro-prie-tä-re In-te-gra-tio-nen zu ho-her Kopp-
- []
-
-
-Overfull \hbox (13.3825pt too wide) in paragraph at lines 9--10
-\T1/cmr/m/n/10.95 und fra-me-wor-ku-n-ab-hän-gi-ger Messaging-Layer kon-zi-pier
-t, der auf eta-blier-ten Web-Standards
- []
-
-[2] [3]
-Overfull \hbox (2.57005pt too wide) in paragraph at lines 32--33
-[]\T1/cmr/m/n/10.95 Implementierung der of-fi-zi-el-len A2A-Spezifikation ein-s
-chlieÿ-lich Agent Cards, Tasks,
- []
-
-
-Overfull \hbox (2.97662pt too wide) in paragraph at lines 39--40
-[]\T1/cmr/m/n/10.95 Das zu-grun-de-lie-gen-de Open-Source-Projekt A2A pflegt ne
--ben der Spe-zi-fi-ka-ti-on ei-ne Road-
- []
-
-[4] [5]
-Overfull \hbox (28.71404pt too wide) in paragraph at lines 64--66
-\T1/cmr/m/n/10.95 schlos-se-nen fach-li-chen Ab-lauf über meh-re-re spe-zia-li-
-sier-te Agen-ten hin-weg zu realisieren.[[],
- []
-
-[6]
-Overfull \hbox (6.64743pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/10.95 drei spe-zia-li-sier-ten Agen-ten (z. B. Research-Agent, Anal
-yse-Agent, Reporting-Agent)
- []
-
-
-Overfull \hbox (4.30704pt too wide) in paragraph at lines 86--87
-\T1/cmr/m/n/10.95 Agen-ten und den Or-che-stra-tor, De-fi-ni-ti-on der not-wen-
-di-gen Kubernetes-Deployments
- []
-
-
-Overfull \hbox (14.36937pt too wide) in paragraph at lines 86--87
-\T1/cmr/m/n/10.95 und -Services so-wie In-te-gra-ti-on in be-ste-hen-de Deploym
-ent-Pipelines von wilhelm.tel.[[],
- []
-
-[7]
-Overfull \hbox (19.9023pt too wide) in paragraph at lines 97--98
-\T1/cmr/m/n/10.95 ka-ti-ons-pro-to-kol-le, A2A-Spezifikation, a2a-python, Grund
--la-gen von Ku-ber-ne-tes/Docker) 
- []
-
-[8] [9]) (termpaper.bbl [10] [11]) (../style/statement_inf.tex) [12]
-(termpaper.aux)
+] [2]) (termpaper.bbl)
+(../style/statement_inf.tex) [3] (termpaper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1561,32 +1502,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41618 strings out of 467871
- 908686 string characters out of 5417408
- 1471948 words of memory out of 5000000
- 69820 multiletter control sequences out of 15000+600000
- 649797 words of font info for 81 fonts, out of 8000000 for 9000
+ 41503 strings out of 467871
+ 906464 string characters out of 5417408
+ 1461948 words of memory out of 5000000
+ 69763 multiletter control sequences out of 15000+600000
+ 648680 words of font info for 79 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 118i,19n,145p,11250b,1316s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,20n,145p,11250b,1187s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-cc1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecti1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\luedeke\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\luedeke\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\luedeke\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\lu
-edeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\
-Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.
-pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-crm1000.pk><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/urw/courier/ucrr8a.pfb><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts
-/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (14 pages, 286183 bytes).
+ti1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\eccc1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\luedeke\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\luedeke\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\luedeke\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\lu
+edeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/U
+sers/luedeke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><
+C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.
+pfb>
+Output written on termpaper.pdf (5 pages, 157987 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

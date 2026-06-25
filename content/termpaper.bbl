@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{5}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -7,129 +7,42 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem[noauthor_a2a_nodate()]{noauthor_a2a_nodate}
-\dinatlabel{noauthor_a2a_nodate } :
-\newblock \emph{A2A Google}. --
-\newblock URL \url{https://a2a-protocol.org/latest/}
+\bibitem[Botti()]{botti_agentic_2025}
+\dinatlabel{Botti } \textsc{Botti}, V.:
+\newblock \emph{Agentic {AI} and Multiagentic: Are We Reinventing the Wheel?}.
+  --
+\newblock URL \url{https://arxiv.org/abs/2506.01463}. -- Zugriffsdatum:
+  2026-06-17. --
+\newblock Version Number: 1
 
-\bibitem[Alenezi()]{alenezi_prompt-response_2026}
-\dinatlabel{Alenezi } \textsc{Alenezi}, Mamdouh:
-\newblock \emph{From Prompt-Response to Goal-Directed Systems: The Evolution of
-  Agentic {AI} Software Architecture}. --
-\newblock URL \url{http://arxiv.org/abs/2602.10479}. -- Zugriffsdatum:
-  2026-03-20
-
-\bibitem[{Aniket P. Kakde} u.\,a.(){Aniket P. Kakde}, {Karan M. Bhoyar},
-  {Muhammad Aiman Shad} und {Prof. Sudesh A.
-  Bachwani}]{aniket_p_kakde_advancing_2025}
-\dinatlabel{{Aniket P. Kakde} u.\,a. } \textsc{{Aniket P. Kakde}}~;
-  \textsc{{Karan M. Bhoyar}}~; \textsc{{Muhammad Aiman Shad}}~; \textsc{{Prof.
-  Sudesh A. Bachwani}}:
-\newblock Advancing Agentic {AI} through Communication Protocols.
+\bibitem[Ferrag u.\,a.()Ferrag, Tihanyi, Hamouda, Maglaras, Lakas und
+  Debbah]{ferrag_prompt_2026}
+\dinatlabel{Ferrag u.\,a. } \textsc{Ferrag}, Mohamed~A.~; \textsc{Tihanyi},
+  Norbert~; \textsc{Hamouda}, Djallel~; \textsc{Maglaras}, Leandros~;
+  \textsc{Lakas}, Abderrahmane~; \textsc{Debbah}, Merouane:
+\newblock From Prompt Injections to Protocol Exploits: Threats in {LLM}-Powered
+  {AI} Agents Workflows.
 \newblock
-\newblock 12, Nr.~5, S.~299--308. --
-\newblock URL
-  \url{https://ijsrst.com/index.php/home/article/view/IJSRST25125127}. --
-  Zugriffsdatum: 2026-03-27. --
-\newblock ISSN 2395-602X, 2395-6011
+\newblock 12, Nr.~2, S.~353--383. --
+\newblock URL \url{http://arxiv.org/abs/2506.23260}. -- Zugriffsdatum:
+  2026-06-17. --
+\newblock ISSN 24059595
 
-\bibitem[Chan u.\,a.()Chan, Wei, Huang, Rajkumar, Perrier, Lazar, Hadfield und
-  Anderljung]{chan_infrastructure_2025}
-\dinatlabel{Chan u.\,a. } \textsc{Chan}, Alan~; \textsc{Wei}, Kevin~;
-  \textsc{Huang}, Sihao~; \textsc{Rajkumar}, Nitarshan~; \textsc{Perrier},
-  Elija~; \textsc{Lazar}, Seth~; \textsc{Hadfield}, Gillian~K.~;
-  \textsc{Anderljung}, Markus:
-\newblock \emph{Infrastructure for {AI} Agents}. --
-\newblock URL \url{https://arxiv.org/abs/2501.10114}. -- Zugriffsdatum:
-  2026-03-27. --
-\newblock Version Number: 3
+\bibitem[Open~WebUI()]{open_webui}
+\dinatlabel{Open~WebUI } \textsc{Open~WebUI}, Inc:
+\newblock \emph{Official website of Open WebUI, Inc}. --
+\newblock URL \url{https://openwebui.com/}
 
-\bibitem[Desai()]{desai_comprehensive_2025}
-\dinatlabel{Desai } \textsc{Desai}, Manoj:
-\newblock \emph{A comprehensive Python library for Google's Agent-to-Agent
-  (A2A) protocol}. --
-\newblock URL \url{https://github.com/themanojdesai/python-a2a}
+\bibitem[{OWASP}()]{owasp_owasp_nodate}
+\dinatlabel{{OWASP} } \textsc{{OWASP}}:
+\newblock \emph{{OWASP} Threat Modeling Project}. --
+\newblock URL \url{https://owasp.org/www-project-threat-modeling/}
 
-\bibitem[Duan und Lu()]{duan_agent_2025}
-\dinatlabel{Duan und Lu } \textsc{Duan}, Qiang~; \textsc{Lu}, Zhihui:
-\newblock \emph{Agent Communications toward Agentic {AI} at Edge -- A Case
-  Study of the Agent2Agent Protocol}. --
-\newblock URL \url{https://arxiv.org/abs/2508.15819}. -- Zugriffsdatum:
-  2026-03-19. --
-\newblock Version Number: 1
-
-\bibitem[Ehtesham u.\,a.()Ehtesham, Singh, Gupta und
-  Kumar]{ehtesham_survey_2025}
-\dinatlabel{Ehtesham u.\,a. } \textsc{Ehtesham}, Abul~; \textsc{Singh}, Aditi~;
-  \textsc{Gupta}, Gaurav~K.~; \textsc{Kumar}, Saket:
-\newblock \emph{A survey of agent interoperability protocols: Model Context
-  Protocol ({MCP}), Agent Communication Protocol ({ACP}), Agent-to-Agent
-  Protocol (A2A), and Agent Network Protocol ({ANP})}. --
-\newblock URL \url{http://arxiv.org/abs/2505.02279}. -- Zugriffsdatum:
-  2025-11-01
-
-\bibitem[Li und Xie()]{li_glue-code_2025}
-\dinatlabel{Li und Xie } \textsc{Li}, Qiaomu~; \textsc{Xie}, Ying:
-\newblock \emph{From Glue-Code to Protocols: A Critical Analysis of A2A and
-  {MCP} Integration for Scalable Agent Systems}. --
-\newblock URL \url{https://arxiv.org/abs/2505.03864}. -- Zugriffsdatum:
-  2026-03-19. --
-\newblock Version Number: 1
-
-\bibitem[Liao u.\,a.()Liao, Liao und Gadiraju]{liao_agentmaster_2025}
-\dinatlabel{Liao u.\,a. } \textsc{Liao}, Callie~C.~; \textsc{Liao}, Duoduo~;
-  \textsc{Gadiraju}, Sai~S.:
-\newblock \emph{{AgentMaster}: A Multi-Agent Conversational Framework Using A2A
-  and {MCP} Protocols for Multimodal Information Retrieval and Analysis}. --
-\newblock URL \url{http://arxiv.org/abs/2507.21105}. -- Zugriffsdatum:
-  2026-03-19
-
-\bibitem[Marro u.\,a.()Marro, La~Malfa, Wright, Li, Shadbolt, Wooldridge und
-  Torr]{marro_scalable_2024}
-\dinatlabel{Marro u.\,a. } \textsc{Marro}, Samuele~; \textsc{La~Malfa},
-  Emanuele~; \textsc{Wright}, Jesse~; \textsc{Li}, Guohao~; \textsc{Shadbolt},
-  Nigel~; \textsc{Wooldridge}, Michael~; \textsc{Torr}, Philip:
-\newblock \emph{A Scalable Communication Protocol for Networks of Large
-  Language Models}. --
-\newblock URL \url{https://arxiv.org/abs/2410.11905}. -- Zugriffsdatum:
-  2026-03-27. --
-\newblock Version Number: 1
-
-\bibitem[Olaru und Pricope()]{olaru_multi-modal_2023}
-\dinatlabel{Olaru und Pricope } \textsc{Olaru}, Andrei~; \textsc{Pricope},
-  Monica:
-\newblock Multi-Modal Decentralized Interaction in Multi-Entity Systems.
-\newblock
-\newblock 23, Nr.~6, S.~3139. --
-\newblock URL \url{https://www.mdpi.com/1424-8220/23/6/3139}. -- Zugriffsdatum:
-  2026-03-27. --
-\newblock ISSN 1424-8220
-
-\bibitem[Ray()]{ray_review_2025}
-\dinatlabel{Ray } \textsc{Ray}, Partha~P.:
-\newblock \emph{A Review on Agent-to-Agent Protocol: Concept, State-of-the-art,
-  Challenges and Future Directions}. --
-\newblock URL
-  \url{https://www.techrxiv.org/users/913189/articles/1289879-a-review-on-agent-to-agent-protocol-concept-state-of-the-art-challenges-and-future-directions?commit=89695e7bd539757442ec066a8f6ec74f31c0dec1}.
-  -- Zugriffsdatum: 2026-03-19
-
-\bibitem[Srivastava u.\,a.()Srivastava, Hussain, Wang, Lin und
-  Wang]{srivastava_effgen_2026}
-\dinatlabel{Srivastava u.\,a. } \textsc{Srivastava}, Gaurav~; \textsc{Hussain},
-  Aafiya~; \textsc{Wang}, Chi~; \textsc{Lin}, Yingyan~C.~; \textsc{Wang}, Xuan:
-\newblock \emph{{EffGen}: Enabling Small Language Models as Capable Autonomous
-  Agents}. --
-\newblock URL \url{http://arxiv.org/abs/2602.00887}. -- Zugriffsdatum:
-  2026-03-19
-
-\bibitem[Stappen u.\,a.()Stappen, Turan, Hagerer und
-  Groh]{stappen_agent2agent_2026}
-\dinatlabel{Stappen u.\,a. } \textsc{Stappen}, Lukas~; \textsc{Turan},
-  Ahmet~E.~; \textsc{Hagerer}, Johann~; \textsc{Groh}, Georg:
-\newblock \emph{Agent2Agent Threats in Safety-Critical {LLM} Assistants: A
-  Human-Centric Taxonomy}. --
-\newblock URL \url{https://arxiv.org/abs/2602.05877}. -- Zugriffsdatum:
-  2026-03-27. --
-\newblock Version Number: 1
+\bibitem[Tete()]{tete_threat_2024}
+\dinatlabel{Tete } \textsc{Tete}, Stephen~B.:
+\newblock \emph{Threat Modelling and Risk Analysis for Large Language Model
+  ({LLM})-Powered Applications}. --
+\newblock URL \url{http://arxiv.org/abs/2406.11007}. -- Zugriffsdatum:
+  2026-06-17
 
 \end{thebibliography}
