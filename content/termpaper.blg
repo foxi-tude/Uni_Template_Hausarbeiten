@@ -11,49 +11,54 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
 Warning--entry type for "owasp_owasp_nodate" isn't style-file defined
---line 213 of file literature.bib
-Warning--entry type for "open_webui" isn't style-file defined
---line 225 of file literature.bib
+--line 199 of file literature.bib
+Warning--entry type for "andric_pdf_nodate" isn't style-file defined
+--line 815 of file literature.bib
 Warning--there's no year in ferrag_prompt_2026
-You've used 5 entries,
+Warning--there's no year in jennings_roadmap_1998
+Warning--there's no year in raza_trism_2026
+Warning--there's no year in wang_large_2026
+Warning--there's no year in wong_adding_2000
+Warning--there's no year in wooldridge_intelligent_1995
+You've used 14 entries,
             3552 wiz_defined-function locations,
-            822 strings with 6783 characters,
-and the built_in function-call counts, 3008 in all, are:
-= -- 360
-> -- 50
-< -- 99
-+ -- 120
-- -- 32
-* -- 272
-:= -- 557
-add.period$ -- 1
-call.type$ -- 5
-change.case$ -- 26
-chr.to.int$ -- 5
-cite$ -- 6
-duplicate$ -- 77
-empty$ -- 181
-format.name$ -- 55
-if$ -- 549
+            879 strings with 9150 characters,
+and the built_in function-call counts, 11696 in all, are:
+= -- 1460
+> -- 209
+< -- 439
++ -- 549
+- -- 160
+* -- 1156
+:= -- 2144
+add.period$ -- 6
+call.type$ -- 14
+change.case$ -- 98
+chr.to.int$ -- 14
+cite$ -- 20
+duplicate$ -- 265
+empty$ -- 591
+format.name$ -- 275
+if$ -- 2066
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 39
-num.names$ -- 20
-pop$ -- 44
+missing$ -- 12
+newline$ -- 103
+num.names$ -- 56
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 93
 quote$ -- 0
-skip$ -- 130
+skip$ -- 509
 stack$ -- 0
-substring$ -- 175
-swap$ -- 16
-text.length$ -- 10
+substring$ -- 723
+swap$ -- 79
+text.length$ -- 51
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 55
-warning$ -- 1
-while$ -- 37
+type$ -- 154
+warning$ -- 6
+while$ -- 133
 width$ -- 0
-write$ -- 57
-(There were 3 warnings)
+write$ -- 167
+(There were 8 warnings)

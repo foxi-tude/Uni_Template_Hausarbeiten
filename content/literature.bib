@@ -1,4 +1,22 @@
 
+@article{khan_beyond_2026,
+	title = {Beyond Single-Framework Architectures: A Systematic Evaluation and Hybrid Design for Scalable Multi-Agent Coordination},
+	volume = {14},
+	rights = {https://creativecommons.org/licenses/by/4.0/legalcode},
+	issn = {2169-3536},
+	url = {https://ieeexplore.ieee.org/document/11481053/},
+	doi = {10.1109/ACCESS.2026.3683900},
+	shorttitle = {Beyond Single-Framework Architectures},
+	abstract = {Large language model ({LLM})-based multi-agent frameworks have emerged as powerful tools for complex coordination tasks, yet systematic comparisons across realistic, large-scale scenarios remain limited. This paper presents a comprehensive evaluation of three prominent frameworks, i.e., {CrewAI}, {AutoGen}, and {LangChain}, alongside a novel hybrid architecture that strategically combines their complementary strengths. Using {CREW}-{WILDFIRE}, a realistic wildfire response benchmark featuring heterogeneous agents and partial observability, we evaluated the framework’s performance across 17 task levels and 7 behavioral competencies. Our results reveal distinct architectural trade-offs: {CrewAI} achieves 34\% higher task designation scores through hierarchical coordination but lacks adaptability; {AutoGen} demonstrates 28\% superior plan adaptation via conversational feedback, yet incurs high token costs; {LangChain} offers maximum flexibility at the expense of a 42\% increase in computational overhead. Based on these insights, we propose and validate a hybrid {LangGraph}-{CrewAI} architecture that achieves a 96.1\% success rate while reducing token consumption by 76.2\% and decision latency by 14.5× compared to pure {CrewAI} implementations. Our comprehensive validation across 51 episodes (17 scenarios ×3 seeds) demonstrates perfect scores in task designation and agent capitalization competencies, outperforming state-of-the-art baselines. This work provides evidence-based guidance for framework selection, highlights fundamental scalability challenges in current systems, and demonstrates that intelligent hybrid designs can overcome individual framework limitations while maintaining cost-efficiency.},
+	pages = {59688--59705},
+	journaltitle = {{IEEE} Access},
+	shortjournal = {{IEEE} Access},
+	author = {Khan, Muhammad Saleem and Khan, Muhammad Janas and Sharif, Muhammad and Yasmin, Sadaf},
+	urldate = {2026-05-22},
+	date = {2026},
+	file = {Full Text PDF:files/111/Khan et al. - 2026 - Beyond Single-Framework Architectures A Systematic Evaluation and Hybrid Design for Scalable Multi-.pdf:application/pdf},
+}
+
 @misc{botti_agentic_2025,
 	title = {Agentic {AI} and Multiagentic: Are We Reinventing the Wheel?},
 	rights = {{arXiv}.org perpetual, non-exclusive license},
@@ -11,53 +29,8 @@
 	urldate = {2026-06-17},
 	date = {2025},
 	note = {Version Number: 1},
-	keywords = {Artificial Intelligence (cs.{AI}), {FOS}: Computer and information sciences, Multiagent Systems (cs.{MA})},
-}
-
-@online{siebert_agentic_2026,
-	title = {Agentic {AI}: Multiagent Systems in the Age of Generative {AI}},
-	url = {https://www.iese.fraunhofer.de/blog/agentic-ai-multiagent-systems-in-the-age-of-generative-ai/},
-	titleaddon = {Digitale Transformation},
-	author = {Siebert, Dr. Julien},
-	date = {2026-01-26},
-}
-
-@misc{ehtesham_survey_2025,
-	title = {A survey of agent interoperability protocols: Model Context Protocol ({MCP}), Agent Communication Protocol ({ACP}), Agent-to-Agent Protocol (A2A), and Agent Network Protocol ({ANP})},
-	url = {http://arxiv.org/abs/2505.02279},
-	doi = {10.48550/arXiv.2505.02279},
-	shorttitle = {A survey of agent interoperability protocols},
-	abstract = {Large language model powered autonomous agents demand robust, standardized protocols to integrate tools, share contextual data, and coordinate tasks across heterogeneous systems. Ad-hoc integrations are difficult to scale, secure, and generalize across domains. This survey examines four emerging agent communication protocols: Model Context Protocol ({MCP}), Agent Communication Protocol ({ACP}), Agent-to-Agent Protocol (A2A), and Agent Network Protocol ({ANP}), each addressing interoperability in deployment contexts. {MCP} provides a {JSON}-{RPC} client-server interface for secure tool invocation and typed data exchange. {ACP} defines a general-purpose communication protocol over {RESTful} {HTTP}, supporting {MIME}-typed multipart messages and synchronous and asynchronous interactions. Its lightweight and runtime-independent design enables scalable agent invocation, while features like session management, message routing, and integration with role-based and decentralized identifiers ({DIDs}). A2A enables peer-to-peer task delegation using capability-based Agent Cards, supporting secure and scalable collaboration across enterprise agent workflows. {ANP} supports open network agent discovery and secure collaboration using W3C decentralized identifiers {DIDs} and {JSON}-{LD} graphs. The protocols are compared across multiple dimensions, including interaction modes, discovery mechanisms, communication patterns, and security models. Based on the comparative analysis, a phased adoption roadmap is proposed: beginning with {MCP} for tool access, followed by {ACP} for structured, multimodal messaging session-aware interaction and both online and offline agent discovery across scalable, {HTTP}-based deployments A2A for collaborative task execution, and extending to {ANP} for decentralized agent marketplaces. This work provides a comprehensive foundation for designing secure, interoperable, and scalable ecosystems of {LLM}-powered agents.},
-	number = {{arXiv}:2505.02279},
-	publisher = {{arXiv}},
-	author = {Ehtesham, Abul and Singh, Aditi and Gupta, Gaurav Kumar and Kumar, Saket},
-	urldate = {2026-06-17},
-	date = {2025-05-23},
-	eprinttype = {arxiv},
-	eprint = {2505.02279 [cs.AI]},
-	keywords = {Computer Science - Artificial Intelligence},
-	file = {Preprint PDF:C\:\\Users\\luedeke\\Zotero\\storage\\72EFWMM6\\Ehtesham et al. - 2025 - A survey of agent interoperability protocols Model Context Protocol (MCP), Agent Communication Prot.pdf:application/pdf;Snapshot:C\:\\Users\\luedeke\\Zotero\\storage\\3GXSEEJB\\2505.html:text/html},
-}
-
-@book{bandura_social_1986,
-	title = {Social Foundations of Thought and Action: A Social Cognitive Theory. {PrenticeHall}.},
-	author = {Bandura, A.},
-	date = {1986},
-}
-
-@misc{stappen_agent2agent_2026,
-	title = {Agent2Agent Threats in Safety-Critical {LLM} Assistants: A Human-Centric Taxonomy},
-	rights = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
-	url = {https://arxiv.org/abs/2602.05877},
-	doi = {10.48550/ARXIV.2602.05877},
-	shorttitle = {Agent2Agent Threats in Safety-Critical {LLM} Assistants},
-	abstract = {The integration of Large Language Model ({LLM})-based conversational agents into vehicles creates novel security challenges at the intersection of agentic {AI}, automotive safety, and inter-agent communication. As these intelligent assistants coordinate with external services via protocols such as Google's Agent-to-Agent (A2A), they establish attack surfaces where manipulations can propagate through natural language payloads, potentially causing severe consequences ranging from driver distraction to unauthorized vehicle control. Existing {AI} security frameworks, while foundational, lack the rigorous "separation of concerns" standard in safety-critical systems engineering by co-mingling the concepts of what is being protected (assets) with how it is attacked (attack paths). This paper addresses this methodological gap by proposing a threat modeling framework called {AgentHeLLM} (Agent Hazard Exploration for {LLM} Assistants) that formally separates asset identification from attack path analysis. We introduce a human-centric asset taxonomy derived from harm-oriented "victim modeling" and inspired by the Universal Declaration of Human Rights, and a formal graph-based model that distinguishes poison paths (malicious data propagation) from trigger paths (activation actions). We demonstrate the framework's practical applicability through an open-source attack path suggestion tool {AgentHeLLM} Attack Path Generator that automates multi-stage threat discovery using a bi-level search strategy.},
-	publisher = {{arXiv}},
-	author = {Stappen, Lukas and Turan, Ahmet Erkan and Hagerer, Johann and Groh, Georg},
-	urldate = {2026-03-27},
-	date = {2026},
-	note = {Version Number: 1},
-	keywords = {Artificial Intelligence (cs.{AI}), {FOS}: Computer and information sciences, Human-Computer Interaction (cs.{HC})},
+	keywords = {Bachlor\_Grundlagen},
+	file = {PDF:files/176/Botti - 2025 - Agentic AI and Multiagentic Are We Reinventing the Wheel.pdf:application/pdf},
 }
 
 @article{ferrag_prompt_2026,
@@ -78,8 +51,7 @@
 	eprinttype = {arxiv},
 	eprint = {2506.23260 [cs.CR]},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Cryptography and Security},
-	annotation = {Comment: The paper is published in {ICT} Express (Elsevier)},
-	file = {Preprint PDF:C\:\\Users\\luedeke\\Zotero\\storage\\Z6U598JJ\\Ferrag et al. - 2026 - From Prompt Injections to Protocol Exploits Threats in LLM-Powered AI Agents Workflows.pdf:application/pdf;Snapshot:C\:\\Users\\luedeke\\Zotero\\storage\\RP8BFJU8\\2506.html:text/html},
+	file = {Preprint PDF:files/144/Ferrag et al. - 2026 - From Prompt Injections to Protocol Exploits Threats in LLM-Powered AI Agents Workflows.pdf:application/pdf;Snapshot:files/145/2506.html:text/html},
 }
 
 @misc{tete_threat_2024,
@@ -95,12 +67,33 @@
 	eprinttype = {arxiv},
 	eprint = {2406.11007 [cs.CR]},
 	keywords = {Computer Science - Software Engineering, Computer Science - Cryptography and Security},
-	file = {Preprint PDF:C\:\\Users\\luedeke\\Zotero\\storage\\9WGY9ZDQ\\Tete - 2024 - Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications.pdf:application/pdf;Snapshot:C\:\\Users\\luedeke\\Zotero\\storage\\CDTYVDAZ\\2406.html:text/html},
+	file = {Preprint PDF:files/151/Tete - 2024 - Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications.pdf:application/pdf;Snapshot:files/152/2406.html:text/html},
 }
 
 @online{noauthor_threat_2026,
 	title = {Threat Modelin Process (Historical) - {OWASP}},
 	url = {https://owasp.org/www-community/Threat_Modeling_Process},
+	abstract = {As Large Language Model ({LLM}) orchestration systems become increasingly prevalent,
+	understanding potential adversarial dynamics between models becomes critical for {AI} safety.
+	We present the Parasitic Manipulation Framework ({PMF}), inspired by biological host-parasite
+	dynamics such as Toxoplasma gondii causing mice to lose their fear of cats, a formal framework
+	analyzing how a “parasite” {LLM} might evolve to manipulate a “host” {LLM}’s routing
+	decisions in multi-model architectures. Through rigorous experimental validation across
+	multiple domains (numerical simulations, text-based tool calling, multi-agent reinforcement
+	learning, ten production {LLMs}, and {LangChain}/{LangGraph} agent frameworks),
+	we demonstrate that: (1) Parasitic manipulation emerges naturally under selective
+	pressure, with naive routing allowing up to 98\% parasite takeover in simulations and 100\%
+	capture in real {LLM} routing (7 of 10 models fully vulnerable); (2) Defenses can effectively
+	neutralize the attacks we study: Bio-inspired defenses reduce parasitism in simulation
+	(H3: 46\% median reduction; H4: 17\% relative reduction with ≈23× lower std-dev), while
+	simple rule-based sandboxing achieves complete protection (92.5\%→0\% capture) for real
+	{LLM} routers; (3) Frontier models show emerging resistance: Claude Opus 4.5 is
+	completely immune (0\% capture), {GPT}-5.1 shows partial resistance (50\%); (4) Adaptive
+	defense addresses the accuracy-security trade-off: A two-layer detection system
+	maintains 73\% baseline accuracy while reducing attack capture by 51\%, offering a practical
+	middle ground between vulnerable H3 and accuracy-degraded H4. Our key finding is that
+	architectural defenses provide more reliable protection than learned defenses, a
+	result validated both in simulation and with production {LLMs}.},
 	date = {2026-06-17},
 }
 
@@ -110,8 +103,547 @@
 	author = {{OWASP}},
 }
 
-@online{open_webui,
-	title = {Official website of Open WebUI, Inc},
-	url = {https://openwebui.com/},
-	author = {Open WebUI, Inc},
+@book{bandura_social_1986,
+	title = {Social Foundations of Thought and Action: A Social Cognitive Theory. {PrenticeHall}.},
+	author = {Bandura, A.},
+	date = {1986},
+}
+
+@article{jennings_roadmap_1998,
+	title = {A Roadmap of Agent Research and Development},
+	volume = {1},
+	rights = {https://www.springernature.com/gp/researchers/text-and-data-mining},
+	issn = {1387-2532, 1573-7454},
+	url = {https://link.springer.com/10.1023/A:1010090405266},
+	doi = {10.1023/A:1010090405266},
+	pages = {7--38},
+	number = {1},
+	journaltitle = {Autonomous Agents and Multi-Agent Systems},
+	shortjournal = {Autonomous Agents and Multi-Agent Systems},
+	author = {Jennings, Nicholas R. and Sycara, Katia and Wooldridge, Michael},
+	urldate = {2026-06-19},
+	date = {1998-03},
+	langid = {english},
+	keywords = {Bachlor\_Grundlagen},
+	file = {PDF:files/184/Jennings et al. - 1998 - A Roadmap of Agent Research and Development.pdf:application/pdf},
+}
+
+@misc{chan_infrastructure_2025,
+	title = {Infrastructure for {AI} Agents},
+	rights = {Creative Commons Zero v1.0 Universal},
+	url = {https://arxiv.org/abs/2501.10114},
+	doi = {10.48550/ARXIV.2501.10114},
+	abstract = {{AI} agents plan and execute interactions in open-ended environments. For example, {OpenAI}'s Operator can use a web browser to do product comparisons and buy online goods. Much research on making agents useful and safe focuses on directly modifying their behaviour, such as by training them to follow user instructions. Direct behavioural modifications are useful, but do not fully address how heterogeneous agents will interact with each other and other actors. Rather, we will need external protocols and systems to shape such interactions. For instance, agents will need more efficient protocols to communicate with each other and form agreements. Attributing an agent's actions to a particular human or other legal entity can help to establish trust, and also disincentivize misuse. Given this motivation, we propose the concept of {\textbackslash}textbf\{agent infrastructure\}: technical systems and shared protocols external to agents that are designed to mediate and influence their interactions with and impacts on their environments. Just as the Internet relies on protocols like {HTTPS}, our work argues that agent infrastructure will be similarly indispensable to ecosystems of agents. We identify three functions for agent infrastructure: 1) attributing actions, properties, and other information to specific agents, their users, or other actors; 2) shaping agents' interactions; and 3) detecting and remedying harmful actions from agents. We provide an incomplete catalog of research directions for such functions. For each direction, we include analysis of use cases, infrastructure adoption, relationships to existing (internet) infrastructure, limitations, and open questions. Making progress on agent infrastructure can prepare society for the adoption of more advanced agents.},
+	publisher = {{arXiv}},
+	author = {Chan, Alan and Wei, Kevin and Huang, Sihao and Rajkumar, Nitarshan and Perrier, Elija and Lazar, Seth and Hadfield, Gillian K. and Anderljung, Markus},
+	urldate = {2026-06-19},
+	date = {2025},
+	note = {Version Number: 3},
+	file = {PDF:files/187/Chan et al. - 2025 - Infrastructure for AI Agents.pdf:application/pdf},
+}
+
+@article{wooldridge_intelligent_1995,
+	title = {Intelligent agents: theory and practice},
+	volume = {10},
+	rights = {https://www.cambridge.org/core/terms},
+	issn = {0269-8889, 1469-8005},
+	url = {https://www.cambridge.org/core/product/identifier/S0269888900008122/type/journal_article},
+	doi = {10.1017/S0269888900008122},
+	shorttitle = {Intelligent agents},
+	abstract = {Abstract
+	
+	The concept of an
+	agent
+	has become important in both artificial intelligence ({AT}) and mainstream computer science. Our aim in this paper is to point the reader at what we perceive to be the most important theoretical and practical issues associated with the design and construction of intelligent agents. For convenience, we divide these issues into three areas (though as the reader will see, the divisions are at times somewhat arbitrary).
+	Agent theory
+	is concerned with the question of what an agent is, and the use of mathematical formalisms for representing and reasoning about the properties of agents.
+	Agent architectures
+	can be thought of as software engineering models of agents; researchers in this area are primarily concerned with the problem of designing software or hardware systems that will satisfy the properties specified by agent theorists. Finally,
+	agent languages
+	are software systems for programming and experimenting with agents; these languages may embody principles proposed by theorists. The paper is
+	not
+	intended to serve as a tutorial introduction to all the issues mentioned; we hope instead simply to identify the most important issues, and point to work that elaborates on them. The article includes a short review of current and potential applications of agent technology.},
+	pages = {115--152},
+	number = {2},
+	journaltitle = {The Knowledge Engineering Review},
+	shortjournal = {The Knowledge Engineering Review},
+	author = {Wooldridge, Michael and Jennings, Nicholas R.},
+	urldate = {2026-06-22},
+	date = {1995-06},
+	langid = {english},
+	keywords = {Bachlor\_Grundlagen},
+}
+
+@inproceedings{georgeff_communication_1983,
+	location = {Washington D.C.},
+	title = {Communication and interaction in multi-agent planning.},
+	eventtitle = {Proceedings of the Third National Conference on Artificial Intelligence ({AAAI}-83)},
+	author = {Georgeff, M. P.},
+	date = {1983-08-22},
+	keywords = {Bachlor\_Grundlagen},
+	file = {PDF:files/203/Georgeff - 1983 - Communication and interaction in multi-agent planning..pdf:application/pdf},
+}
+
+@article{lesser_retrospective_1991,
+	title = {A retrospective view of {FA}/C distributed problem solving},
+	volume = {21},
+	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
+	issn = {00189472},
+	url = {http://ieeexplore.ieee.org/document/135681/},
+	doi = {10.1109/21.135681},
+	pages = {1347--1362},
+	number = {6},
+	journaltitle = {{IEEE} Transactions on Systems, Man, and Cybernetics},
+	shortjournal = {{IEEE} Trans. Syst., Man, Cybern.},
+	author = {Lesser, V.R.},
+	urldate = {2026-06-22},
+	date = {1991-12},
+	keywords = {Bachlor\_Grundlagen},
+	file = {PDF:files/206/Lesser - 1991 - A retrospective view of FAC distributed problem solving.pdf:application/pdf},
+}
+
+@article{xue_all--one_2024,
+	title = {All-in-One Framework for Design, Simulation, and Practical Implementation of Distributed Multiagent Control Systems},
+	volume = {54},
+	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
+	issn = {2168-2216, 2168-2232},
+	url = {https://ieeexplore.ieee.org/document/10493161/},
+	doi = {10.1109/TSMC.2024.3379279},
+	pages = {4331--4344},
+	number = {7},
+	journaltitle = {{IEEE} Transactions on Systems, Man, and Cybernetics: Systems},
+	shortjournal = {{IEEE} Trans. Syst. Man Cybern, Syst.},
+	author = {Xue, Liwei and Liu, Guo-Ping and Hu, Wenshan},
+	urldate = {2026-06-30},
+	date = {2024-07},
+	file = {PDF:files/218/Nascimento et al. - 2023 - Self-Adaptive Large Language Model (LLM)-Based Multiagent Systems.pdf:application/pdf},
+}
+
+@article{vashishtha_cosmic_2026,
+	title = {{COSMIC}: Leader-Driven Context-Oriented Collaboration Between Agents},
+	volume = {13},
+	rights = {https://creativecommons.org/licenses/by-nc-nd/4.0/},
+	issn = {2329-924X, 2373-7476},
+	url = {https://ieeexplore.ieee.org/document/11417193/},
+	doi = {10.1109/TCSS.2026.3661839},
+	shorttitle = {{COSMIC}},
+	pages = {3262--3287},
+	number = {3},
+	journaltitle = {{IEEE} Transactions on Computational Social Systems},
+	shortjournal = {{IEEE} Trans. Comput. Soc. Syst.},
+	author = {Vashishtha, Vansh and Pandey, Sonal and Singh, Yash Raj and Bahga, Arshdeep and Madisetti, Vijay K.},
+	urldate = {2026-06-30},
+	date = {2026-06},
+	file = {PDF:files/216/Vashishtha et al. - 2026 - COSMIC Leader-Driven Context-Oriented Collaboration Between Agents.pdf:application/pdf},
+}
+
+@book{russell_artificial_2022,
+	location = {Boston},
+	edition = {Fourth edition, global edition},
+	title = {Artificial intelligence: a modern approach},
+	isbn = {978-1-292-40113-3 978-1-292-40117-1},
+	series = {Prentice Hall series in artificial intelligence},
+	shorttitle = {Artificial intelligence},
+	abstract = {The most comprehensive, up-to-date introduction to the theory and practice of artificial intelligence The long-anticipated revision of Artificial Intelligence: A Modern Approach explores the full breadth and depth of the field of artificial intelligence ({AI}). The 4th Edition brings readers up to date on the latest technologies, present concepts in a more unified manner, and offers new or expanded coverage of machine learning, deep learning, transfer learning, multi agent systems, robotics, natural language processing, causality, probabilistic programming, privacy, fairness, and safe {AI}},
+	pagetotal = {1},
+	publisher = {Pearson},
+	author = {Russell, Stuart J. and Norvig, Peter},
+	editora = {Chang, Ming-wei and Devlin, Jacob and Dragan, Anca and Forsyth, David and Goodfellow, Ian and Malik, Jitendra and Mansinghka, Vikash and Pearl, Judea and Wooldridge, Michael J.},
+	editoratype = {collaborator},
+	date = {2022},
+	keywords = {Bachlor\_Grundlagen},
+}
+
+@article{jennings_commitments_1993,
+	title = {Commitments and conventions: The foundation of coordination in multi-agent systems},
+	volume = {8},
+	rights = {https://www.cambridge.org/core/terms},
+	issn = {0269-8889, 1469-8005},
+	url = {https://www.cambridge.org/core/product/identifier/S0269888900000205/type/journal_article},
+	doi = {10.1017/S0269888900000205},
+	shorttitle = {Commitments and conventions},
+	abstract = {Abstract      
+	Distributed Artificial Intelligence systems, in which multiple agents interact to improve their individual performance and to enhance the systems' overall utility, are becoming an increasingly pervasive means of conceptualising a diverse range of applications. As the discipline matures, researchers are beginning to strive for the underlying theories and principles which guide the central processes of coordination and cooperation. 
+	Here agent communities are modelled using a distributed goal search formalism, and it is argued that commitments (pledges to undertake a specific course of action) and conventions (means of monitoring commitments in changing circumstances) are the foundation of coordination in multi-agent systems. 
+	An analysis of existing coordination models which use concepts akin to commitments and conventions is undertaken before a new unifying framework is presented. 
+	Finally, a number of prominent coordination techniques which do not explicitly involve commitments or conventions are reformulated in these terms to demonstrate their compliance with the central hypothesis of this paper.},
+	pages = {223--250},
+	number = {3},
+	journaltitle = {The Knowledge Engineering Review},
+	shortjournal = {The Knowledge Engineering Review},
+	author = {Jennings, Nick R.},
+	urldate = {2026-06-30},
+	date = {1993-09},
+	langid = {english},
+	file = {PDF:files/224/Jennings - 1993 - Commitments and conventions The foundation of coordination in multi-agent systems.pdf:application/pdf},
+}
+
+@article{kamdar_state_2018,
+	title = {A State of Art Review on Various Aspects of Multi-Agent System},
+	volume = {27},
+	issn = {0218-1266, 1793-6454},
+	url = {https://www.worldscientific.com/doi/abs/10.1142/S0218126618300064},
+	doi = {10.1142/S0218126618300064},
+	abstract = {The world is witnessing a sudden shift in the paradigm of technology moving from centralized to decentralized approach. Centralized approach leads to single point of failure if any fault occurs and hence a whole system comes to rest. Hence, a decentralized approach like Multi-Agent System is trending now-a-days. A {MAS} is a collection of a number software entities (agents) working together in pursuit of specified tasks. This paper presents a comprehensive review on various aspects of multi-agent system. The paper explains the basic concepts of {MAS} with various ways it has been defined in literature. A comparison has been made on the standards to be followed for applying {MAS}. Classification of {MAS} architecture has been investigated and compared. Application of {MAS} in various areas of optimization technique, software platform and real-time simulation are listed in the paper. The paper draws attentions toward benefits and limitations of using {MAS} based on the survey done. Finally, after visualizing the wide scope of research in the field of {MAS}, an attempt has been made to identify future research avenues.},
+	pages = {1830006},
+	number = {11},
+	journaltitle = {Journal of Circuits, Systems and Computers},
+	shortjournal = {J {CIRCUIT} {SYST} {COMP}},
+	author = {Kamdar, Renuka and Paliwal, Priyanka and Kumar, Yogendra},
+	urldate = {2026-06-30},
+	date = {2018-10},
+	langid = {english},
+}
+
+@article{raza_trism_2026,
+	title = {{TRiSM} for Agentic {AI}: A review of Trust, Risk, and Security Management in {LLM}-based Agentic Multi-Agent Systems},
+	volume = {7},
+	issn = {26666510},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S2666651026000069},
+	doi = {10.1016/j.aiopen.2026.02.006},
+	shorttitle = {{TRiSM} for Agentic {AI}},
+	abstract = {Agentic {AI} systems, built upon large language models ({LLMs}) and deployed in multi-agent configurations, are redefining intelligence, autonomy, collaboration, and decision-making across enterprise and societal domains. This review presents a structured analysis of Trust, Risk, and Security Management ({TRiSM}) in the context of {LLM}-based Agentic Multi-Agent Systems ({AMAS}). We begin by examining the conceptual foundations of Agentic {AI} and highlight its architectural distinctions from traditional {AI} agents. We then adapt and extend the {AI} {TRiSM} framework for Agentic {AI}, structured around key pillars: Explainability, {ModelOps}, Security, Privacy and their Lifecycle Governance, each contextualized to the challenges of {AMAS}. A risk taxonomy is proposed to capture the unique threats and vulnerabilities of Agentic {AI}, ranging from coordination failures to prompt-based adversarial manipulation. To make coordination and tool use measurable in practice, we propose two metrics: the Component Synergy Score ({CSS}), which captures inter-agent enablement, and the Tool Utilization Efficacy ({TUE}), which evaluates whether tools are invoked correctly and efficiently. We further discuss strategies for improving explainability in Agentic {AI}, as well as approaches to enhancing security and privacy through encryption, adversarial robustness, and regulatory compliance. The review concludes with a research roadmap for the responsible development and deployment of Agentic {AI}, highlighting key directions to align emerging systems with {TRiSM} principles-ensuring safety, transparency, and accountability in their operation.},
+	pages = {71--95},
+	journaltitle = {{AI} Open},
+	shortjournal = {{AI} Open},
+	author = {Raza, Shaina and Sapkota, Ranjan and Karkee, Manoj and Emmanouilidis, Christos},
+	urldate = {2026-06-30},
+	date = {2026},
+	langid = {english},
+	file = {PDF:files/229/Raza et al. - 2026 - TRiSM for Agentic AI A review of Trust, Risk, and Security Management in LLM-based Agentic Multi-Ag.pdf:application/pdf},
+}
+
+@article{wang_large_2026,
+	title = {Large Model-Based Agents: State-of-the-Art, Cooperation Paradigms, Security and Privacy, and Future Trends},
+	volume = {28},
+	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
+	issn = {1553-877X, 2373-745X},
+	url = {https://ieeexplore.ieee.org/document/11022699/},
+	doi = {10.1109/COMST.2025.3576176},
+	shorttitle = {Large Model-Based Agents},
+	pages = {1906--1949},
+	journaltitle = {{IEEE} Communications Surveys \& Tutorials},
+	shortjournal = {{IEEE} Commun. Surv. Tutorials},
+	author = {Wang, Yuntao and Pan, Yanghe and Su, Zhou and Deng, Yi and Zhao, Quan and Du, Linkang and Luan, Tom H. and Kang, Jiawen and Niyato, Dusit},
+	urldate = {2026-06-30},
+	date = {2026},
+	file = {PDF:files/231/Wang et al. - 2026 - Large Model-Based Agents State-of-the-Art, Cooperation Paradigms, Security and Privacy, and Future.pdf:application/pdf},
+}
+
+@misc{yan_beyond_2025,
+	title = {Beyond Self-Talk: A Communication-Centric Survey of {LLM}-Based Multi-Agent Systems},
+	rights = {{arXiv}.org perpetual, non-exclusive license},
+	url = {https://arxiv.org/abs/2502.14321},
+	doi = {10.48550/ARXIV.2502.14321},
+	shorttitle = {Beyond Self-Talk},
+	abstract = {Large language model-based multi-agent systems have recently gained significant attention due to their potential for complex, collaborative, and intelligent problem-solving capabilities. Existing surveys typically categorize {LLM}-based multi-agent systems ({LLM}-{MAS}) according to their application domains or architectures, overlooking the central role of communication in coordinating agent behaviors and interactions. To address this gap, this paper presents a comprehensive survey of {LLM}-{MAS} from a communication-centric perspective. Specifically, we propose a structured framework that integrates system-level communication (architecture, goals, and protocols) with system internal communication (strategies, paradigms, objects, and content), enabling a detailed exploration of how agents interact, negotiate, and achieve collective intelligence. Through an extensive analysis of recent literature, we identify key components in multiple dimensions and summarize their strengths and limitations. In addition, we highlight current challenges, including communication efficiency, security vulnerabilities, inadequate benchmarking, and scalability issues, and outline promising future research directions. This review aims to help researchers and practitioners gain a clear understanding of the communication mechanisms in {LLM}-{MAS}, thereby facilitating the design and deployment of robust, scalable, and secure multi-agent systems.},
+	publisher = {{arXiv}},
+	author = {Yan, Bingyu and Zhou, Zhibo and Zhang, Litian and Zhang, Lian and Zhou, Ziyi and Miao, Dezhuang and Li, Zhoujun and Li, Chaozhuo and Zhang, Xiaoming},
+	urldate = {2026-06-30},
+	date = {2025},
+	note = {Version Number: 3},
+	keywords = {{FOS}: Computer and information sciences, Multiagent Systems (cs.{MA}), Computation and Language (cs.{CL})},
+	file = {PDF:files/234/Yan et al. - 2025 - Beyond Self-Talk A Communication-Centric Survey of LLM-Based Multi-Agent Systems.pdf:application/pdf},
+}
+
+@misc{sapkota_langchain_2025,
+	title = {{LangChain} vs. {LangGraph} vs. {LangSmith}: Taxonomies of Agentic {AI} Toolchains for End-to-End Orchestration},
+	rights = {https://creativecommons.org/licenses/by/4.0/},
+	url = {https://www.techrxiv.org/doi/full/10.36227/techrxiv.175695645.52670060/v1},
+	doi = {10.36227/techrxiv.175695645.52670060/v1},
+	shorttitle = {{LangChain} vs. {LangGraph} vs. {LangSmith}},
+	abstract = {This paper presents a comparative overview of the {LangChain}, {LangGraph}, and {LangSmith} as toolchains for agentic orchestration, covering architecture, functionality, and end-to-end {LLMOps}. We introduce a taxonomy that distinguishes chain-based composition, stateful graph orchestration, observability/evaluation layers, and map capabilities to high-impact applications such as retrieval-augmented generation ({RAG}), multi-agent planning, and human-in-the-loop workflows. We detail conversion patterns (chain-graph) and middleware strategies for interoperability including shared state schemas, event buses, and standardized telemetry to streamline integration. To move beyond anecdote, we propose a reproducible benchmarking protocol measuring throughput, latency, scalability, memory behavior, and a developer-centric metric: debugging resolution time. Case studies demonstrate hybrid stacks that pair {LangChain} for rapid construction, {LangGraph} for adaptive orchestration, and {LangSmith} for continuous monitoring, testing, and governance. Finally, we surface current limits complexity growth, state explosion, and transparency gaps and outline future directions: modular state abstraction, unified observability, ethics-by-design, performance-aware routing, and auto-evaluation pipelines. The result is a practical framework for selecting, composing, and evolving Agentic {AI} systems from prototype to production, improving reliability, developer experience, and time-to-value. The project page for this study is available at 
+	https://rashik.info.np/agentic\_ai\_toolchains/},
+	author = {Sapkota, Ranjan and Shrestha, Rashik and Rijal, Madhav and Karkee, Manoj},
+	urldate = {2026-06-30},
+	date = {2025-09-04},
+	langid = {english},
+	file = {Akzeptierte Version:files/239/Sapkota et al. - 2025 - LangChain vs. LangGraph vs. LangSmith Taxonomies of Agentic AI Toolchains for End-to-End Orchestrat.pdf:application/pdf;LangChain vs. LangGraph vs. LangSmith_Taxonomies of Agentic AI Toolchains for End-to-End Orchestration_v1:files/240/LangChain vs. LangGraph vs. LangSmith_Taxonomies of Agentic AI Toolchains for End-to-End Orchestration_v1.pdf:application/pdf},
+}
+
+@book{wooldridge_introduction_2002,
+	location = {New York},
+	title = {An introduction to multiagent systems},
+	isbn = {978-0-471-49691-5},
+	pagetotal = {348},
+	publisher = {J. Wiley},
+	author = {Wooldridge, Michael J.},
+	date = {2002},
+	keywords = {Intelligent agents (Computer software)},
+}
+
+@online{noauthor_foundation_nodate,
+	title = {Foundation for Intelligent Physical Agents},
+	url = {https://www.fipa.org/},
+}
+
+@article{chalupsky_overview_1993,
+	title = {An Overview of {KQML}: A Knowledge Query and Manipulation Language},
+	shorttitle = {An Overview of {KQML}},
+	abstract = {We describe a language and protocol intended to support interoperability among intelligent agents in a distributed application. Examples of applications envisioned include intelligent multi-agent design systems as well as intelligent planning, scheduling and replanning agents supporting distributed transportation planning and scheduling applications. The language, {KQML} for Knowledge Query and Manipulation Language, is part of a larger {DARPA}-sponsored Knowledge Sharing effort focused on developing techniques and tools to promote the sharing on knowledge in intelligent systems. We will define the concepts which underly {KQML} and attempt to specify its scope and provide a model for how it will be used. Notice of {DRAFT} Status. This document presents the current draft of a specification under consideration by the {DARPA} Knowledge Sharing Effort. It is provided for information purposes, and should be treated as representing only the current status of discussions. It should not be inte...},
+	author = {Chalupsky, Hans and Finin, Tim and Fritzson, Rich and Mckay, Don and Shapiro, Stuart and Wiederhold, Gio},
+	date = {1993-07-15},
+}
+
+@book{searle_speech_1969,
+	location = {London},
+	title = {Speech acts: an essay in the philosophy of language},
+	isbn = {978-0-521-07184-0},
+	shorttitle = {Speech acts},
+	pagetotal = {203},
+	publisher = {Cambridge U.P},
+	author = {Searle, John R.},
+	date = {1969},
+	keywords = {Semantics (Philosophy), Speech acts (Linguistics)},
+}
+
+@book{austin_how_1962,
+	location = {Oxford},
+	title = {How to Do Things with Words},
+	publisher = {Oxford at the clarendon press},
+	author = {Austin, J. L.},
+	date = {1962},
+}
+
+@online{andric_pdf_nodate,
+	location = {New York},
+	title = {({PDF}) {LLM} Hijacking: When Models Manipulate Their Routers},
+	url = {https://www.researchgate.net/publication/398334488_LLM_Hijacking_When_Models_Manipulate_Their_Routers},
+	doi = {10.5281/zenodo.17812180},
+	shorttitle = {({PDF}) {LLM} Hijacking},
+	abstract = {{PDF} {\textbar} As Large Language Model ({LLM}) orchestration systems become increasingly prevalent, understanding potential adversarial dynamics between models... {\textbar} Find, read and cite all the research you need on {ResearchGate}},
+	titleaddon = {{ResearchGate}},
+	author = {Andric, Sandro},
+	urldate = {2026-07-01},
+	langid = {english},
+	doi = {10.5281/zenodo.17812180},
+	file = {PDF:files/270/Andric - (PDF) LLM Hijacking When Models Manipulate Their Routers.pdf:application/pdf;Snapshot:files/268/398334488_LLM_Hijacking_When_Models_Manipulate_Their_Routers.html:text/html},
+}
+
+@misc{wang_poisoned_2024,
+	title = {Poisoned {LangChain}: Jailbreak {LLMs} by {LangChain}},
+	rights = {{arXiv}.org perpetual, non-exclusive license},
+	url = {https://arxiv.org/abs/2406.18122},
+	doi = {10.48550/ARXIV.2406.18122},
+	shorttitle = {Poisoned {LangChain}},
+	abstract = {With the development of natural language processing ({NLP}), large language models ({LLMs}) are becoming increasingly popular. {LLMs} are integrating more into everyday life, raising public concerns about their security vulnerabilities. Consequently, the security of large language models is becoming critically important. Currently, the techniques for attacking and defending against {LLMs} are continuously evolving. One significant method type of attack is the jailbreak attack, which designed to evade model safety mechanisms and induce the generation of inappropriate content. Existing jailbreak attacks primarily rely on crafting inducement prompts for direct jailbreaks, which are less effective against large models with robust filtering and high comprehension abilities. Given the increasing demand for real-time capabilities in large language models, real-time updates and iterations of new knowledge have become essential. Retrieval-Augmented Generation ({RAG}), an advanced technique to compensate for the model's lack of new knowledge, is gradually becoming mainstream. As {RAG} enables the model to utilize external knowledge bases, it provides a new avenue for jailbreak attacks.
+	In this paper, we conduct the first work to propose the concept of indirect jailbreak and achieve Retrieval-Augmented Generation via {LangChain}. Building on this, we further design a novel method of indirect jailbreak attack, termed Poisoned-{LangChain} ({PLC}), which leverages a poisoned external knowledge base to interact with large language models, thereby causing the large models to generate malicious non-compliant dialogues.We tested this method on six different large language models across three major categories of jailbreak issues. The experiments demonstrate that {PLC} successfully implemented indirect jailbreak attacks under three different scenarios, achieving success rates of 88.56\%, 79.04\%, and 82.69\% respectively.},
+	publisher = {{arXiv}},
+	author = {Wang, Ziqiu and Liu, Jun and Zhang, Shengkai and Yang, Yang},
+	urldate = {2026-07-01},
+	date = {2024},
+	note = {Version Number: 1},
+	keywords = {Artificial Intelligence (cs.{AI}), {FOS}: Computer and information sciences, Computation and Language (cs.{CL})},
+}
+
+@misc{hamza_understanding_2026,
+	title = {Understanding Security Issues in Open-source Agentic {AI} Frameworks: An Empirical Analysis},
+	url = {https://www.ssrn.com/abstract=6627158},
+	doi = {10.2139/ssrn.6627158},
+	shorttitle = {Understanding Security Issues in Open-source Agentic {AI} Frameworks},
+	abstract = {{\textless}div{\textgreater}
+	Agentic {AI} frameworks have rapidly emerged as a practical approach for building autonomous, tool-augmented large language model ({LLM}) applications. While these frameworks are increasingly adopted in software development and organizational workflows, there is still limited empirical understanding of the security issues developers encounter, the underlying causes of these issues, and the mitigation strategies used in practice. To address this gap, we conducted an empirical study by mining and analyzing 777 discussions of security-related issues from three widely used open-source agentic {AI} frameworks: {LangChain}, {AutoGen}, and {CrewAI}.\&nbsp;
+	{\textless}/div{\textgreater}
+	{\textless}div{\textgreater}
+	{\textless}br{\textgreater}
+	{\textless}/div{\textgreater}
+	{\textless}div{\textgreater}
+	\&nbsp; \&nbsp; \&nbsp;Our analysis identifies ten categories of security issues, with Secret and Credential Exposure (24.8\%) and Authentication and Authorization Issues (23.2\%) emerging as the most frequent issues. Further analysis reveals that these issues are primarily caused by dependency and supply chain risks (25.1\%), unsafe code or tool execution practices (24.5\%), and insecure secret handling (20.1\%).\&nbsp;
+	{\textless}/div{\textgreater}
+	{\textless}div{\textgreater}
+	{\textless}br{\textgreater}
+	{\textless}/div{\textgreater}
+	{\textless}div{\textgreater}
+	\&nbsp; \&nbsp; \&nbsp;To mitigate these risks, developers commonly adopt several security strategies, including secret redaction and secure storage (30.2\%), prompt and tool guardrails (20.8\%), sandboxed execution environments (19.2\%), authentication abstraction improvements (16\%), and dependency upgrades and security scanning (13.8\%). The taxonomies and empirical evidence presented in this study provide insights into the evolving security landscape of agentic {AI} frameworks and support researchers and practitioners in designing and deploying more secure and trustworthy agentic {AI} systems.
+	{\textless}/div{\textgreater}},
+	publisher = {{SSRN}},
+	author = {Hamza, Muhammad and Akbar, Muhammad Azeem and Awan, Wardah Naeem and Shoaib, Muhammad},
+	urldate = {2026-07-01},
+	date = {2026},
+	file = {PDF:files/274/Hamza et al. - 2026 - Understanding Security Issues in Open-source Agentic AI Frameworks An Empirical Analysis.pdf:application/pdf},
+}
+
+@misc{zhang_agent_2026,
+	title = {Agent Audit: A Security Analysis System for {LLM} Agent Applications},
+	rights = {Creative Commons Attribution 4.0 International},
+	url = {https://arxiv.org/abs/2603.22853},
+	doi = {10.48550/ARXIV.2603.22853},
+	shorttitle = {Agent Audit},
+	abstract = {What should a developer inspect before deploying an {LLM} agent: the model, the tool code, the deployment configuration, or all three? In practice, many security failures in agent systems arise not from model weights alone, but from the surrounding software stack: tool functions that pass untrusted inputs to dangerous operations, exposed credentials in deployment artifacts, and over-privileged Model Context Protocol ({MCP}) configurations.
+	We present Agent Audit, a security analysis system for {LLM} agent applications. Agent Audit analyzes Python agent code and deployment artifacts through an agent-aware pipeline that combines dataflow analysis, credential detection, structured configuration parsing, and privilege-risk checks. The system reports findings in terminal, {JSON}, and {SARIF} formats, enabling direct integration with local development workflows and {CI}/{CD} pipelines. On a benchmark of 22 samples with 42 annotated vulnerabilities, Agent Audit detects 40 vulnerabilities with 6 false positives, substantially improving recall over common {SAST} baselines while maintaining sub-second scan times. Agent Audit is open source and installable via pip, making security auditing accessible for agent systems.
+	In the live demonstration, attendees scan vulnerable agent repositories and observe how Agent Audit identifies security risks in tool functions, prompts, and more. Findings are linked to source locations and configuration paths, and can be exported into {VS} Code and {GitHub} Code Scanning for interactive inspection.},
+	publisher = {{arXiv}},
+	author = {Zhang, Haiyue and Nian, Yi and Zhao, Yue},
+	urldate = {2026-07-01},
+	date = {2026},
+	note = {Version Number: 1},
+	keywords = {Artificial Intelligence (cs.{AI}), Cryptography and Security (cs.{CR}), {FOS}: Computer and information sciences},
+	file = {PDF:files/278/Zhang et al. - 2026 - Agent Audit A Security Analysis System for LLM Agent Applications.pdf:application/pdf},
+}
+
+@misc{krawiecka_extending_2025,
+	title = {Extending the {OWASP} Multi-Agentic System Threat Modeling Guide: Insights from Multi-Agent Security Research},
+	rights = {{arXiv}.org perpetual, non-exclusive license},
+	url = {https://arxiv.org/abs/2508.09815},
+	doi = {10.48550/ARXIV.2508.09815},
+	shorttitle = {Extending the {OWASP} Multi-Agentic System Threat Modeling Guide},
+	abstract = {We propose an extension to the {OWASP} Multi-Agentic System ({MAS}) Threat Modeling Guide, translating recent anticipatory research in multi-agent security ({MASEC}) into practical guidance for addressing challenges unique to large language model ({LLM})-driven multi-agent architectures. Although {OWASP}'s existing taxonomy covers many attack vectors, our analysis identifies gaps in modeling failures, including, but not limited to: reasoning collapse across planner-executor chains, metric overfitting, unsafe delegation escalation, emergent covert coordination, and heterogeneous multi-agent exploits. We introduce additional threat classes and scenarios grounded in practical {MAS} deployments, highlighting risks from benign goal drift, cross-agent hallucination propagation, affective prompt framing, and multi-agent backdoors. We also outline evaluation strategies, including robustness testing, coordination assessment, safety enforcement, and emergent behavior monitoring, to ensure complete coverage. This work complements the framework of {OWASP} by expanding its applicability to increasingly complex, autonomous, and adaptive multi-agent systems, with the goal of improving security posture and resilience in real world deployments.},
+	publisher = {{arXiv}},
+	author = {Krawiecka, Klaudia and de Witt, Christian Schroeder},
+	urldate = {2026-07-01},
+	date = {2025},
+	note = {Version Number: 1},
+	keywords = {Cryptography and Security (cs.{CR}), {FOS}: Computer and information sciences, Multiagent Systems (cs.{MA}), Software Engineering (cs.{SE})},
+	file = {PDF:files/277/Krawiecka und de Witt - 2025 - Extending the OWASP Multi-Agentic System Threat Modeling Guide Insights from Multi-Agent Security R.pdf:application/pdf},
+}
+
+@misc{anbiaee_security_2026,
+	title = {Security Threat Modeling for Emerging {AI}-Agent Protocols: A Comparative Analysis of {MCP}, A2A, Agora, and {ANP}},
+	rights = {{arXiv}.org perpetual, non-exclusive license},
+	url = {https://arxiv.org/abs/2602.11327},
+	doi = {10.48550/ARXIV.2602.11327},
+	shorttitle = {Security Threat Modeling for Emerging {AI}-Agent Protocols},
+	abstract = {The rapid development of the {AI} agent communication protocols, including the Model Context Protocol ({MCP}), Agent2Agent (A2A), Agora, and Agent Network Protocol ({ANP}), is reshaping how {AI} agents communicate with tools, services, and each other. While these protocols support scalable multi-agent interaction and cross-organizational interoperability, their security principles remain understudied, and standardized threat modeling is limited; no protocol-centric risk assessment framework has been established yet. This paper presents a systematic security analysis of four emerging {AI} agent communication protocols. First, we develop a structured threat modeling analysis that examines protocol architectures, trust assumptions, interaction patterns, and lifecycle behaviors to identify protocol-specific and cross-protocol risk surfaces. Second, we introduce a qualitative risk assessment framework that identifies twelve protocol-level risks and evaluates security posture across the creation, operation, and update phases through systematic assessment of likelihood, impact, and overall protocol risk, with implications for secure deployment and future standardization. Third, we provide a measurement-driven case study on {MCP} that formalizes the risk of missing mandatory validation/attestation for executable components as a falsifiable security claim by quantifying wrong-provider tool execution under multi-server composition across representative resolver policies. Collectively, our results highlight key design-induced risk surfaces and provide actionable guidance for secure deployment and future standardization of agent communication ecosystems.},
+	publisher = {{arXiv}},
+	author = {Anbiaee, Zeynab and Rabbani, Mahdi and Mirani, Mansur and Piya, Gunjan and Opushnyev, Igor and Ghorbani, Ali and Dadkhah, Sajjad},
+	urldate = {2026-07-01},
+	date = {2026},
+	note = {Version Number: 2},
+	keywords = {Artificial Intelligence (cs.{AI}), Cryptography and Security (cs.{CR}), {FOS}: Computer and information sciences},
+	file = {PDF:files/280/Anbiaee et al. - 2026 - Security Threat Modeling for Emerging AI-Agent Protocols A Comparative Analysis of MCP, A2A, Agora,.pdf:application/pdf},
+}
+
+@article{hedin_security_2015,
+	title = {Security in Multi-Agent Systems},
+	volume = {60},
+	issn = {18770509},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S1877050915023972},
+	doi = {10.1016/j.procs.2015.08.270},
+	pages = {1604--1612},
+	journaltitle = {Procedia Computer Science},
+	shortjournal = {Procedia Computer Science},
+	author = {Hedin, Yaqin and Moradian, Esmiralda},
+	urldate = {2026-07-01},
+	date = {2015},
+	langid = {english},
+	file = {PDF:files/282/Hedin und Moradian - 2015 - Security in Multi-Agent Systems.pdf:application/pdf},
+}
+
+@article{wong_adding_2000,
+	title = {Adding security and trust to multiagent systems},
+	volume = {14},
+	issn = {0883-9514, 1087-6545},
+	url = {http://www.tandfonline.com/doi/abs/10.1080/08839510050144886},
+	doi = {10.1080/08839510050144886},
+	abstract = {Multiagent systems ({MASs}) are societies whose individuals are software delegatees (agents)acting on behalf of their owners or delegators (people or organizations). When deployed inan open network such as the Internet, {MASs} face some trust and security issues. Agentscome and go, and interact with strangers. Assumptions about security and generaltrustworthiness of agents and their deployers are inadequate in this context. In this paper,the design of a security infrastructure is presented applicable to {MASs} in general. T hisdesign addresses both security threats and trust issues. In this design, there are mechanismsfor ensuring secure communication among agents and secure naming and resource locationservices. And two types of trusts are addressed: trust that agents will not misbehave andtrust that agents are really delegatees of whom they claim to be. T o establish the Ðrst typeof trust, deployers of agents are made liable for the actions of their agents ; to establish thesecond type of trust, it is proposed that agents prove that they know secrets that only theirdelegators know.},
+	pages = {927--941},
+	number = {9},
+	journaltitle = {Applied Artificial Intelligence},
+	shortjournal = {Applied Artificial Intelligence},
+	author = {Wong, H. Chi and Sycara, Katia},
+	urldate = {2026-07-01},
+	date = {2000-10},
+	langid = {english},
+	file = {PDF:files/284/Wong und Sycara - 2000 - Adding security and trust to multiagent systems.pdf:application/pdf},
+}
+
+@inproceedings{wang_g-safeguard_2025,
+	location = {Vienna, Austria},
+	title = {G-Safeguard: A Topology-Guided Security Lens and Treatment on {LLM}-based Multi-agent Systems},
+	url = {https://aclanthology.org/2025.acl-long.359},
+	doi = {10.18653/v1/2025.acl-long.359},
+	shorttitle = {G-Safeguard},
+	eventtitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+	pages = {7261--7276},
+	booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+	publisher = {Association for Computational Linguistics},
+	author = {Wang, Shilong and Zhang, Guibin and Yu, Miao and Wan, Guancheng and Meng, Fanci and Guo, Chongye and Wang, Kun and Wang, Yang},
+	urldate = {2026-07-01},
+	date = {2025},
+	langid = {english},
+	file = {PDF:files/286/Wang et al. - 2025 - G-Safeguard A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems.pdf:application/pdf},
+}
+
+@article{sycara_distributed_1996,
+	title = {Distributed intelligent agents},
+	volume = {11},
+	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
+	issn = {0885-9000},
+	url = {http://ieeexplore.ieee.org/document/546581/},
+	doi = {10.1109/64.546581},
+	pages = {36--46},
+	number = {6},
+	journaltitle = {{IEEE} Expert},
+	shortjournal = {{IEEE} Expert},
+	author = {Sycara, K. and Pannu, A. and Willamson, M. and {Dajun Zeng} and Decker, K.},
+	urldate = {2026-07-01},
+	date = {1996-12},
+	langid = {english},
+	file = {PDF:files/290/Sycara et al. - 1996 - Distributed intelligent agents.pdf:application/pdf},
+}
+
+@software{ramirez_fastapi_2026,
+	title = {{FastAPI}},
+	rights = {{MIT}},
+	url = {https://github.com/fastapi/fastapi},
+	abstract = {{FastAPI} framework, high performance, easy to learn, fast to code, ready for production},
+	author = {Ramírez, Sebastián},
+	urldate = {2026-07-02},
+	date = {2026-07-02},
+	note = {original-date: 2018-12-08T08:21:47Z},
+}
+
+@software{chase_langchain_2022,
+	title = {{LangChain}},
+	rights = {{MIT}},
+	url = {https://github.com/langchain-ai/langchain},
+	abstract = {The agent engineering platform.},
+	author = {Chase, Harrison},
+	urldate = {2026-07-02},
+	date = {2022-10},
+	note = {original-date: 2022-10-17T02:58:36Z},
+}
+
+@software{noauthor_langchain-ailanggraph_2026,
+	title = {langchain-ai/langgraph},
+	rights = {{MIT}},
+	url = {https://github.com/langchain-ai/langgraph},
+	abstract = {Build resilient agents.},
+	publisher = {{LangChain}},
+	urldate = {2026-07-02},
+	date = {2026-07-02},
+	note = {original-date: 2023-08-09T18:33:12Z},
+	keywords = {agents, ai, ai-agents, chatgpt, deepagents, enterprise, framework, gemini, generative-ai, langchain, langgraph, llm, multiagent, open-source, openai, pydantic, python, rag},
+}
+
+@software{noauthor_open-webuiopen-webui_2026,
+	title = {open-webui/open-webui},
+	url = {https://github.com/open-webui/open-webui},
+	abstract = {User-friendly {AI} Interface (Supports Ollama, {OpenAI} {API}, ...)},
+	publisher = {Open {WebUI}},
+	urldate = {2026-07-02},
+	date = {2026-07-02},
+	note = {original-date: 2023-10-06T22:08:27Z},
+	keywords = {ai, llm, llm-ui, llm-webui, llms, mcp, ollama, ollama-webui, open-webui, openai, openapi, rag, self-hosted, ui, webui},
+}
+
+@software{noauthor_pydantic_nodate,
+	title = {pydantic: Data validation using Python type hints},
+	url = {https://github.com/pydantic/pydantic},
+	shorttitle = {pydantic},
+	version = {2.13.4},
+	urldate = {2026-07-02},
+	keywords = {Internet, Software Development - Libraries - Python Modules},
+	file = {Snapshot:files/318/pydantic.html:text/html},
+}
+
+@online{noauthor_welcome_2026,
+	title = {Welcome to Python.org},
+	url = {https://www.python.org/},
+	abstract = {The official home of the Python Programming Language},
+	titleaddon = {Python.org},
+	urldate = {2026-07-02},
+	date = {2026-06-29},
+	langid = {english},
+	file = {Snapshot:files/320/www.python.org.html:text/html},
 }

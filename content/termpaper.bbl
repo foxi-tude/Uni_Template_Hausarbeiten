@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{14}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -6,6 +6,25 @@
 \makeatother
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[Anbiaee u.\,a.()Anbiaee, Rabbani, Mirani, Piya, Opushnyev, Ghorbani
+  und Dadkhah]{anbiaee_security_2026}
+\dinatlabel{Anbiaee u.\,a. } \textsc{Anbiaee}, Zeynab~; \textsc{Rabbani},
+  Mahdi~; \textsc{Mirani}, Mansur~; \textsc{Piya}, Gunjan~; \textsc{Opushnyev},
+  Igor~; \textsc{Ghorbani}, Ali~; \textsc{Dadkhah}, Sajjad:
+\newblock \emph{Security Threat Modeling for Emerging {AI}-Agent Protocols: A
+  Comparative Analysis of {MCP}, A2A, Agora, and {ANP}}. --
+\newblock URL \url{https://arxiv.org/abs/2602.11327}. -- Zugriffsdatum:
+  2026-07-01. --
+\newblock Version Number: 2
+
+\bibitem[Andric()]{andric_pdf_nodate}
+\dinatlabel{Andric } \textsc{Andric}, Sandro:
+\newblock \emph{({PDF}) {LLM} Hijacking: When Models Manipulate Their Routers}.
+  --
+\newblock URL
+  \url{https://www.researchgate.net/publication/398334488_LLM_Hijacking_When_Models_Manipulate_Their_Routers}.
+  -- Zugriffsdatum: 2026-07-01
 
 \bibitem[Botti()]{botti_agentic_2025}
 \dinatlabel{Botti } \textsc{Botti}, V.:
@@ -28,15 +47,42 @@
   2026-06-17. --
 \newblock ISSN 24059595
 
-\bibitem[Open~WebUI()]{open_webui}
-\dinatlabel{Open~WebUI } \textsc{Open~WebUI}, Inc:
-\newblock \emph{Official website of Open WebUI, Inc}. --
-\newblock URL \url{https://openwebui.com/}
+\bibitem[Jennings u.\,a.()Jennings, Sycara und
+  Wooldridge]{jennings_roadmap_1998}
+\dinatlabel{Jennings u.\,a. } \textsc{Jennings}, Nicholas~R.~; \textsc{Sycara},
+  Katia~; \textsc{Wooldridge}, Michael:
+\newblock A Roadmap of Agent Research and Development.
+\newblock
+\newblock 1, Nr.~1, S.~7--38. --
+\newblock URL \url{https://link.springer.com/10.1023/A:1010090405266}. --
+  Zugriffsdatum: 2026-06-19. --
+\newblock ISSN 1387-2532, 1573-7454
+
+\bibitem[Krawiecka und de~Witt()]{krawiecka_extending_2025}
+\dinatlabel{Krawiecka und de~Witt } \textsc{Krawiecka}, Klaudia~;
+  \textsc{Witt}, Christian~S. de:
+\newblock \emph{Extending the {OWASP} Multi-Agentic System Threat Modeling
+  Guide: Insights from Multi-Agent Security Research}. --
+\newblock URL \url{https://arxiv.org/abs/2508.09815}. -- Zugriffsdatum:
+  2026-07-01. --
+\newblock Version Number: 1
 
 \bibitem[{OWASP}()]{owasp_owasp_nodate}
 \dinatlabel{{OWASP} } \textsc{{OWASP}}:
 \newblock \emph{{OWASP} Threat Modeling Project}. --
 \newblock URL \url{https://owasp.org/www-project-threat-modeling/}
+
+\bibitem[Raza u.\,a.()Raza, Sapkota, Karkee und Emmanouilidis]{raza_trism_2026}
+\dinatlabel{Raza u.\,a. } \textsc{Raza}, Shaina~; \textsc{Sapkota}, Ranjan~;
+  \textsc{Karkee}, Manoj~; \textsc{Emmanouilidis}, Christos:
+\newblock {TRiSM} for Agentic {AI}: A review of Trust, Risk, and Security
+  Management in {LLM}-based Agentic Multi-Agent Systems.
+\newblock
+\newblock 7, S.~71--95. --
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S2666651026000069}. --
+  Zugriffsdatum: 2026-06-30. --
+\newblock ISSN 26666510
 
 \bibitem[Tete()]{tete_threat_2024}
 \dinatlabel{Tete } \textsc{Tete}, Stephen~B.:
@@ -44,5 +90,61 @@
   ({LLM})-Powered Applications}. --
 \newblock URL \url{http://arxiv.org/abs/2406.11007}. -- Zugriffsdatum:
   2026-06-17
+
+\bibitem[Wang u.\,a.()Wang, Pan, Su, Deng, Zhao, Du, Luan, Kang und
+  Niyato]{wang_large_2026}
+\dinatlabel{Wang u.\,a. } \textsc{Wang}, Yuntao~; \textsc{Pan}, Yanghe~;
+  \textsc{Su}, Zhou~; \textsc{Deng}, Yi~; \textsc{Zhao}, Quan~; \textsc{Du},
+  Linkang~; \textsc{Luan}, Tom~H.~; \textsc{Kang}, Jiawen~; \textsc{Niyato},
+  Dusit:
+\newblock Large Model-Based Agents: State-of-the-Art, Cooperation Paradigms,
+  Security and Privacy, and Future Trends.
+\newblock
+\newblock 28, S.~1906--1949. --
+\newblock URL \url{https://ieeexplore.ieee.org/document/11022699/}. --
+  Zugriffsdatum: 2026-06-30. --
+\newblock ISSN 1553-877X, 2373-745X
+
+\bibitem[Wong und Sycara()]{wong_adding_2000}
+\dinatlabel{Wong und Sycara } \textsc{Wong}, H.~C.~; \textsc{Sycara}, Katia:
+\newblock Adding security and trust to multiagent systems.
+\newblock
+\newblock 14, Nr.~9, S.~927--941. --
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/08839510050144886}. --
+  Zugriffsdatum: 2026-07-01. --
+\newblock ISSN 0883-9514, 1087-6545
+
+\bibitem[Wooldridge und Jennings()]{wooldridge_intelligent_1995}
+\dinatlabel{Wooldridge und Jennings } \textsc{Wooldridge}, Michael~;
+  \textsc{Jennings}, Nicholas~R.:
+\newblock Intelligent agents: theory and practice.
+\newblock
+\newblock 10, Nr.~2, S.~115--152. --
+\newblock URL
+  \url{https://www.cambridge.org/core/product/identifier/S0269888900008122/type/journal_article}.
+  -- Zugriffsdatum: 2026-06-22. --
+\newblock ISSN 0269-8889, 1469-8005
+
+\bibitem[Yan u.\,a.()Yan, Zhou, Zhang, Zhang, Zhou, Miao, Li, Li und
+  Zhang]{yan_beyond_2025}
+\dinatlabel{Yan u.\,a. } \textsc{Yan}, Bingyu~; \textsc{Zhou}, Zhibo~;
+  \textsc{Zhang}, Litian~; \textsc{Zhang}, Lian~; \textsc{Zhou}, Ziyi~;
+  \textsc{Miao}, Dezhuang~; \textsc{Li}, Zhoujun~; \textsc{Li}, Chaozhuo~;
+  \textsc{Zhang}, Xiaoming:
+\newblock \emph{Beyond Self-Talk: A Communication-Centric Survey of {LLM}-Based
+  Multi-Agent Systems}. --
+\newblock URL \url{https://arxiv.org/abs/2502.14321}. -- Zugriffsdatum:
+  2026-06-30. --
+\newblock Version Number: 3
+
+\bibitem[Zhang u.\,a.()Zhang, Nian und Zhao]{zhang_agent_2026}
+\dinatlabel{Zhang u.\,a. } \textsc{Zhang}, Haiyue~; \textsc{Nian}, Yi~;
+  \textsc{Zhao}, Yue:
+\newblock \emph{Agent Audit: A Security Analysis System for {LLM} Agent
+  Applications}. --
+\newblock URL \url{https://arxiv.org/abs/2603.22853}. -- Zugriffsdatum:
+  2026-07-01. --
+\newblock Version Number: 1
 
 \end{thebibliography}

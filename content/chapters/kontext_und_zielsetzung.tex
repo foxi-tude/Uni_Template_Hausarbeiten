@@ -1,0 +1,57 @@
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
+
+\section{Kontext und Zielsetzung}
+
+\subsection{Arbeitstitel}
+
+Konzeption, sicherheitsorientierte Architekturentwicklung und Threat Modelling eines LLM-basierten Multi-Agenten-Systems im Unternehmenskontext.
+
+\subsection{Ausgangslage und Motivation}
+
+Große Sprachmodelle werden im aktuellen Diskurs zunehmend nicht mehr nur als Grundlage einfacher dialogorientierter Anwendungen verstanden, sondern als Bausteine agentischer Systeme, in denen mehrere spezialisierte Komponenten Aufgaben übernehmen, Informationen austauschen und arbeitsteilig zur Bearbeitung komplexerer Probleme beitragen. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998,botti_agentic_2025}
+
+Diese Entwicklung lässt sich als Fortführung klassischer Konzepte aus der Multi-Agenten-Forschung und Verteilten Systemen interpretieren, die durch LLM-basierte Sprachverarbeitung, flexible Werkzeugnutzung und dynamische Kontextverarbeitung erweitert werden. \cite{jennings_roadmap_1998,yan_beyond_2025,wang_large_2026} Mit dieser funktionalen Erweiterung steigt zugleich die technische und organisatorische Komplexität. \cite{jennings_roadmap_1998,wong_adding_2000,ferrag_prompt_2026}
+
+Während klassische Multi-Agenten-Systeme bereits Fragen der Koordination, Kooperation und Kommunikation adressieren, entstehen bei LLM-basierten Architekturen zusätzliche Unsicherheiten durch probabilistische Modellentscheidungen, die Einbindung externer Tools und die Verarbeitung heterogener Kontextquellen. \cite{wong_adding_2000,ferrag_prompt_2026,raza_trism_2026}
+
+Für Unternehmen ist daher nicht nur relevant, ob ein Multi-Agenten-System grundsätzlich leistungsfähig erscheint, sondern ob es unter realen Randbedingungen nachvollziehbar, beherrschbar und sicher betrieben werden kann. \cite{raza_trism_2026,ferrag_prompt_2026}
+
+\newpage
+Damit gewinnt die Fragestellung wie LLM Basierte Multi-Agenten-Systeme in bestehende technische und organisatorische Strukturen eingebettet werden können, immer mehr an Relevanz. Somit rücken Architekturentscheidungen in den Mittelpunkt, die nicht allein funktional, sondern zugleich unter Sicherheits-, Betriebs- und Governance-Gesichtspunkten begründet werden müssen. \cite{wong_adding_2000,krawiecka_extending_2025}
+
+\subsection{Problemstellung}
+
+In aktuellen Diskussionen zu agentischen Systemen stehen häufig Funktionsumfang, Automatisierungspotenziale und die Qualität generierter Ergebnisse im Vordergrund. \cite{krawiecka_extending_2025,ferrag_prompt_2026,zhang_agent_2026}
+
+Weniger systematisch behandelt wird dagegen die Frage, wie ein solches System im Unternehmenskontext so entworfen werden kann, dass Sicherheitsaspekte nicht erst nachträglich ergänzt, sondern bereits auf Architekturebene berücksichtigt werden. \cite{tete_threat_2024,wong_adding_2000,ferrag_prompt_2026}
+
+Gerade bei LLM Basierten Multi-Agenten-Systemen erweitert sich die Angriffsfläche gegenüber einfacheren Einzelagenten- oder Chatbot-Ansätzen deutlich. \cite{wong_adding_2000,ferrag_prompt_2026,anbiaee_security_2026}
+
+Risiken ergeben sich nicht nur aus direkten Benutzereingaben, sondern auch aus Agentenkommunikation, Delegationsmechanismen, Tool-Aufrufen, Retrieval-Prozessen, Protokollschichten und der Weitergabe von Kontexten oder Zwischenergebnissen. \cite{wong_adding_2000,krawiecka_extending_2025,ferrag_prompt_2026, andric_pdf_nodate, zhang_agent_2026} 
+Daraus folgt, dass eine rein funktionale Betrachtung des Systementwurfs für die vorliegende Problemstellung nicht ausreicht. \cite{wong_adding_2000,tete_threat_2024}
+
+Die zentrale Problemstellung der Arbeit besteht daher darin, eine nachvollziehbare Verbindung zwischen funktionaler Architekturentwicklung und systematischem Threat Modeling herzustellen. Untersucht wird, wie sich ein LLM-basiertes Multi-Agenten-System so konzipieren lässt, dass sowohl fachliche Anforderungen als auch Schutzbedarfe, Vertrauensgrenzen und Gegenmaßnahmen konsistent in einer Zielarchitektur abgebildet werden können. \cite{krawiecka_extending_2025, ferrag_prompt_2026}
+
+\subsection{Zielsetzung der Arbeit}
+
+Ziel der Arbeit ist die Konzeption eines LLM-basierten Multi-Agenten-Systems einen Unternehmenskontext, sowie die sicherheitsorientierte Bewertung dieses Entwurfs mithilfe eines strukturierten Threat Modelings. Im Vordergrund steht damit nicht primär die vollständige produktive Implementierung, sondern die Entwicklung einer fachlich plausiblen, technisch realisierbaren und sicherheitsorientierten begründeten Zielarchitektur.
+
+Die Arbeit verfolgt dabei drei miteinander verbundene Teilziele. Erstens soll eine Architektur entwickelt werden, in der Rollen, Komponenten, Schnittstellen und Kommunikationsbeziehungen klar beschrieben sind. Zweitens sollen relevante Bedrohungen systematisch identifiziert und entlang von Komponenten, Datenflüssen und Vertrauensgrenzen analysiert werden. Drittens sollen daraus konkrete Maßnahmen abgeleitet werden, die zeigen, wie Sicherheitsanforderungen in ein konsistentes Systemdesign überführt werden können. \cite{owasp_owasp_nodate, wong_adding_2000, krawiecka_extending_2025}
+
+\subsection{Forschungsfragen}
+
+Die übergeordnete Forschungsfrage lautet:
+
+Wie kann ein LLM-basiertes Multi-Agenten-System im Unternehmenskontext so konzipiert werden, dass funktionale und nicht funktionale Anforderungen, technische Realisierbarkeit und sicherheitsorientiertes Threat Modeling in einer konsistenten Architektur zusammengeführt werden?
+
+Zur Beantwortung dieser Leitfrage werden folgende untergeordnete Forschungsfragen betrachtet:
+
+\begin{itemize}
+	\item Welche funktionalen und nicht-funktionalen Anforderungen prägen die Zielarchitektur eines solchen Systems?
+	\item Welche Komponenten, Kommunikationsbeziehungen und Vertrauensgrenzen ergeben sich aus dem gewählten Multi-Agenten-Ansatz?
+	\item Welche Bedrohungen entstehen durch Benutzerinteraktion, Agentenkommunikation, Tool-Nutzung und Modellanbindung?
+	\item Mit welchen architektonischen und organisatorischen Maßnahmen lassen sich diese Bedrohungen angemessen mindern?
+	\item In welchen Punkten erzeugt der Multi-Agenten-Ansatz einen Mehrwert gegenüber einfacheren Architekturalternativen, und welche zusätzliche Komplexität entsteht dadurch?
+\end{itemize}
