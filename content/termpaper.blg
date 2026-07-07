@@ -10,55 +10,70 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
+Warning--entry type for "noauthor_threat_2026" isn't style-file defined
+--line 145 of file literature.bib
 Warning--entry type for "owasp_owasp_nodate" isn't style-file defined
 --line 199 of file literature.bib
 Warning--entry type for "andric_pdf_nodate" isn't style-file defined
 --line 815 of file literature.bib
+Warning--entry type for "fipa" isn't style-file defined
+--line 993 of file literature.bib
+Warning--I didn't find a database entry for "anbiaee_security_2026m"
+Warning--to sort, need author or key in fipa
+Warning--to sort, need author or key in noauthor_threat_2026
+Warning--there's no year in chalupsky_overview_1993
 Warning--there's no year in ferrag_prompt_2026
 Warning--there's no year in jennings_roadmap_1998
+Warning--there's no year in jennings_commitments_1993
+Warning--there's no year in khan_beyond_2026
+Warning--there's no year in lesser_retrospective_1991
 Warning--there's no year in raza_trism_2026
+Warning--there's a publisher but no year in russell_artificial_2022
+Warning--there's no year in sycara_distributed_1996
 Warning--there's no year in wang_large_2026
 Warning--there's no year in wong_adding_2000
 Warning--there's no year in wooldridge_intelligent_1995
-You've used 14 entries,
+Warning--there's a publisher but no year in wooldridge_introduction_2002
+Warning--there's no year in xue_all--one_2024
+You've used 25 entries,
             3552 wiz_defined-function locations,
-            879 strings with 9150 characters,
-and the built_in function-call counts, 11696 in all, are:
-= -- 1460
-> -- 209
-< -- 439
-+ -- 549
-- -- 160
-* -- 1156
-:= -- 2144
-add.period$ -- 6
-call.type$ -- 14
-change.case$ -- 98
-chr.to.int$ -- 14
-cite$ -- 20
-duplicate$ -- 265
-empty$ -- 591
-format.name$ -- 275
-if$ -- 2066
+            942 strings with 11119 characters,
+and the built_in function-call counts, 18886 in all, are:
+= -- 2330
+> -- 317
+< -- 623
++ -- 790
+- -- 237
+* -- 1861
+:= -- 3401
+add.period$ -- 16
+call.type$ -- 25
+change.case$ -- 155
+chr.to.int$ -- 25
+cite$ -- 45
+duplicate$ -- 453
+empty$ -- 1088
+format.name$ -- 406
+if$ -- 3449
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 103
-num.names$ -- 56
-pop$ -- 142
+missing$ -- 29
+newline$ -- 177
+num.names$ -- 92
+pop$ -- 240
 preamble$ -- 1
-purify$ -- 93
+purify$ -- 150
 quote$ -- 0
-skip$ -- 509
+skip$ -- 779
 stack$ -- 0
-substring$ -- 723
-swap$ -- 79
-text.length$ -- 51
+substring$ -- 1218
+swap$ -- 118
+text.length$ -- 75
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
-warning$ -- 6
-while$ -- 133
+type$ -- 260
+warning$ -- 16
+while$ -- 216
 width$ -- 0
-write$ -- 167
-(There were 8 warnings)
+write$ -- 293
+(There were 21 warnings)

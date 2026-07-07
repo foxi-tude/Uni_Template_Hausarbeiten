@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{25}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -6,6 +6,16 @@
 \makeatother
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[noauthor_threat_2026()]{noauthor_threat_2026}
+\dinatlabel{noauthor_threat_2026 } :
+\newblock \emph{Threat Modelin Process (Historical) - {OWASP}}. --
+\newblock URL \url{https://owasp.org/www-community/Threat_Modeling_Process}
+
+\bibitem[fipa()]{fipa}
+\dinatlabel{fipa } :
+\newblock \emph{Welcome to the Foundation for Intelligent Physical Agents}. --
+\newblock URL \url{https://www.fipa.org/}. -- Zugriffsdatum: 2026-07-03
 
 \bibitem[Anbiaee u.\,a.()Anbiaee, Rabbani, Mirani, Piya, Opushnyev, Ghorbani
   und Dadkhah]{anbiaee_security_2026}
@@ -34,6 +44,14 @@
   2026-06-17. --
 \newblock Version Number: 1
 
+\bibitem[Chalupsky u.\,a.()Chalupsky, Finin, Fritzson, Mckay, Shapiro und
+  Wiederhold]{chalupsky_overview_1993}
+\dinatlabel{Chalupsky u.\,a. } \textsc{Chalupsky}, Hans~; \textsc{Finin}, Tim~;
+  \textsc{Fritzson}, Rich~; \textsc{Mckay}, Don~; \textsc{Shapiro}, Stuart~;
+  \textsc{Wiederhold}, Gio:
+\newblock An Overview of {KQML}: A Knowledge Query and Manipulation Language.
+\newblock
+
 \bibitem[Ferrag u.\,a.()Ferrag, Tihanyi, Hamouda, Maglaras, Lakas und
   Debbah]{ferrag_prompt_2026}
 \dinatlabel{Ferrag u.\,a. } \textsc{Ferrag}, Mohamed~A.~; \textsc{Tihanyi},
@@ -58,6 +76,28 @@
   Zugriffsdatum: 2026-06-19. --
 \newblock ISSN 1387-2532, 1573-7454
 
+\bibitem[Jennings()]{jennings_commitments_1993}
+\dinatlabel{Jennings } \textsc{Jennings}, Nick~R.:
+\newblock Commitments and conventions: The foundation of coordination in
+  multi-agent systems.
+\newblock
+\newblock 8, Nr.~3, S.~223--250. --
+\newblock URL
+  \url{https://www.cambridge.org/core/product/identifier/S0269888900000205/type/journal_article}.
+  -- Zugriffsdatum: 2026-06-30. --
+\newblock ISSN 0269-8889, 1469-8005
+
+\bibitem[Khan u.\,a.()Khan, Khan, Sharif und Yasmin]{khan_beyond_2026}
+\dinatlabel{Khan u.\,a. } \textsc{Khan}, Muhammad~S.~; \textsc{Khan},
+  Muhammad~J.~; \textsc{Sharif}, Muhammad~; \textsc{Yasmin}, Sadaf:
+\newblock Beyond Single-Framework Architectures: A Systematic Evaluation and
+  Hybrid Design for Scalable Multi-Agent Coordination.
+\newblock
+\newblock 14, S.~59688--59705. --
+\newblock URL \url{https://ieeexplore.ieee.org/document/11481053/}. --
+  Zugriffsdatum: 2026-05-22. --
+\newblock ISSN 2169-3536
+
 \bibitem[Krawiecka und de~Witt()]{krawiecka_extending_2025}
 \dinatlabel{Krawiecka und de~Witt } \textsc{Krawiecka}, Klaudia~;
   \textsc{Witt}, Christian~S. de:
@@ -66,6 +106,15 @@
 \newblock URL \url{https://arxiv.org/abs/2508.09815}. -- Zugriffsdatum:
   2026-07-01. --
 \newblock Version Number: 1
+
+\bibitem[Lesser()]{lesser_retrospective_1991}
+\dinatlabel{Lesser } \textsc{Lesser}, V.R.:
+\newblock A retrospective view of {FA}/C distributed problem solving.
+\newblock
+\newblock 21, Nr.~6, S.~1347--1362. --
+\newblock URL \url{http://ieeexplore.ieee.org/document/135681/}. --
+  Zugriffsdatum: 2026-06-22. --
+\newblock ISSN 00189472
 
 \bibitem[{OWASP}()]{owasp_owasp_nodate}
 \dinatlabel{{OWASP} } \textsc{{OWASP}}:
@@ -83,6 +132,31 @@
   \url{https://linkinghub.elsevier.com/retrieve/pii/S2666651026000069}. --
   Zugriffsdatum: 2026-06-30. --
 \newblock ISSN 26666510
+
+\bibitem[Russell und Norvig()]{russell_artificial_2022}
+\dinatlabel{Russell und Norvig } \textsc{Russell}, Stuart~J.~; \textsc{Norvig},
+  Peter:
+\newblock \emph{Artificial intelligence: a modern approach}.
+\newblock Fourth edition, global edition.
+\newblock Pearson
+\newblock (Prentice Hall series in artificial intelligence). --
+\newblock ISBN 978-1-292-40113-3 978-1-292-40117-1
+
+\bibitem[Shostack(2014)]{shostack2014threat}
+\dinatlabel{Shostack 2014} \textsc{Shostack}, Adam:
+\newblock \emph{Threat modeling: Designing for security}.
+\newblock John wiley \& sons, 2014
+
+\bibitem[Sycara u.\,a.()Sycara, Pannu, Willamson, {Dajun Zeng} und
+  Decker]{sycara_distributed_1996}
+\dinatlabel{Sycara u.\,a. } \textsc{Sycara}, K.~; \textsc{Pannu}, A.~;
+  \textsc{Willamson}, M.~; \textsc{{Dajun Zeng}}~; \textsc{Decker}, K.:
+\newblock Distributed intelligent agents.
+\newblock
+\newblock 11, Nr.~6, S.~36--46. --
+\newblock URL \url{http://ieeexplore.ieee.org/document/546581/}. --
+  Zugriffsdatum: 2026-07-01. --
+\newblock ISSN 0885-9000
 
 \bibitem[Tete()]{tete_threat_2024}
 \dinatlabel{Tete } \textsc{Tete}, Stephen~B.:
@@ -125,6 +199,23 @@
   \url{https://www.cambridge.org/core/product/identifier/S0269888900008122/type/journal_article}.
   -- Zugriffsdatum: 2026-06-22. --
 \newblock ISSN 0269-8889, 1469-8005
+
+\bibitem[Wooldridge()]{wooldridge_introduction_2002}
+\dinatlabel{Wooldridge } \textsc{Wooldridge}, Michael~J.:
+\newblock \emph{An introduction to multiagent systems}.
+\newblock J. Wiley. --
+\newblock ISBN 978-0-471-49691-5
+
+\bibitem[Xue u.\,a.()Xue, Liu und Hu]{xue_all--one_2024}
+\dinatlabel{Xue u.\,a. } \textsc{Xue}, Liwei~; \textsc{Liu}, Guo-Ping~;
+  \textsc{Hu}, Wenshan:
+\newblock All-in-One Framework for Design, Simulation, and Practical
+  Implementation of Distributed Multiagent Control Systems.
+\newblock
+\newblock 54, Nr.~7, S.~4331--4344. --
+\newblock URL \url{https://ieeexplore.ieee.org/document/10493161/}. --
+  Zugriffsdatum: 2026-06-30. --
+\newblock ISSN 2168-2216, 2168-2232
 
 \bibitem[Yan u.\,a.()Yan, Zhou, Zhang, Zhang, Zhou, Miao, Li, Li und
   Zhang]{yan_beyond_2025}

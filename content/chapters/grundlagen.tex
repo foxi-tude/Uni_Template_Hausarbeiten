@@ -2,6 +2,84 @@
 % @author Leonhard Lüdeke
 %
 
-\section{Grundlagen}
+\section{Grundlagen und Bewertungsrahmen}
 
-\subsection{Theoretische Grundlagen}
+\subsection{Theoretische und fachliche Grundlagen}
+
+Die theoretische Grundlage der Arbeit verbindet klassische Konzepte der Multi-Agenten-Forschung mit neueren Ansätzen LLM-basierter agentischer Systeme. \cite{wooldridge_intelligent_1995, jennings_roadmap_1998,russell_artificial_2022}
+Ausgangspunkt ist der in der Literatur etablierte Agentenbegriff, nach dem ein Agent als in einer Umgebung situierte Softwareeinheit verstanden werden kann, die flexibel und autonom im Sinne ihrer Entwurfsziele handelt. \cite{wooldridge_intelligent_1995, wooldridge_introduction_2002, russell_artificial_2022}
+
+Auf dieser Basis lässt sich ein Multi-Agenten-System als eine Architektur beschreiben, in der mehrere autonome oder teilautonome Einheiten kooperieren, kommunizieren und ihre Aktivitäten koordinieren, um individuelle oder gemeinsame Ziele zu verfolgen. \cite{jennings_roadmap_1998, lesser_retrospective_1991, russell_artificial_2022, botti_agentic_2025}
+
+Damit sind heutige LLM-basierte Agentensysteme als Erweiterung klassischer Agenten- und MAS-Konzepte zu verstehen, bei denen Sprachmodelle neue Fähigkeiten der Interaktion, Werkzeugnutzung und Kontextverarbeitung bereitstellen, ohne die grundlegenden Fragen nach Autonomie, Koordination und Verantwortungsverteilung obsolet zu machen. \cite{botti_agentic_2025,yan_beyond_2025, jennings_roadmap_1998, russell_artificial_2022}
+
+Diese Veränderung der Agentensysteme hin zu LLM-basierten Agentensystemen lassen neue Angriffsvektoren entstehen \cite{tete_threat_2024, krawiecka_extending_2025}, die neben den klassischen Bedrohungen für Multi-Agenten-Systemen bestehen \cite{wong_adding_2000}
+
+Dazu gehören insbesondere Trust Boundaries, kontrollierte Schnittstellen, das Prinzip minimaler Rechte sowie Kriterien zur Beurteilung von Robustheit, Nachvollziehbarkeit und Beherrschbarkeit komplexer agentischer Systeme. \cite{wong_adding_2000, tete_threat_2024}
+
+\subsection{Agentische KI und Multi-Agenten-Systeme}
+
+Agentische KI bezeichnet Systeme, die nicht nur einzelne Antworten erzeugen, sondern zielgerichtet Aufgaben bearbeiten, Zwischenschritte planen, externe Werkzeuge verwenden und Teile ihres Handlungsablaufs selbst steuern. \cite{wooldridge_intelligent_1995,jennings_commitments_1993}
+
+Von einem Multi-Agenten-System wird gesprochen, wenn mehrere spezialisierte Agenten miteinander interagieren und durch Kommunikation, Delegation oder Orchestrierung zu einem Gesamtergebnis beitragen.\cite{jennings_roadmap_1998,wooldridge_introduction_2002,russell_artificial_2022}
+
+Für die Arbeit ist es wichtig, zwischen dem traditionellen Agentenbegriff und heutigen LLM-basierten Agenten zu unterscheiden. \cite{russell_artificial_2022,botti_agentic_2025} 
+
+Die Grundlage, welche Aspekte bei der praktischen Entwicklung von Agenten und Multi-Agenten-Systeme betrachtet werden müssen, hat sich nicht maßgeblich verändert. Das zeigen auch die 3 relevantesten Teilaspekte \cite{russell_artificial_2022,jennings_roadmap_1998} die moderne Frameworks wie LangGraph, AutoGen, ADK, CrewAI und viele weitere adressieren:
+- Begründung (Reasoning): Wie wird das Handeln eines Agenten argumentiert.
+- Speicher (Memory): Entscheidungen müssen in einen Kontext gesetzt werden können und bauen sich auf (episodischer Aufbau).
+- Nutzung von Tools (Tool use): Ansprechen von externen Systemen (Server, API's, Browser) mittels strukturierte Eingabeaufforderungen.
+
+Im Jahre 1996 hat sich Sycara mit der Entwicklung eines Multi-Agenten Framework names "Retsina" beschäftigt das diese Kernelemente von Multi-Agenten-Systeme abdeckte. \cite{sycara_distributed_1996} 
+
+Jedoch beruhen Klassische Agentensysteme typischerweise stärker auf expliziten Zustandsmodellen, Regeln und formalen Interaktionsmustern, während LLM-basierte Agenten in hohem Maß durch Prompts, Kontextfenster und probabilistische Generierung geprägt sind. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998, botti_agentic_2025}
+Dabei setzen sich die einzelnen Agenten eigenständig ziele und Interpretieren diese in Natürlicher Sprache. Daraus entstehen neue Freiheitsgrade, aber auch neue Unsicherheiten in Bezug auf Robustheit, Fehlverhalten und Interpretierbarkeit.  \cite{wang_large_2026, raza_trism_2026}
+
+Ein Multi-Agenten-Ansatz ist deshalb nicht per se vorteilhaft. \cite{jennings_roadmap_1998, yan_beyond_2025, khan_beyond_2026} Sein Einsatz muss über konkrete Anforderungen wie Spezialisierung, Modularisierung, Trennung von Verantwortlichkeiten oder kontrollierte Delegation begründet werden. \cite{jennings_roadmap_1998,wooldridge_intelligent_1995,xue_all--one_2024} Andernfalls droht zusätzliche Komplexität ohne klaren funktionalen oder sicherheitlichen Mehrwert. \cite{wong_adding_2000,yan_beyond_2025,khan_beyond_2026, raza_trism_2026}
+
+\subsection{Agentenkommunikation und Interoperabilität}
+
+Kommunikation ist ein zentrales Strukturmerkmal von Multi-Agenten-Systemen. \cite{russell_artificial_2022,chalupsky_overview_1993,jennings_roadmap_1998}
+
+Bereits in der klassischen Literatur wird deutlich, dass die Leistungsfähigkeit verteilter Agentensysteme wesentlich davon abhängt, wie Informationen zwischen beteiligten Einheiten ausgetauscht, interpretiert und in koordiniertes Handeln überführt werden. \cite{jennings_roadmap_1998,russell_artificial_2022,botti_agentic_2025}
+
+Historische Arbeiten zu KQML und spätere Standardisierungsbestrebungen, etwa im Umfeld von FIPA (Foundation for Intelligent Physical Agents), verdeutlichen, dass Agentenkommunikation nicht nur als technischer Nachrichtentransport, sondern als strukturierte Interaktion mit syntaktischen, semantischen und pragmatischen Ebenen verstanden werden sollte. \cite{chalupsky_overview_1993, fipa, botti_agentic_2025}
+
+Für LLM-basierte Multi-Agenten-Systeme bleibt diese Einsicht zentral. \cite{wang_large_2026, yan_beyond_2025}
+
+Zwar erfolgen Kommunikationsprozesse heute häufig über natürlichsprachliche oder halb strukturierte Kontexte. Dies bietet eine gewisse Flexibilität erhöht, jedoch die Gefahr von Missverständnissen, Kontextverlusten und unkontrollierten Seiteneffekten. \cite{yan_beyond_2025,ferrag_prompt_2026}
+
+Interoperabilität bedeutet deshalb in der vorliegenden Arbeit nicht nur technische Anschlussfähigkeit, sondern eine verlässlich kontrollierbare Zusammenarbeit trotz unterschiedlicher Rollen, Zustände und Systemgrenzen. \cite{fipa, chalupsky_overview_1993, anbiaee_security_2026}
+
+\subsection{Threat Modeling für LLM-basierte Agentensysteme}
+
+Threat Modeling bezeichnet wiederholbare systematische Verfahren zur Identifikation, Strukturierung und Bewertung potenzieller Bedrohungen innerhalb eines Systems. \cite{owasp_owasp_nodate, shostack2014threat}
+
+Dabei umfasst das Threat Modeling diverse Framworks und Methoden wie STRIDE, PASTA, LINDDUN, 'attack trees', 'abuse cases' und viele mehr. \cite{owasp_owasp_nodate}
+
+Auch für LLM-basierte Agentensysteme sind diese Ansatz geeignet, weil Risiken nicht nur aus einzelnen Komponenten, sondern aus Interaktionsketten zwischen Benutzenden, Agenten, Protokollen, Tools, Datenquellen und externen Diensten entstehen. \cite{krawiecka_extending_2025}
+
+Im Unterschied zu einer rein Komponenten bezogenen Sicherheitsbetrachtung erlauben Threat Modeling Framwork eine methodische Analyse entlang konkreter Datenflüsse, Rollen und Vertrauensgrenzen. \cite{shostack2014threat, owasp_owasp_nodate, wong_adding_2000}
+
+Dadurch können sowohl klassische Bedrohungen verteilter Agentensysteme als auch neuere LLM-spezifische Risiken erfasst werden. \cite{krawiecka_extending_2025, noauthor_threat_2026}
+Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen, fehlerhafte oder über privilegierte Tool-Aufrufe, unsichere Delegation, Protokollschwächen und unkontrollierte Weitergabe sensibler Informationen. \cite{ferrag_prompt_2026, anbiaee_security_2026m, zhang_agent_2026, krawiecka_extending_2025}
+
+Diese Arbeit wird sich maßgeblich an den 'OWASP Top 10 for LLM Applications' \cite{editor_owasp_nodate} orientieren und klassische Threat Modeling Frameworks für die Beantwortung der Forschungsfragen nutzen.
+
+%\subsection{Evaluierung von LLM-Agenten und Multi-Agenten-Systemen}
+
+% Literaturhinweis: Yan et al. (2025); Khan et al. (2026); Wang et al. (2026)
+%Die Bewertung agentischer Systeme darf sich nicht auf die Qualität einzelner Antworten %beschränken.
+
+% Literaturhinweis: Yan et al. (2025); Khan et al. (2026); Raza et al. (2026)
+%Relevant sind ebenso Zielerreichung, Koordinationsqualität, Robustheit, Fehlertoleranz, %Kommunikationsaufwand, Nachvollziehbarkeit und die Beherrschbarkeit von Risiken.
+
+% Literaturhinweis: Raza et al. (2026); Ferrag et al. (2026)
+%Gerade bei Multi-Agenten-Systemen kann ein funktional plausibler Ablauf dennoch %problematisch sein, wenn Zwischenschritte intransparent bleiben oder Kommunikations- und %Tool-Schnittstellen unzureichend abgesichert sind.
+
+% Literaturhinweis: Yan et al. (2025); Wang et al. (2026); Raza et al. (2026)
+%Für die vorliegende Arbeit bietet sich daher ein mehrdimensionaler Bewertungsrahmen an, der %funktionale, architektonische und sicherheitsbezogene Kriterien miteinander verbindet.
+
+% Literaturhinweis: Khan et al. (2026); Yan et al. (2025)
+%Ein solcher Rahmen ist geeignet, die entworfene Zielarchitektur nicht nur als technische %Idee, sondern als systematisch beurteilbares Konzept zu behandeln.
+

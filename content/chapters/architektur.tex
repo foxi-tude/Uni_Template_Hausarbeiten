@@ -1,0 +1,26 @@
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
+
+\section{Architektur}
+
+\subsection{Anforderungen für Architektur}
+
+Die Zielarchitektur wird in dieser Arbeit nicht primär aus verfügbaren Frameworks abgeleitet, sondern aus fachlichen, organisatorischen und sicherheitsbezogenen Anforderungen entwickelt.
+
+Daher ist der Ausgangspunkt nicht die Frage, was für Technologien verfügbar sind sondern welche Aufgaben das System erfüllen soll (User-Stories) und unter welchen Randbedingungen es betrieben wird. Hier sind sowohl Unternehmerischen Richtlinien (Richtlinie 27) wie auch Technische Begebenheiten zu berücksichtigen, sodass sich das Multi-Agenten-System nahtlos in die vorhandene Infrastruktur einfügt.
+
+Neben den beschriebenen Anforderungen ergeben sich aus einer Analyse mittels Threat-Modelings weitere Designentscheidungen, welche fortlaufende Architekturentscheidungen begründen sollen.
+
+Dies könnten zum Beispiel zusätzliche Kontrollmechanismen, Protokollentscheidungen oder auch stärkere zentralisierung/verteiltes Design des Multi-Agenten-Systems sein.
+
+\subsection{Threat Modeling}
+
+Mittels einer frühzeitiger Sicherheitsanalysen, werden besonders Schutzbedürftige Komponenten und Vertrauensgrenzen ausgemacht. \cite{shostack2014threat} Daraufhin können technische oder organisatorische Gegenmaßnahmen identifiziert werden.
+
+Da gerade in Agentischen Systemen Sicherheitsprobleme nicht isoliert an einzelnen Komponenten entstehen, sondern sich Risiken entlang von Kommunikationsketten, Delegationsentscheidungen, Tool-Interaktionen und Protokollbeziehungen entstehe. \cite{wong_adding_2000} Bietet sich eine breite Analyse mittels Threat-Modeling an um Sicherheitsrisiken auszumachen. \cite{owasp_owasp_nodate}
+
+\subsection{Bisherige überlegungen zur Zielarchitektur}Ü
+
+Die bisherige Zielarchitektur orientiert sich an einem modularen Multi-Agenten-Ansatz mit getrennten Verantwortlichkeiten. Ein Zentraler Orchestrator und/oder Workflow Controller erscheint für Multi-Agenten-Systeme eine plausible Kernkomponente. \cite{georgeff_communication_1983,jennings_roadmap_1998, vashishtha_cosmic_2026} 
+
