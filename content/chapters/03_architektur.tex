@@ -1,0 +1,32 @@
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
+
+\section{Architektur}
+
+\subsection{Anforderungen für Architektur}
+
+Die Zielarchitektur wird in dieser Arbeit nicht primär aus verfügbaren Frameworks abgeleitet, sondern aus fachlichen, organisatorischen und sicherheitsbezogenen Anforderungen entwickelt.
+
+Daher ist der Ausgangspunkt nicht die Frage, was für Technologien verfügbar sind sondern welche Aufgaben das System erfüllen soll (User-Stories) und unter welchen Randbedingungen es betrieben wird. Hier sind sowohl Unternehmerischen Richtlinien (Richtlinie 27) wie auch Technische Begebenheiten zu berücksichtigen, sodass sich das Multi-Agenten-System nahtlos in die vorhandene Infrastruktur einfügt.
+
+Durch die Analytische Betrachtung durch geeignete Threat-Modeling Prozesse werden weitere Designentscheidungen getroffen, welche fortlaufende Architekturentscheidungen begründen sollen.
+
+Dies könnten zum Beispiel zusätzliche Kontrollmechanismen, Protokollentscheidungen oder auch stärkere zentralisierung/verteiltes Design des Multi-Agenten-Systems sein.
+
+
+%\subsection{Threat Modeling}
+%
+%Mittels einer frühzeitiger Sicherheitsanalysen, werden besonders Schutzbedürftige Komponenten und Vertrauensgrenzen ausgemacht. \cite{shostack2014threat} Daraufhin können technische oder organisatorische Gegenmaßnahmen identifiziert werden.
+%
+%Da gerade in Agentischen Systemen Sicherheitsprobleme nicht isoliert an einzelnen Komponenten entstehen, sondern sich Risiken entlang von Kommunikationsketten, Delegationsentscheidungen, Tool-Interaktionen und Protokollbeziehungen entstehe. \cite{wong_adding_2000} Bietet sich eine breite Analyse mittels Threat-Modeling an um Sicherheitsrisiken auszumachen. \cite{owasp_owasp_nodate}
+
+\subsection{Bisherige Überlegungen zur Architektur}
+
+Die bisherige Zielarchitektur orientiert sich an einem modularen Multi-Agenten-Ansatz mit getrennten Verantwortlichkeiten. Ein Zentraler Orchestrator und/oder Workflow Controller erscheint für Multi-Agenten-Systeme eine plausible Kernkomponente. \cite{georgeff_communication_1983,jennings_roadmap_1998, vashishtha_cosmic_2026}
+
+Dieser nimmt Anfragen entgegen, strukturiert Aufgaben, delegiert Teilaufgaben an spezialisierte Agenten und konsolidiert Ergebnisse. \cite{sycara_distributed_1996, xue_all--one_2024} Damit werden Koordination, Kontrolllogik und Fehlerbehandlung in dieser Instanz gebündelt, damit der Gesamtprozess transparent strukturiert werden kann. \cite{wong_adding_2000}
+
+Als User-Interface ist eine Angepasste Version von OpenWebUI \cite{noauthor_open-webuiopen-webui_2026} vorgegeben an die sich das Multi-Agenten-System anbinden soll. Bisherige Agenten sind mittels Langchain und Langgraph \cite{chase_langchain_2022} in Python \cite{noauthor_welcome_2026} implementiert, sowie teilweise mit einem FastApi Gateway \cite{ramirez_fastapi_2026} mittels eines OpenApi Endpunktes \cite{noauthor_openapi_nodate} im internen Kubernetes cluster, \cite{noauthor_produktionsreife_nodate} in einem Docker container \cite{noauthor_docker_nodate} deployed.
+
+Die bisherigen Überlegungen zur Architektonischen Umsetzung, sowie bisher maßgeblich beteiligte Systeme sind im angegebenen Diagramm dargestellt. \ref{fig:mas_arch}

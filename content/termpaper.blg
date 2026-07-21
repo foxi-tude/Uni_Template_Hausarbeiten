@@ -16,13 +16,41 @@ Warning--entry type for "owasp_owasp_nodate" isn't style-file defined
 --line 199 of file literature.bib
 Warning--entry type for "andric_pdf_nodate" isn't style-file defined
 --line 815 of file literature.bib
+Warning--entry type for "editor_owasp_nodate" isn't style-file defined
+--line 969 of file literature.bib
 Warning--entry type for "fipa" isn't style-file defined
 --line 993 of file literature.bib
+Warning--entry type for "ramirez_fastapi_2026" isn't style-file defined
+--line 1251 of file literature.bib
+Repeated entry---line 1273 of file literature.bib
+ : @software{ramirez_fastapi_2026
+ :                               ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "chase_langchain_2022" isn't style-file defined
+--line 1295 of file literature.bib
+Warning--entry type for "noauthor_open-webuiopen-webui_2026" isn't style-file defined
+--line 1341 of file literature.bib
+Warning--entry type for "noauthor_welcome_2026" isn't style-file defined
+--line 1383 of file literature.bib
+Warning--entry type for "noauthor_openapi_nodate" isn't style-file defined
+--line 1405 of file literature.bib
+Warning--entry type for "noauthor_produktionsreife_nodate" isn't style-file defined
+--line 1421 of file literature.bib
+Warning--entry type for "noauthor_docker_nodate" isn't style-file defined
+--line 1443 of file literature.bib
 Warning--I didn't find a database entry for "anbiaee_security_2026m"
 Warning--to sort, need author or key in fipa
 Warning--to sort, need author or key in noauthor_threat_2026
+Warning--to sort, need author or key in noauthor_open-webuiopen-webui_2026
+Warning--to sort, need author or key in noauthor_welcome_2026
+Warning--to sort, need author or key in noauthor_openapi_nodate
+Warning--to sort, need author or key in noauthor_produktionsreife_nodate
+Warning--to sort, need author or key in noauthor_docker_nodate
 Warning--there's no year in chalupsky_overview_1993
 Warning--there's no year in ferrag_prompt_2026
+Warning--empty booktitle in georgeff_communication_1983
+Warning--no publisher, address, url or date in georgeff_communication_1983
+Warning--empty pages in georgeff_communication_1983
 Warning--there's no year in jennings_roadmap_1998
 Warning--there's no year in jennings_commitments_1993
 Warning--there's no year in khan_beyond_2026
@@ -30,50 +58,51 @@ Warning--there's no year in lesser_retrospective_1991
 Warning--there's no year in raza_trism_2026
 Warning--there's a publisher but no year in russell_artificial_2022
 Warning--there's no year in sycara_distributed_1996
+Warning--there's no year in vashishtha_cosmic_2026
 Warning--there's no year in wang_large_2026
 Warning--there's no year in wong_adding_2000
 Warning--there's no year in wooldridge_intelligent_1995
 Warning--there's a publisher but no year in wooldridge_introduction_2002
 Warning--there's no year in xue_all--one_2024
-You've used 25 entries,
+You've used 35 entries,
             3552 wiz_defined-function locations,
-            942 strings with 11119 characters,
-and the built_in function-call counts, 18886 in all, are:
-= -- 2330
-> -- 317
-< -- 623
-+ -- 790
-- -- 237
-* -- 1861
-:= -- 3401
-add.period$ -- 16
-call.type$ -- 25
-change.case$ -- 155
-chr.to.int$ -- 25
-cite$ -- 45
-duplicate$ -- 453
-empty$ -- 1088
-format.name$ -- 406
-if$ -- 3449
+            985 strings with 12669 characters,
+and the built_in function-call counts, 23277 in all, are:
+= -- 2858
+> -- 364
+< -- 719
++ -- 910
+- -- 267
+* -- 2285
+:= -- 4158
+add.period$ -- 17
+call.type$ -- 35
+change.case$ -- 197
+chr.to.int$ -- 35
+cite$ -- 74
+duplicate$ -- 590
+empty$ -- 1436
+format.name$ -- 456
+if$ -- 4334
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 177
-num.names$ -- 92
-pop$ -- 240
+missing$ -- 32
+newline$ -- 231
+num.names$ -- 112
+pop$ -- 323
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 189
 quote$ -- 0
-skip$ -- 779
+skip$ -- 936
 stack$ -- 0
-substring$ -- 1218
-swap$ -- 118
-text.length$ -- 75
+substring$ -- 1458
+swap$ -- 137
+text.length$ -- 84
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 260
-warning$ -- 16
-while$ -- 216
+type$ -- 370
+warning$ -- 25
+while$ -- 262
 width$ -- 0
-write$ -- 293
-(There were 21 warnings)
+write$ -- 381
+(There was 1 error message)

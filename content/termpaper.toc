@@ -9,7 +9,13 @@
 \contentsline {subsection}{\numberline {2.1}Theoretische und fachliche Grundlagen}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Agentische KI und Multi-Agenten-Systeme}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Agentenkommunikation und Interoperabilität}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Threat Modeling für LLM-basierte Agentensysteme}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Architektur}{7}{section.3}%
-\contentsline {section}{\nonumberline Literatur}{7}{section*.1}%
+\contentsline {subsection}{\numberline {2.4}Threat Modeling für LLM-basierte Agentensysteme}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Architektur}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Anforderungen für Architektur}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Bisherige Überlegungen zur Architektur}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Methodik und Struktur}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Methodisches Vorgehen}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Vorläufige Kapitelstruktur}{10}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Anhang}{10}{section.5}%
+\contentsline {section}{\nonumberline Literatur}{10}{section*.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

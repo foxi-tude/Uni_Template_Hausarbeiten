@@ -1,0 +1,29 @@
+% !TEX root = ../termpaper.tex
+% @author Leonhard Lüdeke
+%
+
+\section{Methodik und Struktur}
+
+\subsection{Methodisches Vorgehen}
+
+Methodisch kombiniert die Arbeit konzeptionelle Architekturentwicklung mit strukturierter Sicherheitsanalyse.
+
+Zunächst werden auf Basis einschlägiger Literatur sowie der gegebenen Rahmenbedingungen Anforderungen, Randbedingungen und Zielkriterien herausgearbeitet. \cite{georgeff_communication_1983,jennings_commitments_1993,jennings_roadmap_1998,russell_artificial_2022,sycara_distributed_1996,wang_large_2026} Hierbei sind neben den Literatur basierten Rahmenbedingungen, die Unternehmerischen Anforderungen von maßgeblicher Bedeutung. Hierfür werden Fachinterviews mit den zuständigen Abteilungsleitern geführt, um klare Use Cases (Bereichsleitung DSAI= Data Science and Artificial Intelligence) zu definieren und notwendigen Sicherheitsanforderungen (CISO) zu ermitteln. 
+
+Anschließend wird daraus eine Zielarchitektur für ein LLM-basiertes Multi-Agenten-System abgeleitet, in der Rollen, Schnittstellen, Kommunikationsbeziehungen und zentrale Vertrauensgrenzen beschrieben werden.
+
+Im nächsten Schritt wird diese Architektur in Komponenten, Datenflüsse und potenzielle Angriffsflächen zerlegt.
+
+Darauf aufbauend erfolgt das Threat Modelling, das klassische Kategorien verteilter Systeme mit LLM-spezifischen Angriffsmustern verbindet. \cite{wong_adding_2000,tete_threat_2024,krawiecka_extending_2025,noauthor_threat_2026,editor_owasp_nodate}
+
+Die identifizierten Risiken werden anschließend in technische und organisatorische Gegenmaßnahmen übersetzt und hinsichtlich ihrer Wirksamkeit sowie verbleibender Restrisiken diskutiert. \cite{krawiecka_extending_2025,wong_adding_2000,editor_owasp_nodate,shostack2014threat,ferrag_prompt_2026,raza_trism_2026}
+
+Auf diese Weise entsteht ein methodischer Ansatz, der Entwurf, Analyse und Bewertung nicht voneinander trennt, sondern systematisch miteinander verknüpft.
+
+\subsection{Vorläufige Kapitelstruktur}
+
+Die Kapitelstruktur beginnt mit der Darstellung des Problemkontextes über die theoretischen Grundlagen und die Anforderungsanalyse zur Architekturkonzeption, Erstellung einer Sicherheitsanalyse und endet mit einer Evaluation und Beantwortung der Forschungsfragen.
+
+Eine mögliche Struktur umfasst die Kapitel Einleitung, theoretische Grundlagen, methodisches Vorgehen, Anforderungsanalyse, Architekturkonzeption, Threat Modelling, Evaluation, Diskussion und Fazit.
+
+Dabei ist besonders wichtig, dass der Threat-Modelling-Teil nicht als isolierter Sicherheitseinschub erscheint, sondern als integraler Bestandteil der Architekturentwicklung nachvollziehbar wird.

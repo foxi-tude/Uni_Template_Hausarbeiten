@@ -13,9 +13,9 @@ Auf dieser Basis lässt sich ein Multi-Agenten-System als eine Architektur besch
 
 Damit sind heutige LLM-basierte Agentensysteme als Erweiterung klassischer Agenten- und MAS-Konzepte zu verstehen, bei denen Sprachmodelle neue Fähigkeiten der Interaktion, Werkzeugnutzung und Kontextverarbeitung bereitstellen, ohne die grundlegenden Fragen nach Autonomie, Koordination und Verantwortungsverteilung obsolet zu machen. \cite{botti_agentic_2025,yan_beyond_2025, jennings_roadmap_1998, russell_artificial_2022}
 
-Diese Veränderung der Agentensysteme hin zu LLM-basierten Agentensystemen lassen neue Angriffsvektoren entstehen \cite{tete_threat_2024, krawiecka_extending_2025}, die neben den klassischen Bedrohungen für Multi-Agenten-Systemen bestehen \cite{wong_adding_2000}
+Diese Veränderung der Agentensysteme hin zu LLM-basierten Agentensystemen lassen neue Angriffsvektoren entstehen \cite{tete_threat_2024, krawiecka_extending_2025}, die neben den klassischen Bedrohungen für Multi-Agenten-Systemen bestehen. \cite{wong_adding_2000}
 
-Dazu gehören insbesondere Trust Boundaries, kontrollierte Schnittstellen, das Prinzip minimaler Rechte sowie Kriterien zur Beurteilung von Robustheit, Nachvollziehbarkeit und Beherrschbarkeit komplexer agentischer Systeme. \cite{wong_adding_2000, tete_threat_2024}
+Dazu gehören insbesondere Trust Boundaries, kontrollierte Schnittstellen, das Prinzip minimaler Rechte, sowie Kriterien zur Beurteilung von Robustheit, Nachvollziehbarkeit und Beherrschbarkeit komplexer agentischer Systeme. \cite{wong_adding_2000, tete_threat_2024}
 
 \subsection{Agentische KI und Multi-Agenten-Systeme}
 
@@ -25,46 +25,48 @@ Von einem Multi-Agenten-System wird gesprochen, wenn mehrere spezialisierte Agen
 
 Für die Arbeit ist es wichtig, zwischen dem traditionellen Agentenbegriff und heutigen LLM-basierten Agenten zu unterscheiden. \cite{russell_artificial_2022,botti_agentic_2025} 
 
-Die Grundlage, welche Aspekte bei der praktischen Entwicklung von Agenten und Multi-Agenten-Systeme betrachtet werden müssen, hat sich nicht maßgeblich verändert. Das zeigen auch die 3 relevantesten Teilaspekte \cite{russell_artificial_2022,jennings_roadmap_1998} die moderne Frameworks wie LangGraph, AutoGen, ADK, CrewAI und viele weitere adressieren:
-- Begründung (Reasoning): Wie wird das Handeln eines Agenten argumentiert.
-- Speicher (Memory): Entscheidungen müssen in einen Kontext gesetzt werden können und bauen sich auf (episodischer Aufbau).
-- Nutzung von Tools (Tool use): Ansprechen von externen Systemen (Server, API's, Browser) mittels strukturierte Eingabeaufforderungen.
+Die Grundlage, welche Aspekte bei der praktischen Entwicklung von Agenten und Multi-Agenten-Systeme betrachtet werden müssen, hat sich nicht maßgeblich verändert. Das zeigen auch die 3 relevantesten Teilaspekte \cite{russell_artificial_2022,jennings_roadmap_1998} die moderne Frameworks wie LangGraph, AutoGen, ADK, CrewAI und viele weitere adressieren: 
+\begin{itemize}
+	\item Begründung (Reasoning): Wie wird das Handeln eines Agenten argumentiert.
+	\item Speicher (Memory): Entscheidungen müssen in einen Kontext gesetzt werden können und bauen sich auf (episodischer Aufbau).
+	\item Nutzung von Tools (Tool use): Ansprechen von externen Systemen (Server, API's, Browser) mittels strukturierte Eingabeaufforderungen.
+\end{itemize}
 
-Im Jahre 1996 hat sich Sycara mit der Entwicklung eines Multi-Agenten Framework names "Retsina" beschäftigt das diese Kernelemente von Multi-Agenten-Systeme abdeckte. \cite{sycara_distributed_1996} 
+Diese Kernelemente von Multi-Agenten-Systeme hat Sycara Jahre 1996 mit der Entwicklung eines Multi-Agenten Framework names "Retsina"  zum ersten mal abgedeckt. \cite{sycara_distributed_1996} 
 
 Jedoch beruhen Klassische Agentensysteme typischerweise stärker auf expliziten Zustandsmodellen, Regeln und formalen Interaktionsmustern, während LLM-basierte Agenten in hohem Maß durch Prompts, Kontextfenster und probabilistische Generierung geprägt sind. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998, botti_agentic_2025}
 Dabei setzen sich die einzelnen Agenten eigenständig ziele und Interpretieren diese in Natürlicher Sprache. Daraus entstehen neue Freiheitsgrade, aber auch neue Unsicherheiten in Bezug auf Robustheit, Fehlverhalten und Interpretierbarkeit.  \cite{wang_large_2026, raza_trism_2026}
+
+\newpage
 
 Ein Multi-Agenten-Ansatz ist deshalb nicht per se vorteilhaft. \cite{jennings_roadmap_1998, yan_beyond_2025, khan_beyond_2026} Sein Einsatz muss über konkrete Anforderungen wie Spezialisierung, Modularisierung, Trennung von Verantwortlichkeiten oder kontrollierte Delegation begründet werden. \cite{jennings_roadmap_1998,wooldridge_intelligent_1995,xue_all--one_2024} Andernfalls droht zusätzliche Komplexität ohne klaren funktionalen oder sicherheitlichen Mehrwert. \cite{wong_adding_2000,yan_beyond_2025,khan_beyond_2026, raza_trism_2026}
 
 \subsection{Agentenkommunikation und Interoperabilität}
 
-Kommunikation ist ein zentrales Strukturmerkmal von Multi-Agenten-Systemen. \cite{russell_artificial_2022,chalupsky_overview_1993,jennings_roadmap_1998}
-
-Bereits in der klassischen Literatur wird deutlich, dass die Leistungsfähigkeit verteilter Agentensysteme wesentlich davon abhängt, wie Informationen zwischen beteiligten Einheiten ausgetauscht, interpretiert und in koordiniertes Handeln überführt werden. \cite{jennings_roadmap_1998,russell_artificial_2022,botti_agentic_2025}
+Kommunikation ist ein zentrales Strukturmerkmal von Multi-Agenten-Systemen. \cite{russell_artificial_2022,chalupsky_overview_1993,jennings_roadmap_1998} Bereits in der klassischen Literatur wird deutlich, dass die Leistungsfähigkeit verteilter Agentensysteme wesentlich davon abhängt, wie Informationen zwischen beteiligten Einheiten ausgetauscht, interpretiert und in koordiniertes Handeln überführt werden. \cite{jennings_roadmap_1998,russell_artificial_2022,botti_agentic_2025}
 
 Historische Arbeiten zu KQML und spätere Standardisierungsbestrebungen, etwa im Umfeld von FIPA (Foundation for Intelligent Physical Agents), verdeutlichen, dass Agentenkommunikation nicht nur als technischer Nachrichtentransport, sondern als strukturierte Interaktion mit syntaktischen, semantischen und pragmatischen Ebenen verstanden werden sollte. \cite{chalupsky_overview_1993, fipa, botti_agentic_2025}
 
-Für LLM-basierte Multi-Agenten-Systeme bleibt diese Einsicht zentral. \cite{wang_large_2026, yan_beyond_2025}
-
-Zwar erfolgen Kommunikationsprozesse heute häufig über natürlichsprachliche oder halb strukturierte Kontexte. Dies bietet eine gewisse Flexibilität erhöht, jedoch die Gefahr von Missverständnissen, Kontextverlusten und unkontrollierten Seiteneffekten. \cite{yan_beyond_2025,ferrag_prompt_2026}
+Für LLM-basierte Multi-Agenten-Systeme bleibt diese Einsicht zentral. \cite{wang_large_2026, yan_beyond_2025} Zwar erfolgen Kommunikationsprozesse heute häufig über natürlichsprachliche oder halb strukturierte Kontexte, welches eine gewisse Flexibilität bietet, jedoch dies die Gefahr von Missverständnissen, Kontextverlusten und unkontrollierten Seiteneffekten. \cite{yan_beyond_2025,ferrag_prompt_2026}
 
 Interoperabilität bedeutet deshalb in der vorliegenden Arbeit nicht nur technische Anschlussfähigkeit, sondern eine verlässlich kontrollierbare Zusammenarbeit trotz unterschiedlicher Rollen, Zustände und Systemgrenzen. \cite{fipa, chalupsky_overview_1993, anbiaee_security_2026}
 
+\newpage
+
 \subsection{Threat Modeling für LLM-basierte Agentensysteme}
 
-Threat Modeling bezeichnet wiederholbare systematische Verfahren zur Identifikation, Strukturierung und Bewertung potenzieller Bedrohungen innerhalb eines Systems. \cite{owasp_owasp_nodate, shostack2014threat}
+Threat Modeling bezeichnet wiederholbare systematische Verfahren zur Identifikation, Strukturierung und Bewertung potenzieller Bedrohungen innerhalb eines Systems. \cite{owasp_owasp_nodate, shostack2014threat} Dabei umfasst das Threat Modeling diverse Framworks und Methoden wie STRIDE, PASTA, LINDDUN, 'attack trees', 'abuse cases' und viele mehr. \cite{owasp_owasp_nodate}
 
-Dabei umfasst das Threat Modeling diverse Framworks und Methoden wie STRIDE, PASTA, LINDDUN, 'attack trees', 'abuse cases' und viele mehr. \cite{owasp_owasp_nodate}
+Auch für LLM-basierte Multi-Agenten-Systeme sind diese Ansatz geeignet, da Risiken nicht nur aus einzelnen Komponenten, sondern aus Interaktionsketten zwischen Benutzenden, Agenten, Protokollen, Tools, Datenquellen und externen Diensten entstehen. \cite{krawiecka_extending_2025}
 
-Auch für LLM-basierte Agentensysteme sind diese Ansatz geeignet, weil Risiken nicht nur aus einzelnen Komponenten, sondern aus Interaktionsketten zwischen Benutzenden, Agenten, Protokollen, Tools, Datenquellen und externen Diensten entstehen. \cite{krawiecka_extending_2025}
-
-Im Unterschied zu einer rein Komponenten bezogenen Sicherheitsbetrachtung erlauben Threat Modeling Framwork eine methodische Analyse entlang konkreter Datenflüsse, Rollen und Vertrauensgrenzen. \cite{shostack2014threat, owasp_owasp_nodate, wong_adding_2000}
+Im Unterschied zu einer rein Komponenten bezogenen Sicherheitsbetrachtung erlauben Threat Modeling Framwork's eine methodische Analyse entlang konkreter Datenflüsse, Rollen und Vertrauensgrenzen. \cite{shostack2014threat, owasp_owasp_nodate, wong_adding_2000}
 
 Dadurch können sowohl klassische Bedrohungen verteilter Agentensysteme als auch neuere LLM-spezifische Risiken erfasst werden. \cite{krawiecka_extending_2025, noauthor_threat_2026}
-Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen, fehlerhafte oder über privilegierte Tool-Aufrufe, unsichere Delegation, Protokollschwächen und unkontrollierte Weitergabe sensibler Informationen. \cite{ferrag_prompt_2026, anbiaee_security_2026m, zhang_agent_2026, krawiecka_extending_2025}
+Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen, fehlerhafte oder über privilegierte Tool-Aufrufe, unsichere Delegation, Protokollschwächen und unkontrollierte Weitergabe sensibler Informationen. \cite{ferrag_prompt_2026, anbiaee_security_2026, zhang_agent_2026, krawiecka_extending_2025}
 
 Diese Arbeit wird sich maßgeblich an den 'OWASP Top 10 for LLM Applications' \cite{editor_owasp_nodate} orientieren und klassische Threat Modeling Frameworks für die Beantwortung der Forschungsfragen nutzen.
+
+\newpage
 
 %\subsection{Evaluierung von LLM-Agenten und Multi-Agenten-Systemen}
 
