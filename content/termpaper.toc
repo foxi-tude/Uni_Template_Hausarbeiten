@@ -16,6 +16,9 @@
 \contentsline {section}{\numberline {4}Methodik und Struktur}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Methodisches Vorgehen}{9}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Vorläufige Kapitelstruktur}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Anhang}{10}{section.5}%
-\contentsline {section}{\nonumberline Literatur}{10}{section*.2}%
+\contentsline {section}{\numberline {5}Beitrag, Risiken und Arbeitsplan}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Erwarteter wissenschaftlicher Beitrag}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Annahmen, Unsicherheiten und offene Punkte}{11}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Anhang}{11}{section.6}%
+\contentsline {section}{\nonumberline Literatur}{11}{section*.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
