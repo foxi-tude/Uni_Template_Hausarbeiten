@@ -20,5 +20,7 @@
 \contentsline {subsection}{\numberline {5.1}Erwarteter wissenschaftlicher Beitrag}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Annahmen, Unsicherheiten und offene Punkte}{11}{subsection.5.2}%
 \contentsline {section}{\numberline {6}Anhang}{11}{section.6}%
-\contentsline {section}{\nonumberline Literatur}{11}{section*.2}%
+\contentsline {paragraph}{\nonumberline Anwendungsklasse}{11}{paragraph*.2}%
+\contentsline {subparagraph}{\nonumberline Mögliche formulierungen für Anwendungsfälle}{11}{subparagraph*.3}%
+\contentsline {section}{\nonumberline Literatur}{13}{section*.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
