@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  30 SEP 2026 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  2 OCT 2026 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,13 +1520,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41783 strings out of 467871
- 913997 string characters out of 5417408
+ 41777 strings out of 467871
+ 913919 string characters out of 5417408
  1473948 words of memory out of 5000000
- 69960 multiletter control sequences out of 15000+600000
+ 69954 multiletter control sequences out of 15000+600000
  649797 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 118i,20n,145p,11250b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,19n,145p,11250b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 cc1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecti1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -1542,9 +1542,9 @@ pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
 crm1000.pk><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/cour
 ier/ucrr8a.pfb><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (18 pages, 501573 bytes).
+Output written on termpaper.pdf (18 pages, 501263 bytes).
 PDF statistics:
- 1131 PDF objects out of 1200 (max. 8388607)
+ 1130 PDF objects out of 1200 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,7 +6,7 @@
 
 \subsection{Anforderungen für Architektur}
 
-Die Referenzarchitektur wird aus fachlichen, organisatorischen, technischen und sicherheitsbezogenen Anforderungen abgeleitet. Diese werden auf basis von Fachlichen Interviews, technischen Randbedingungen und der Literatur gebildet. 
+Die Referenzarchitektur wird aus fachlichen, organisatorischen, technischen und sicherheitsbezogenen Anforderungen abgeleitet. Diese werden auf Basis von fachlichen Interviews, technischen Randbedingungen und der Literatur gebildet. 
 
 Daher ist der Ausgangspunkt nicht die Frage, was für Technologien verfügbar sind sondern welchen Anwendungsfall das System erfüllen soll und unter welchen Randbedingungen es betrieben wird. Hier sind sowohl Unternehmerischen Richtlinien wie auch Technische Begebenheiten zu berücksichtigen, sodass sich das Multi-Agenten-System nahtlos klassische Cloud Infrastrukturen einbinden lassen.
 
@@ -27,6 +27,6 @@ Die bisherige Zielarchitektur orientiert sich an einem modularen Multi-Agenten-A
 
 Dieser nimmt Anfragen entgegen, strukturiert Aufgaben, delegiert Teilaufgaben an spezialisierte Agenten und konsolidiert Ergebnisse. \cite{sycara_distributed_1996, xue_all--one_2024} Damit werden Koordination, Kontrolllogik und Fehlerbehandlung in dieser Instanz gebündelt, damit der Gesamtprozess transparent strukturiert werden kann. \cite{wong_adding_2000}
 
-Als User-Interface ist eine Angepasste Version von OpenWebUI \cite{noauthor_open-webuiopen-webui_2026} vorgegeben an die sich das Multi-Agenten-System anbinden soll. Bisherige Agenten sind mittels Langchain und Langgraph \cite{chase_langchain_2022} in Python \cite{noauthor_welcome_2026} implementiert, sowie teilweise mit einem FastApi Gateway \cite{ramirez_fastapi_2026} mittels eines OpenApi Endpunktes \cite{noauthor_openapi_nodate} im internen Kubernetes cluster, \cite{noauthor_produktionsreife_nodate} in einem Docker container \cite{noauthor_docker_nodate} deployed.
+Als User-Interface ist eine angepasste Version von OpenWebUI \cite{noauthor_open-webuiopen-webui_2026} vorgegeben an die sich das Multi-Agenten-System anbinden soll. Bisherige Agenten sind mittels Langchain und Langgraph \cite{chase_langchain_2022} in Python \cite{noauthor_welcome_2026} implementiert, sowie teilweise mit einem FastApi Gateway \cite{ramirez_fastapi_2026} mittels eines OpenApi Endpunktes \cite{noauthor_openapi_nodate} im internen Kubernetes cluster, \cite{noauthor_produktionsreife_nodate} in einem Docker container \cite{noauthor_docker_nodate} deployed.
 
 ( Die bisherigen Überlegungen zur Architektonischen Umsetzung, sowie bisher maßgeblich beteiligte Systeme sind im angegebenen Diagramm dargestellt. \ref{fig:mas_arch} - Dies ist vorerst nur als zusätzliche veranschaulichte Information zu betrachten.)

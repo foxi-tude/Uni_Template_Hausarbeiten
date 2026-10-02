@@ -38,7 +38,6 @@ Warning--entry type for "noauthor_produktionsreife_nodate" isn't style-file defi
 --line 1421 of file literature.bib
 Warning--entry type for "noauthor_docker_nodate" isn't style-file defined
 --line 1443 of file literature.bib
-Warning--I didn't find a database entry for "anbiaee_security_2026m"
 Warning--to sort, need author or key in fipa
 Warning--to sort, need author or key in noauthor_threat_2026
 Warning--to sort, need author or key in noauthor_open-webuiopen-webui_2026
@@ -66,7 +65,7 @@ Warning--there's a publisher but no year in wooldridge_introduction_2002
 Warning--there's no year in xue_all--one_2024
 You've used 35 entries,
             3552 wiz_defined-function locations,
-            985 strings with 12669 characters,
+            984 strings with 12647 characters,
 and the built_in function-call counts, 23277 in all, are:
 = -- 2858
 > -- 364

@@ -27,14 +27,14 @@ Für die Arbeit ist es wichtig, zwischen dem traditionellen Agentenbegriff und h
 
 Die Grundlage, welche Aspekte bei der praktischen Entwicklung von Agenten und Multi-Agenten-Systeme betrachtet werden müssen, hat sich nicht maßgeblich verändert. Das zeigen auch die 3 relevantesten Teilaspekte \cite{russell_artificial_2022,jennings_roadmap_1998} die moderne Frameworks wie LangGraph, AutoGen, ADK, CrewAI und viele weitere adressieren: 
 \begin{itemize}
-	\item Begründung (Reasoning): Wie wird das Handeln eines Agenten argumentiert.
+	\item Begründung (Reasoning): Wie wird das Handeln eines Agenten argumentiert?
 	\item Speicher (Memory): Entscheidungen müssen in einen Kontext gesetzt werden können und bauen sich auf (episodischer Aufbau).
 	\item Nutzung von Tools (Tool use): Ansprechen von externen Systemen (Server, API's, Browser) mittels strukturierte Eingabeaufforderungen.
 \end{itemize}
 
-Diese Kernelemente von Multi-Agenten-Systeme hat Sycara Jahre 1996 mit der Entwicklung eines Multi-Agenten Framework names "Retsina"  zum ersten mal abgedeckt. \cite{sycara_distributed_1996} 
+Diese Kernelemente von Multi-Agenten-Systeme hat Sycara Jahre 1996 mit der Entwicklung eines Multi-Agenten Framework names 'Retsina'  zum ersten mal abgedeckt. \cite{sycara_distributed_1996} 
 
-Jedoch beruhen Klassische Agentensysteme typischerweise stärker auf expliziten Zustandsmodellen, Regeln und formalen Interaktionsmustern, während LLM-basierte Agenten in hohem Maß durch Prompts, Kontextfenster und probabilistische Generierung geprägt sind. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998, botti_agentic_2025}
+Jedoch beruhen Klassische Agentensysteme typischerweise stärker auf expliziten Zustandsmodellen, Regeln und formalen Interaktionsmustern, während LLM-basierte Agenten in hohem Maß durch probabilistische Generierung geprägt sind. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998, botti_agentic_2025}
 Dabei setzen sich die einzelnen Agenten eigenständig ziele und Interpretieren diese in Natürlicher Sprache. Daraus entstehen neue Freiheitsgrade, aber auch neue Unsicherheiten in Bezug auf Robustheit, Fehlverhalten und Interpretierbarkeit.  \cite{wang_large_2026, raza_trism_2026}
 
 Ein Multi-Agenten-Ansatz ist deshalb nicht per se vorteilhaft. \cite{jennings_roadmap_1998, yan_beyond_2025, khan_beyond_2026} Sein Einsatz muss über konkrete Anforderungen wie Spezialisierung, Modularisierung, Trennung von Verantwortlichkeiten oder kontrollierte Delegation begründet werden. \cite{jennings_roadmap_1998,wooldridge_intelligent_1995,xue_all--one_2024} Andernfalls droht zusätzliche Komplexität ohne klaren funktionalen oder sicherheitlichen Mehrwert. \cite{wong_adding_2000,yan_beyond_2025,khan_beyond_2026, raza_trism_2026}
