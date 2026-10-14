@@ -17,6 +17,8 @@ Diese Veränderung der Agentensysteme hin zu LLM-basierten Agentensystemen lasse
 
 Dazu gehören insbesondere Trust Boundaries, kontrollierte Schnittstellen, das Prinzip minimaler Rechte, sowie Kriterien zur Beurteilung von Robustheit, Nachvollziehbarkeit und Beherrschbarkeit komplexer agentischer Systeme. \cite{wong_adding_2000, tete_threat_2024}
 
+\newpage
+
 \subsection{Agentische KI und Multi-Agenten-Systeme}
 
 Agentische KI bezeichnet Systeme, die nicht nur einzelne Antworten erzeugen, sondern zielgerichtet Aufgaben bearbeiten, Zwischenschritte planen, externe Werkzeuge verwenden und Teile ihres Handlungsablaufs selbst steuern. \cite{wooldridge_intelligent_1995,jennings_commitments_1993}
@@ -60,26 +62,8 @@ Auch für LLM-basierte Multi-Agenten-Systeme sind diese Ansatz geeignet, da Risi
 Im Unterschied zu einer rein Komponenten bezogenen Sicherheitsbetrachtung erlauben Threat Modeling Framwork's eine methodische Analyse entlang konkreter Datenflüsse, Rollen und Vertrauensgrenzen. \cite{shostack2014threat, owasp_owasp_nodate, wong_adding_2000}
 
 Dadurch können sowohl klassische Bedrohungen verteilter Agentensysteme als auch neuere LLM-spezifische Risiken erfasst werden. \cite{krawiecka_extending_2025, noauthor_threat_2026}
-Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen, fehlerhafte oder über privilegierte Tool-Aufrufe, unsichere Delegation, Protokollschwächen und unkontrollierte Weitergabe sensibler Informationen. \cite{ferrag_prompt_2026, anbiaee_security_2026, zhang_agent_2026, krawiecka_extending_2025}
+Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen und Protokollschwächen. Ebenfalls stellen Fehlerhafte Tool-Aufrufe, welche durch reines Routing auf Basis von LLM-Entscheidungen getroffen werden, entstehen können ein Risiko da.  Zusätzlich bedarf der sichere Zugriff auf getrennte Systeme eine dezidierte Betrachtung, da dies User*innen Potenzielle Zugriff auf sensible Informationen ermöglicht. Dies fällt unter die Thematik von "Access Controll" und wird in dieser Arbeit nur am Rande betrachtet. \cite{ferrag_prompt_2026, anbiaee_security_2026, zhang_agent_2026, krawiecka_extending_2025}
 
 Diese Arbeit wird sich maßgeblich an den 'OWASP Top 10 for LLM Applications' \cite{editor_owasp_nodate} orientieren und klassische Threat Modeling Frameworks für die Beantwortung der Forschungsfragen nutzen.
 
 \newpage
-
-%\subsection{Evaluierung von LLM-Agenten und Multi-Agenten-Systemen}
-
-% Literaturhinweis: Yan et al. (2025); Khan et al. (2026); Wang et al. (2026)
-%Die Bewertung agentischer Systeme darf sich nicht auf die Qualität einzelner Antworten %beschränken.
-
-% Literaturhinweis: Yan et al. (2025); Khan et al. (2026); Raza et al. (2026)
-%Relevant sind ebenso Zielerreichung, Koordinationsqualität, Robustheit, Fehlertoleranz, %Kommunikationsaufwand, Nachvollziehbarkeit und die Beherrschbarkeit von Risiken.
-
-% Literaturhinweis: Raza et al. (2026); Ferrag et al. (2026)
-%Gerade bei Multi-Agenten-Systemen kann ein funktional plausibler Ablauf dennoch %problematisch sein, wenn Zwischenschritte intransparent bleiben oder Kommunikations- und %Tool-Schnittstellen unzureichend abgesichert sind.
-
-% Literaturhinweis: Yan et al. (2025); Wang et al. (2026); Raza et al. (2026)
-%Für die vorliegende Arbeit bietet sich daher ein mehrdimensionaler Bewertungsrahmen an, der %funktionale, architektonische und sicherheitsbezogene Kriterien miteinander verbindet.
-
-% Literaturhinweis: Khan et al. (2026); Yan et al. (2025)
-%Ein solcher Rahmen ist geeignet, die entworfene Zielarchitektur nicht nur als technische %Idee, sondern als systematisch beurteilbares Konzept zu behandeln.
-
