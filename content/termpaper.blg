@@ -32,19 +32,13 @@ Warning--entry type for "noauthor_open-webuiopen-webui_2026" isn't style-file de
 --line 1341 of file literature.bib
 Warning--entry type for "noauthor_welcome_2026" isn't style-file defined
 --line 1383 of file literature.bib
-Warning--entry type for "noauthor_openapi_nodate" isn't style-file defined
---line 1405 of file literature.bib
 Warning--entry type for "noauthor_produktionsreife_nodate" isn't style-file defined
 --line 1421 of file literature.bib
-Warning--entry type for "noauthor_docker_nodate" isn't style-file defined
---line 1443 of file literature.bib
 Warning--to sort, need author or key in fipa
 Warning--to sort, need author or key in noauthor_threat_2026
-Warning--to sort, need author or key in noauthor_open-webuiopen-webui_2026
-Warning--to sort, need author or key in noauthor_welcome_2026
-Warning--to sort, need author or key in noauthor_openapi_nodate
 Warning--to sort, need author or key in noauthor_produktionsreife_nodate
-Warning--to sort, need author or key in noauthor_docker_nodate
+Warning--to sort, need author or key in noauthor_welcome_2026
+Warning--to sort, need author or key in noauthor_open-webuiopen-webui_2026
 Warning--there's no year in chalupsky_overview_1993
 Warning--there's no year in ferrag_prompt_2026
 Warning--empty booktitle in georgeff_communication_1983
@@ -63,45 +57,45 @@ Warning--there's no year in wong_adding_2000
 Warning--there's no year in wooldridge_intelligent_1995
 Warning--there's a publisher but no year in wooldridge_introduction_2002
 Warning--there's no year in xue_all--one_2024
-You've used 35 entries,
+You've used 33 entries,
             3552 wiz_defined-function locations,
-            984 strings with 12647 characters,
-and the built_in function-call counts, 23277 in all, are:
-= -- 2858
+            978 strings with 12186 characters,
+and the built_in function-call counts, 22727 in all, are:
+= -- 2792
 > -- 364
 < -- 719
-+ -- 910
++ -- 908
 - -- 267
-* -- 2285
-:= -- 4158
+* -- 2223
+:= -- 4072
 add.period$ -- 17
-call.type$ -- 35
-change.case$ -- 197
-chr.to.int$ -- 35
-cite$ -- 74
-duplicate$ -- 590
-empty$ -- 1436
+call.type$ -- 33
+change.case$ -- 191
+chr.to.int$ -- 33
+cite$ -- 66
+duplicate$ -- 568
+empty$ -- 1376
 format.name$ -- 456
-if$ -- 4334
+if$ -- 4208
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 32
-newline$ -- 231
+newline$ -- 221
 num.names$ -- 112
-pop$ -- 323
+pop$ -- 309
 preamble$ -- 1
-purify$ -- 189
+purify$ -- 183
 quote$ -- 0
-skip$ -- 936
+skip$ -- 926
 stack$ -- 0
-substring$ -- 1458
-swap$ -- 137
+substring$ -- 1436
+swap$ -- 135
 text.length$ -- 84
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 370
-warning$ -- 25
-while$ -- 262
+type$ -- 348
+warning$ -- 23
+while$ -- 258
 width$ -- 0
-write$ -- 381
+write$ -- 365
 (There was 1 error message)

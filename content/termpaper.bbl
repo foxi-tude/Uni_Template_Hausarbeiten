@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{33}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -7,26 +7,12 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem[noauthor_docker_nodate()]{noauthor_docker_nodate}
-\dinatlabel{noauthor_docker_nodate } :
-\newblock \emph{Docker: Accelerated Container Application Development}. --
-\newblock URL \url{https://www.docker.com/}. -- Zugriffsdatum: 2026-07-07
-
 \bibitem[noauthor_open-webuiopen-webui_2026()]{noauthor_open-webuiopen-webui_2026}
 \dinatlabel{noauthor_open-webuiopen-webui_2026 } \emph{open-webui/open-webui}.
   --
 \newblock URL \url{https://github.com/open-webui/open-webui}. -- Zugriffsdatum:
   2026-07-02. --
 \newblock original-date: 2023-10-06T22:08:27Z
-
-\bibitem[noauthor_openapi_nodate()]{noauthor_openapi_nodate}
-\dinatlabel{noauthor_openapi_nodate } :
-\newblock \emph{{OpenAPI} Initiative – The {OpenAPI} Initiative provides an
-  open source, technical community, within which industry participants may
-  easily contribute to building a vendor-neutral, portable and an open
-  specification for providing technical metadata for {REST} {APIs} – the
-  “{OpenAPI} Specification” ({OAS}).}. --
-\newblock URL \url{https://www.openapis.org/}. -- Zugriffsdatum: 2026-07-07
 
 \bibitem[noauthor_produktionsreife_nodate()]{noauthor_produktionsreife_nodate}
 \dinatlabel{noauthor_produktionsreife_nodate } :

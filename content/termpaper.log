@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  15 OCT 2026 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  16 OCT 2026 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,7 +1485,12 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 
 [2] (chapters/01_kontext_und_zielsetzung.tex [1
 
-] [2] [3]
+] [2]
+
+LaTeX Warning: Reference `Anwendungfälle' on page 3 undefined on input line 44
+.
+
+[3]
 Overfull \hbox (10.84142pt too wide) in paragraph at lines 61--62
 \T1/cmr/m/n/10.95 ste-hen durch Be-nut-zerin-ter-ak-ti-on, Agen-ten-kom-mu-ni-k
 a-ti-on, De-le-ga-ti-on, Tool-Nutzung
@@ -1498,9 +1503,13 @@ Overfull \hbox (2.38713pt too wide) in paragraph at lines 38--39
 r die-nen, um das Multi-Agenten-
  []
 
-) (chapters/04_methodik.tex [10] [11]) (chapters/05_beitrag_risiken.tex
-[12]) (chapters/anhang.tex
-<chapters/MAS Architektur 0.2.pdf, id=308, 598.15468pt x 845.07718pt>
+) (chapters/04_methodik.tex [10]
+
+LaTeX Warning: Reference `Anwendungfälle' on page 11 undefined on input line 1
+1.
+
+[11]) (chapters/05_beitrag_risiken.tex [12]) (chapters/anhang.tex
+<chapters/MAS Architektur 0.2.pdf, id=306, 598.15468pt x 845.07718pt>
 File: chapters/MAS Architektur 0.2.pdf Graphic file (type pdf)
 <use chapters/MAS Architektur 0.2.pdf>
 Package pdftex.def Info: chapters/MAS Architektur 0.2.pdf  used on input line 1
@@ -1524,15 +1533,18 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 41813 strings out of 467871
- 914417 string characters out of 5417408
- 1473948 words of memory out of 5000000
- 69979 multiletter control sequences out of 15000+600000
+ 41806 strings out of 467871
+ 914195 string characters out of 5417408
+ 1472948 words of memory out of 5000000
+ 69974 multiletter control sequences out of 15000+600000
  653517 words of font info for 92 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 118i,21n,145p,11250b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,21n,145p,11250b,1348s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 cc1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecti1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -1550,9 +1562,9 @@ dpi600\ecbx2986.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ecrm1000.pk><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/courier/ucrr8a.pfb><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/
 fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (20 pages, 491080 bytes).
+Output written on termpaper.pdf (20 pages, 488768 bytes).
 PDF statistics:
- 1170 PDF objects out of 1200 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
+ 1160 PDF objects out of 1200 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
