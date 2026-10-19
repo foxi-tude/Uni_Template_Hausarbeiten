@@ -6,7 +6,7 @@
 
 \subsection{Arbeitstitel}
 
-Entwicklung einer Referenzarchitektur eines Wissen orientierten Multi-Agenten-Systems unter Berücksichtigung einer Threat-Modelling Analyse
+Entwicklung einer Referenzarchitektur eines wissensorientierten Multi-Agenten-Systems unter Berücksichtigung einer Threat-Modelling Analyse
 
 \subsection{Ausgangslage und Motivation}
 
@@ -14,13 +14,13 @@ Große Sprachmodelle werden im aktuellen Diskurs zunehmend nicht mehr nur als Gr
 
 Diese Entwicklung lässt sich als Fortführung klassischer Konzepte aus der Multi-Agenten-Forschung und verteilten Systemen interpretieren, die durch LLM-basierte Sprachverarbeitung, flexible Werkzeugnutzung und dynamische Kontextverarbeitung erweitert werden. \cite{jennings_roadmap_1998,yan_beyond_2025,wang_large_2026} Mit dieser funktionalen Erweiterung steigt zugleich die technische und organisatorische Komplexität. \cite{jennings_roadmap_1998,wong_adding_2000,ferrag_prompt_2026}
 
-Während klassische Multi-Agenten-Systeme bereits Fragen der Koordination, Kooperation und Kommunikation adressieren, entstehen bei LLM-basierten Architekturen zusätzliche Unsicherheiten durch auf Wahrscheinlichkeits-basierten Modellentscheidungen. \cite{wong_adding_2000,ferrag_prompt_2026,raza_trism_2026} Hierbei stellt zum Beispiel die Entscheidung welcher Agent mit welchem Input angesprochen wird, eine Schwierigkeiten da. Weitere Herausforderung sind die Einbindung externer Tools und die Verarbeitung heterogener Kontextquellen.
+Während klassische Multi-Agenten-Systeme bereits Fragen der Koordination, Kooperation und Kommunikation adressieren, entstehen bei LLM-basierten Architekturen zusätzliche Unsicherheiten durch auf Wahrscheinlichkeits-basierten Modellentscheidungen. \cite{wong_adding_2000,ferrag_prompt_2026,raza_trism_2026} Hierbei stellt zum Beispiel die Entscheidung, welcher Agent mit welchem Input angesprochen wird, eine Schwierigkeiten da. Weitere Herausforderung sind die Einbindung externer Tools und die Verarbeitung heterogener Kontextquellen.
 
 Für Unternehmen ist daher nicht nur relevant, ob ein Multi-Agenten-System grundsätzlich leistungsfähig erscheint, sondern ob es unter realen Randbedingungen nachvollziehbar, beherrschbar und sicher betrieben werden kann. \cite{raza_trism_2026,ferrag_prompt_2026}
 
 \newpage
 
-Damit gewinnt die Fragestellung, wie LLM basierte Multi-Agenten-Systeme in bestehende technische und organisatorische Strukturen eingebettet werden können, immer mehr an Relevanz. Somit rücken Architekturentscheidungen in den Mittelpunkt, die nicht allein funktional, sondern zugleich unter Sicherheitspunkten begründet werden müssen.  \cite{wong_adding_2000,krawiecka_extending_2025} Zusätzlich sollten Governance Aspekte mit in die Überlegungen einfließen und können als Basis für eine Risikoanalyse dienen.
+Damit gewinnt die Fragestellung, wie LLM basierte Multi-Agenten-Systeme in bestehende technische und organisatorische Strukturen eingebettet werden können, immer mehr an Relevanz. Somit rücken Architekturentscheidungen in den Mittelpunkt, die nicht allein funktional, sondern zugleich unter Sicherheitspunkten begründet werden müssen.  \cite{wong_adding_2000,krawiecka_extending_2025} Zusätzlich sollten Governance-Aspekte mit in die Überlegungen einfließen und können als Basis für eine Risikoanalyse dienen.
 
 \subsection{Problemstellung}
 
@@ -39,11 +39,11 @@ Die zentrale Problemstellung der Arbeit besteht daher darin, eine nachvollziehba
 
 \subsection{Zielsetzung der Arbeit}
 
-Ziel der Arbeit ist die Konzeption eines LLM-basierten Multi-Agenten-Systems im Unternehmenskontext sowie die sicherheitsorientierte Bewertung dieses Entwurfs mithilfe einer strukturierten Threat-Modeling-Analyse. Im Vordergrund steht damit nicht primär die vollständige produktive Implementierung, sondern die Entwicklung einer fachlich plausiblen, technisch realisierbaren und sicherheitsorientierten begründeten Referenzarchitektur.
+Ziel der Arbeit ist die Konzeption eines LLM-basierten Multi-Agenten-Systems im Unternehmenskontext sowie die sicherheitsorientierte Bewertung dieses Entwurfs mithilfe einer strukturierten Threat-Modeling-Analyse. Im Vordergrund steht damit nicht primär die vollständige produktive Implementierung, sondern die Entwicklung einer fachlich plausiblen, technisch realisierbaren und sicherheitsorientiert begründeten Referenzarchitektur.
 
-Das Multi-Agenten-System hat zum Ziel bei wissensintensiven Unternehmensaufgaben zu assistieren. Hierfür werden LLM-basierte Agenten Informationen aus heterogenen internen und externen Quellen beschaffen, analysieren, zusammenführen und bewerten, um ein nachvollziehbares Arbeitsergebnis zur menschlichen Prüfung oder Entscheidung vorzubereiten. \ref{Anwendungfälle}
+Das Multi-Agenten-System hat zum Ziel, bei wissensintensiven Unternehmensaufgaben zu assistieren. Hierfür werden LLM-basierte Agenten Informationen aus heterogenen internen und externen Quellen beschaffen, analysieren, zusammenführen und bewerten, um ein nachvollziehbares Arbeitsergebnis zur menschlichen Prüfung oder Entscheidung vorzubereiten.
 
-Die Arbeit verfolgt dabei drei miteinander verbundene Teilziele. Erstens soll eine Referenzarchitektur entwickelt werden, in der Rollen, Komponenten, Schnittstellen und Kommunikationsbeziehungen der beteiligten Entitäten, klar beschrieben sind. Zweitens sollen relevante Bedrohungen systematisch identifiziert und entlang von Komponenten, Datenflüssen und Vertrauensgrenzen analysiert werden. Drittens sollen daraus konkrete Maßnahmen abgeleitet werden, die zeigen, wie Sicherheitsanforderungen in ein konsistentes Systemdesign überführt werden können. \cite{owasp_owasp_nodate, wong_adding_2000, krawiecka_extending_2025}
+Die Arbeit verfolgt dabei drei miteinander verbundene Teilziele. Erstens soll eine Referenzarchitektur entwickelt werden, in der Rollen, Komponenten, Schnittstellen und Kommunikationsbeziehungen der beteiligten Entitäten klar beschrieben sind. Zweitens sollen relevante Bedrohungen systematisch identifiziert und entlang von Komponenten, Datenflüssen und Vertrauensgrenzen analysiert werden. Drittens sollen daraus konkrete Maßnahmen abgeleitet werden, die zeigen, wie Sicherheitsanforderungen in ein konsistentes Systemdesign überführt werden können. \cite{owasp_owasp_nodate, wong_adding_2000, krawiecka_extending_2025}
 
 \newpage
 
@@ -51,7 +51,7 @@ Die Arbeit verfolgt dabei drei miteinander verbundene Teilziele. Erstens soll ei
 
 Die übergeordnete Forschungsfrage lautet:
 
-Wie kann eine LLM-basierte Multi-Agenten-Referenzarchitektur für wissensintensiver Unternehmensanwendungen, so entwickelt und evaluiert werden, dass funktionale, organisatorische und sicherheitsbezogene Anforderungen nachvollziehbar auf Architekturentscheidungen, Bedrohungen und Gegenmaßnahmen  miteinander verknüpft sind?
+Wie kann eine LLM-basierte Multi-Agenten-Referenzarchitektur für wissensintensive Unternehmensanwendungen, so entwickelt und evaluiert werden, dass funktionale, organisatorische und sicherheitsbezogene Anforderungen nachvollziehbar auf Architekturentscheidungen, Bedrohungen und Gegenmaßnahmen  miteinander verknüpft sind?
 
 Zur Beantwortung dieser Leitfrage werden folgende untergeordnete Forschungsfragen betrachtet:
 
@@ -59,7 +59,7 @@ Zur Beantwortung dieser Leitfrage werden folgende untergeordnete Forschungsfrage
 	\item Welche Merkmale, Akteure, Aufgaben, Informationsquellen und Interaktionsformen kennzeichnen wissensintensive Unternehmensanwendungen?
 	\item Welche funktionalen, organisatorischen, technischen und sicherheitsbezogenen Anforderungen ergeben sich aus den betrachteten Unternehmensanwendungen und den Perspektiven der relevanten Stakeholder?
 	\item Welche klassischen sowie LLM- und Multi-Agenten-spezifischen Bedrohungen entstehen durch Benutzerinteraktion, Agentenkommunikation, Delegation, Tool-Nutzung und Modellanbindung?
-	\item Mit welchen Architektonischen und organisatorischen Maßnahmen lassen sich diese Bedrohungen angemessen mindern?
+	\item Mit welchen architektonischen und organisatorischen Maßnahmen lassen sich diese Bedrohungen angemessen mindern?
 	\item In welchen Punkten erzeugt der Multi-Agenten-Ansatz einen Mehrwert gegenüber einfacheren Single-Agent-Referenzarchitektur, und welche Sicherheitsrisiken ergeben sich dadurch?
 \end{itemize}
 
