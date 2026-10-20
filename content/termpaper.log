@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  19 OCT 2026 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  20 OCT 2026 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1486,7 +1486,7 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 [2] (chapters/01_kontext_und_zielsetzung.tex [1
 
 ] [2] [3]
-Overfull \hbox (10.84142pt too wide) in paragraph at lines 61--62
+Overfull \hbox (10.84142pt too wide) in paragraph at lines 63--64
 \T1/cmr/m/n/10.95 ste-hen durch Be-nut-zerin-ter-ak-ti-on, Agen-ten-kom-mu-ni-k
 a-ti-on, De-le-ga-ti-on, Tool-Nutzung
  []
@@ -1498,13 +1498,9 @@ Overfull \hbox (2.38713pt too wide) in paragraph at lines 35--36
 r die-nen, um das Multi-Agenten-
  []
 
-) (chapters/04_methodik.tex [10]
-
-LaTeX Warning: Reference `Anwendungfälle' on page 11 undefined on input line 1
-1.
-
-[11]) (chapters/05_beitrag_risiken.tex [12]) (chapters/anhang.tex
-<chapters/MAS Architektur 0.2.pdf, id=306, 598.15468pt x 845.07718pt>
+) (chapters/04_methodik.tex [10] [11]) (chapters/05_beitrag_risiken.tex
+[12]) (chapters/anhang.tex
+<chapters/MAS Architektur 0.2.pdf, id=309, 598.15468pt x 845.07718pt>
 File: chapters/MAS Architektur 0.2.pdf Graphic file (type pdf)
 <use chapters/MAS Architektur 0.2.pdf>
 Package pdftex.def Info: chapters/MAS Architektur 0.2.pdf  used on input line 1
@@ -1515,12 +1511,12 @@ Package pdftex.def Info: chapters/MAS Architektur 0.2.pdf  used on input line 1
 LaTeX Warning: Float too large for page by 23.00084pt on input line 16.
 
 [13] [14 <./chapters/MAS Architektur 0.2.pdf>]
-<chapters/Zeitplan.pdf, id=463, 598.15468pt x 846.0408pt>
+<chapters/Zeitplan.pdf, id=466, 598.15468pt x 846.0408pt>
 File: chapters/Zeitplan.pdf Graphic file (type pdf)
 <use chapters/Zeitplan.pdf>
 Package pdftex.def Info: chapters/Zeitplan.pdf  used on input line 31.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
-<chapters/Zeitplan.pdf, id=465, page=1, 598.15468pt x 846.0408pt>
+<chapters/Zeitplan.pdf, id=468, page=1, 598.15468pt x 846.0408pt>
 File: chapters/Zeitplan.pdf Graphic file (type pdf)
 <use chapters/Zeitplan.pdf, page 1>
 Package pdftex.def Info: chapters/Zeitplan.pdf , page1 used on input line 31.
@@ -1558,24 +1554,21 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
  41819 strings out of 467871
- 914598 string characters out of 5417408
+ 914592 string characters out of 5417408
  1472948 words of memory out of 5000000
- 69986 multiletter control sequences out of 15000+600000
+ 69985 multiletter control sequences out of 15000+600000
  653517 words of font info for 92 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  118i,21n,145p,11250b,1348s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 cc1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecti1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm0600.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts
-/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\luedeke\AppData\Local\MiKT
+pen/ec/dpi600\tcrm1095.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\luedeke\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\luedeke\AppData\Lo
 cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\luedeke\Ap
 pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\lu
@@ -1587,9 +1580,9 @@ dpi600\ecbx2986.pk> <C:\Users\luedeke\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ecrm1000.pk><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/courier/ucrr8a.pfb><C:/Users/luedeke/AppData/Local/Programs/MiKTeX/
 fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on termpaper.pdf (21 pages, 571158 bytes).
+Output written on termpaper.pdf (21 pages, 573841 bytes).
 PDF statistics:
- 1184 PDF objects out of 1200 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
+ 1192 PDF objects out of 1200 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

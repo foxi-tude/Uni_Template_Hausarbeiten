@@ -8,7 +8,7 @@
 
 Die Referenzarchitektur wird aus fachlichen, organisatorischen, technischen und sicherheitsbezogenen Anforderungen abgeleitet. Diese werden auf Basis von fachlichen Interviews, technischen Randbedingungen und der Literatur gebildet. 
 
-Daher ist der Ausgangspunkt nicht die Frage, was für Technologien verfügbar sind sondern welchen Anwendungsfall das System erfüllen soll und unter welchen Randbedingungen es betrieben wird. Hier sind sowohl Unternehmerischen Richtlinien wie auch Technische Begebenheiten zu berücksichtigen, sodass sich das Multi-Agenten-System nahtlos in klassische Cloud Infrastrukturen einbinden lassen.
+Daher ist der Ausgangspunkt nicht die Frage, was für Technologien verfügbar sind sondern welchen Anwendungsfall das System erfüllen soll und unter welchen Randbedingungen es betrieben wird. Hier sind sowohl Unternehmerischen Richtlinien wie auch Technische Begebenheiten zu berücksichtigen, sodass sich die Komponenten des Multi-Agenten-System in einer containerisierten Umgebung einbinden lassen.
 
 Durch die Analytische Betrachtung durch geeignete Threat-Modeling Prozesse werden weitere Designentscheidungen getroffen, welche fortlaufende Architekturentscheidungen begründen sollen.
 
@@ -30,7 +30,7 @@ Zusätzlich steht ein 'Planner' Agent zur Verfügung. Dieser benötigt wiederum 
 
 Als eine Kontrollinstanz dient der 'Judge' Agent. Dieser bekommt Input stellt wiederum ein String da. In verschiedenen Stationen des Agenten wird geprüft ob der String den Anforderungen welche Nutzer*innen mitgeben oder der Judge Agent selbst aufgestellt hat entspricht. Anschließend wird auf dieser Basis ein Feedback entwickelt und zurückgeliefert.
 
-Es wird angenommen das alle beteiligten Systeme innerhalb des gleichen Subnetzes in einem Kubernetes Cluster \cite{noauthor_produktionsreife_nodate} und sind mittels LangChain, LangGraph in Python \cite{chase_langchain_2022,noauthor_welcome_2026} und einen FastAPI \cite{ramirez_fastapi_2026} Endpunkt als Gateway realisiert. Es ist bisher nicht beabsichtigt, das die Agenten untereinander Kommunizieren. Die komplette Koordination der Kommunikation liegt bei dem Orchestrator Agent.
+Es wird angenommen das alle beteiligten Systeme innerhalb des gleichen Subnetzes in einem Kubernetes Cluster \cite{noauthor_produktionsreife_nodate} und sind mittels LangChain, LangGraph in Python \cite{chase_langchain_2022,noauthor_welcome_2026} und einen FastAPI \cite{ramirez_fastapi_2026} Endpunkt als Gateway realisiert. Es ist bisher nicht beabsichtigt, das die Spezialagenten direkt miteinander Kommunizieren. Die komplette Koordination von Aufgaben und Zwischenergebnissen liegt bei dem Orchestrator Agent.
 
 Als User-Interface kann OpenWebUI \cite{noauthor_open-webuiopen-webui_2026} als Frontend Layer dienen, um das Multi-Agenten-System \footnote{Wobei hier der Orchestrator als äquivalent zum MAS angeführt werden kann.} Anzubinden. Als reines Frontend Layer sind sehr viele Leistungen von OpenWebUI  ungeeignet, jedoch sind viele Möglichkeiten wie die Einbindung von diversen LLM's, RAG Aufbau, Authentifizierungsfunktionen und weitere Methoden für Unternehmen von potenziellem Interesse. Somit könnte eine beispielhafte Einbindung eines MAS in OpenWebUI als Entscheidungshilfe für diese Open Source Lösung dienen.
 

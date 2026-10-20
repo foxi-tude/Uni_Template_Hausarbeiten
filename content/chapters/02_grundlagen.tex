@@ -15,7 +15,7 @@ Damit sind heutige LLM-basierte Agentensysteme als Erweiterung klassischer Agent
 
 Diese Veränderung der Agentensysteme hin zu LLM-basierten Agentensystemen lässt neue Angriffsvektoren entstehen \cite{tete_threat_2024, krawiecka_extending_2025}, die neben den klassischen Bedrohungen für Multi-Agenten-Systemen bestehen. \cite{wong_adding_2000}
 
-Dazu gehören insbesondere Trust Boundaries, kontrollierte Schnittstellen, das Prinzip minimaler Rechte, sowie Kriterien zur Beurteilung von Robustheit, Nachvollziehbarkeit und Beherrschbarkeit komplexer agentischer Systeme. \cite{wong_adding_2000, tete_threat_2024}
+Um diese Bedrohungen zu Analysieren werden Vertrauensgrenzen und Datenflüsse modelliert. Für die Gestaltung von Gegenmaßnahmen bedarf es einer Berücksichtigung von kontrollierten Schnittstellen, das Prinzip minimaler Rechte, sowie Nachvollziehbarkeit und Beherrschbarkeit. \cite{wong_adding_2000, tete_threat_2024}
 
 \newpage
 
@@ -34,7 +34,7 @@ Die Grundlage, welche Aspekte bei der praktischen Entwicklung von Agenten und Mu
 	\item Nutzung von Tools (Tool use): Ansprechen von externen Systemen (Server, APIs, Browser) mittels strukturierter Eingabeaufforderungen.
 \end{itemize}
 
-Diese Kernelemente von Multi-Agenten-Systeme hat Sycara Jahre 1996 mit der Entwicklung eines Multi-Agenten Framework names 'Retsina'  zum ersten mal abgedeckt. \cite{sycara_distributed_1996} 
+Diese Kernelemente von Multi-Agenten-Systeme hat Sycara Jahre 1996 mit der Entwicklung eines Multi-Agenten Framework names 'Retsina' adressiert. Darin wurde eine wiederverwendbare Multi-Agenten-Infrastruktur aufgebaut die Planung, Informationsbeschaffung und Kooperation realisierten. \cite{sycara_distributed_1996} 
 
 Jedoch beruhen Klassische Agentensysteme typischerweise stärker auf expliziten Zustandsmodellen, Regeln und formalen Interaktionsmustern, während LLM-basierte Agenten in hohem Maß durch probabilistische Generierung geprägt sind. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998, botti_agentic_2025}
 Dabei setzen sich die einzelnen Agenten eigenständig Ziele und Interpretieren diese in natürlicher Sprache. Daraus entstehen neue Freiheitsgrade, aber auch neue Unsicherheiten in Bezug auf Robustheit, Fehlverhalten und Interpretierbarkeit.  \cite{wang_large_2026, raza_trism_2026}
@@ -64,6 +64,6 @@ Im Unterschied zu einer rein Komponenten bezogenen Sicherheitsbetrachtung erlaub
 Dadurch können sowohl klassische Bedrohungen verteilter Agentensysteme als auch neuere LLM-spezifische Risiken erfasst werden. \cite{krawiecka_extending_2025, noauthor_threat_2026}
 Dazu zählen etwa Prompt Injection, manipulierte Kontextquellen und Protokollschwächen. Ebenfalls stellen Fehlerhafte Tool-Aufrufe, welche durch reines Routing auf Basis von LLM-Entscheidungen getroffen werden, entstehen können ein Risiko da.  Zusätzlich bedarf der sichere Zugriff auf getrennte Systeme eine dezidierte Betrachtung, da dies User*innen Potenzielle Zugriff auf sensible Informationen ermöglicht. Dies fällt unter die Thematik von "Access Controll" und wird in dieser Arbeit nur am Rande betrachtet. \cite{ferrag_prompt_2026, anbiaee_security_2026, zhang_agent_2026, krawiecka_extending_2025}
 
-Diese Arbeit wird sich maßgeblich an den 'OWASP Top 10 for LLM Applications' \cite{editor_owasp_nodate} orientieren und klassische Threat Modeling Frameworks für die Beantwortung der Forschungsfragen nutzen.
+Diese Arbeit wird die 'OWASP Top 10 for LLM Applications' \cite{editor_owasp_nodate} als Orientierung für Risikokategorien verwendet und klassische Threat Modeling Frameworks für die Beantwortung der Forschungsfragen nutzen.
 
 \newpage

@@ -12,7 +12,7 @@ Entwicklung einer Referenzarchitektur eines wissensorientierten Multi-Agenten-Sy
 
 Große Sprachmodelle werden im aktuellen Diskurs zunehmend nicht mehr nur als Grundlage einfacher dialogorientierter Anwendungen verstanden, sondern als Bausteine agentischer Systeme, in denen mehrere spezialisierte Komponenten Aufgaben übernehmen, Informationen austauschen und arbeitsteilig zur Bearbeitung komplexerer Probleme beitragen. \cite{wooldridge_intelligent_1995,jennings_roadmap_1998,botti_agentic_2025}
 
-Diese Entwicklung lässt sich als Fortführung klassischer Konzepte aus der Multi-Agenten-Forschung und verteilten Systemen interpretieren, die durch LLM-basierte Sprachverarbeitung, flexible Werkzeugnutzung und dynamische Kontextverarbeitung erweitert werden. \cite{jennings_roadmap_1998,yan_beyond_2025,wang_large_2026} Mit dieser funktionalen Erweiterung steigt zugleich die technische und organisatorische Komplexität. \cite{jennings_roadmap_1998,wong_adding_2000,ferrag_prompt_2026}
+Diese Entwicklung lässt sich als Fortführung klassischer Konzepte aus der Multi-Agenten-Forschung und verteilten Systemen interpretieren, die durch LLM-basierte Sprachverarbeitung, flexible Werkzeugnutzung und dynamische Kontextverarbeitung \footnote{Kontext verändert sich durch zusätzliche Nutzereingaben (Human in the Loop), Suchergebnisse und durch LLM selbst erstellte Zwischenergebnisse.} erweitert werden. \cite{jennings_roadmap_1998,yan_beyond_2025,wang_large_2026} Mit dieser funktionalen Erweiterung steigt zugleich die technische und organisatorische Komplexität. \cite{jennings_roadmap_1998,wong_adding_2000,ferrag_prompt_2026}
 
 Während klassische Multi-Agenten-Systeme bereits Fragen der Koordination, Kooperation und Kommunikation adressieren, entstehen bei LLM-basierten Architekturen zusätzliche Unsicherheiten durch auf Wahrscheinlichkeits-basierten Modellentscheidungen. \cite{wong_adding_2000,ferrag_prompt_2026,raza_trism_2026} Hierbei stellt zum Beispiel die Entscheidung, welcher Agent mit welchem Input angesprochen wird, eine Schwierigkeiten da. Weitere Herausforderung sind die Einbindung externer Tools und die Verarbeitung heterogener Kontextquellen.
 
@@ -41,9 +41,11 @@ Die zentrale Problemstellung der Arbeit besteht daher darin, eine nachvollziehba
 
 Ziel der Arbeit ist die Konzeption eines LLM-basierten Multi-Agenten-Systems im Unternehmenskontext sowie die sicherheitsorientierte Bewertung dieses Entwurfs mithilfe einer strukturierten Threat-Modeling-Analyse. Im Vordergrund steht damit nicht primär die vollständige produktive Implementierung, sondern die Entwicklung einer fachlich plausiblen, technisch realisierbaren und sicherheitsorientiert begründeten Referenzarchitektur.
 
-Das Multi-Agenten-System hat zum Ziel, bei wissensintensiven Unternehmensaufgaben zu assistieren. Hierfür werden LLM-basierte Agenten Informationen aus heterogenen internen und externen Quellen beschaffen, analysieren, zusammenführen und bewerten, um ein nachvollziehbares Arbeitsergebnis zur menschlichen Prüfung oder Entscheidung vorzubereiten.
+Das Multi-Agenten-System hat zum Ziel, bei Recherche-, Analyse- und Syntheseaufgaben zu assistieren. Hierfür werden LLM-basierte Agenten Informationen aus heterogenen internen und externen Quellen beschaffen, analysieren, zusammenführen und bewerten, um ein nachvollziehbares Arbeitsergebnis zur menschlichen Prüfung oder Entscheidung vorzubereiten.
 
 Die Arbeit verfolgt dabei drei miteinander verbundene Teilziele. Erstens soll eine Referenzarchitektur entwickelt werden, in der Rollen, Komponenten, Schnittstellen und Kommunikationsbeziehungen der beteiligten Entitäten klar beschrieben sind. Zweitens sollen relevante Bedrohungen systematisch identifiziert und entlang von Komponenten, Datenflüssen und Vertrauensgrenzen analysiert werden. Drittens sollen daraus konkrete Maßnahmen abgeleitet werden, die zeigen, wie Sicherheitsanforderungen in ein konsistentes Systemdesign überführt werden können. \cite{owasp_owasp_nodate, wong_adding_2000, krawiecka_extending_2025}
+
+ Die daraus entstehende Referenzarchitektur soll als Entscheidungsgrundlage für spätere produktive Umsetzung dienen. Die Entwurfsentscheidungen werden in einem Prototypen realisiert und die Funktionalität anhand von Anwendungsfällen untersucht.
 
 \newpage
 
